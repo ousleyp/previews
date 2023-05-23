@@ -8,4 +8,5 @@ notes on the build-preview.sh script:
   in my case, they're in a directory called "repos":
   
   $ ls ~/repos
+  
   openshift-docs previews
