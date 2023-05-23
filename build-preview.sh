@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # prerequisites:
-# * you changed the username in the `open` command to your own
+# * you changed the username in the `open` command (line 18) to your own
 # * your openshift-docs and previews directories have the same parent
 # * you are in the openshift-docs directory when running this script
 # * you checked out the branch that you want to build
