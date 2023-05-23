@@ -490,6 +490,7 @@
                   <li><a class="" href="../installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html">Installing a cluster on vSphere in a restricted network</a></li>
                   <li><a class="" href="../installing/installing_vsphere/installing-restricted-networks-vsphere.html">Installing a cluster on vSphere in a restricted network with user-provisioned infrastructure</a></li>
                   <li><a class="" href="../installing/installing_vsphere/installing-vsphere-three-node.html">Installing a three-node cluster on vSphere</a></li>
+                  <li><a class="" href="../installing/installing_vsphere/installing-vsphere-post-installation-configuration.html">Configuring the vSphere connection settings after an installation</a></li>
                   <li><a class="" href="../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
@@ -627,7 +628,7 @@
                   <li><a class="" href="../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../web_console/odc-about-web-terminal.html">Web terminal</a></li>
+            <li><a class="" href="../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
             <li><a class="" href="../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -1071,6 +1072,7 @@
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-gcp-pd.html">GCP PD CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-google-cloud-file.html">GCP Filestore CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ibm-vpc-block.html">IBM VPC Block CSI Driver Operator</a></li>
+                  <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ibm-powervs-block.html">IBM Power Virtual Server Block CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-cinder.html">OpenStack Cinder CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-manila.html">OpenStack Manila CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ovirt.html">Red Hat Virtualization CSI Driver Operator</a></li>
@@ -1493,18 +1495,10 @@
                   <li><a class="" href="../nodes/nodes/nodes-nodes-viewing.html">Viewing and listing the nodes in your cluster</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-working.html">Working with nodes</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-managing.html">Managing nodes</a></li>
+                  <li><a class="" href="../nodes/nodes/nodes-nodes-graceful-shutdown.html">Managing graceful node shutdown</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-managing-max-pods.html">Managing the maximum number of pods per node</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-4-5"><span id="ssgSpan-21-4-5" class="fa fa-caret-right"></span>&nbsp;Remediation, fencing, and maintenance</a>
-                  <ul id="topicSubSubGroup-21-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-about-remediation-fencing-maintenance.html" style="padding-left: 70px;">About node remediation, fencing, and maintentance</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-self-node-remediation-operator.html" style="padding-left: 70px;">Using Self Node Remediation</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-machine-health-checks.html" style="padding-left: 70px;">Remediating nodes with Machine Health Checks</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-node-health-check-operator.html" style="padding-left: 70px;">Remediating nodes with Node Health Checks</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-node-maintenance-operator.html" style="padding-left: 70px;">Placing nodes in maintenance mode with Node Maintenance Operator</a></li>                  </ul>
-                  </li>
-
+                  <li><a class="" href="../nodes/nodes/nodes-remediating-fencing-maintaining-rhwa.html">Remediating, fencing, and maintaining nodes</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-rebooting.html">Understanding node rebooting</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-garbage-collection.html">Freeing node resources using garbage collection</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-resources-configuring.html">Allocating resources for nodes</a></li>
@@ -1585,17 +1579,27 @@
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
       <ul id="topicGroup24" class="collapse  list-unstyled">
             <li><a class="" href="../logging/cluster-logging-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.7</a>
               <ul id="topicSubGroup-24-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../logging/v5_7/logging-5-7-release-notes.html">Logging 5.7 Release Notes</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-getting-started.html">Getting started with logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-configuration.html">Configuring Logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-administration.html">Administering Logging</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/v5_6/logging-5-6-release-notes.html">Logging 5.6 Release Notes</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-getting-started.html">Getting started with logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../logging/v5_6/logging-5-6-configuration.html">Configuring Logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-administration.html">Administering Logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-reference.html">Logging Reference</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
-              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-3"><span id="sgSpan-24-3" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
+              <ul id="topicSubGroup-24-3" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/v5_5/logging-5-5-release-notes.html">Logging 5.5 Release Notes</a></li>
                   <li><a class="" href="../logging/v5_5/logging-5-5-getting-started.html">Getting started with logging</a></li>
@@ -1604,8 +1608,8 @@
             </li>
             <li><a class="" href="../logging/cluster-logging.html">About Logging</a></li>
             <li><a class="" href="../logging/cluster-logging-deploying.html">Installing Logging</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-5"><span id="sgSpan-24-5" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
-              <ul id="topicSubGroup-24-5" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-6"><span id="sgSpan-24-6" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
+              <ul id="topicSubGroup-24-6" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/config/cluster-logging-configuring-cr.html">About the Cluster Logging custom resource</a></li>
                   <li><a class="" href="../logging/config/cluster-logging-collector.html">Configuring the logging collector</a></li>
@@ -1626,8 +1630,8 @@
             <li><a class="" href="../logging/cluster-logging-eventrouter.html">Collecting and storing Kubernetes events</a></li>
             <li><a class="" href="../logging/cluster-logging-upgrading.html">Updating Logging</a></li>
             <li><a class="" href="../logging/cluster-logging-dashboards.html">Viewing cluster dashboards</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-14"><span id="sgSpan-24-14" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
-              <ul id="topicSubGroup-24-14" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-15"><span id="sgSpan-24-15" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
+              <ul id="topicSubGroup-24-15" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/troubleshooting/cluster-logging-cluster-status.html">Viewing Logging status</a></li>
                   <li><a class="" href="../logging/troubleshooting/cluster-logging-log-store-status.html">Viewing the status of the log store</a></li>
@@ -2232,7 +2236,7 @@
                   <li><a class="" href="../virt/install/uninstalling-virt.html">Uninstalling OpenShift Virtualization</a></li>              </ul>
             </li>
             <li><a class="" href="../virt/upgrading-virt.html">Updating OpenShift Virtualization</a></li>
-            <li><a class="" href="../virt/virt-additional-security-privileges-controller-and-launcher.html">Security policies</a></li>
+            <li><a class="" href="../virt/virt-security-policies.html">Security policies</a></li>
             <li><a class="" href="../virt/virt-using-the-cli-tools.html">Using the CLI tools</a></li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-9"><span id="sgSpan-34-9" class="fa fa-caret-right"></span>&nbsp;Virtual machines</a>
               <ul id="topicSubGroup-34-9" class="nav-tertiary list-unstyled collapse">
@@ -2709,6 +2713,7 @@
 <li><a href="#support_distributed-tracing-release-notes">Getting support</a></li>
 <li><a href="#distr-tracing-rn-new-features_distributed-tracing-release-notes">New features and enhancements</a>
 <ul class="sectlevel2">
+<li><a href="#new-features-and-enhancements-red-hat-openshift-distributed-tracing-2-8">New features and enhancements Red Hat OpenShift distributed tracing 2.8</a></li>
 <li><a href="#new-features-and-enhancements-red-hat-openshift-distributed-tracing-2-7">New features and enhancements Red Hat OpenShift distributed tracing 2.7</a></li>
 <li><a href="#new-features-and-enhancements-red-hat-openshift-distributed-tracing-2-6">New features and enhancements Red Hat OpenShift distributed tracing 2.6</a></li>
 <li><a href="#new-features-and-enhancements-red-hat-openshift-distributed-tracing-2-5">New features and enhancements Red Hat OpenShift distributed tracing 2.5</a></li>
@@ -2722,6 +2727,7 @@
 </li>
 <li><a href="#distr-tracing-rn-technology-preview_distributed-tracing-release-notes">Red Hat OpenShift distributed tracing Technology Preview</a>
 <ul class="sectlevel2">
+<li><a href="#red-hat-openshift-distributed-tracing-2-8-0-technology-preview">Red Hat OpenShift distributed tracing 2.8.0 Technology Preview</a></li>
 <li><a href="#red-hat-openshift-distributed-tracing-2-4-0-technology-preview">Red Hat OpenShift distributed tracing 2.4.0 Technology Preview</a></li>
 <li><a href="#red-hat-openshift-distributed-tracing-2-2-0-technology-preview">Red Hat OpenShift distributed tracing 2.2.0 Technology Preview</a></li>
 <li><a href="#red-hat-openshift-distributed-tracing-2-1-0-technology-preview">Red Hat OpenShift distributed tracing 2.1.0 Technology Preview</a></li>
@@ -2817,6 +2823,46 @@ provide specific details, such as the section name and OpenShift Container Platf
 <div class="sectionbody">
 <div class="paragraph">
 <p>This release adds improvements related to the following components and concepts.</p>
+</div>
+<div class="sect2">
+<h3 id="new-features-and-enhancements-red-hat-openshift-distributed-tracing-2-8"><a class="anchor" href="#new-features-and-enhancements-red-hat-openshift-distributed-tracing-2-8"></a>New features and enhancements Red Hat OpenShift distributed tracing 2.8</h3>
+<div class="paragraph">
+<p>This release of Red Hat OpenShift distributed tracing addresses Common Vulnerabilities and Exposures (CVEs) and bug fixes.</p>
+</div>
+<div class="sect3">
+<h4 id="component-versions-supported-in-red-hat-openshift-distributed-tracing-version-2-8"><a class="anchor" href="#component-versions-supported-in-red-hat-openshift-distributed-tracing-version-2-8"></a>Component versions supported in Red Hat OpenShift distributed tracing version 2.8</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Operator</th>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Red Hat OpenShift distributed tracing platform</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jaeger</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.42</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Red Hat OpenShift distributed tracing data collection</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OpenTelemetry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.74.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tempo Operator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tempo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.1.0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="new-features-and-enhancements-red-hat-openshift-distributed-tracing-2-7"><a class="anchor" href="#new-features-and-enhancements-red-hat-openshift-distributed-tracing-2-7"></a>New features and enhancements Red Hat OpenShift distributed tracing 2.7</h3>
@@ -3235,6 +3281,36 @@ provide specific details, such as the section name and OpenShift Container Platf
 </td>
 </tr>
 </table>
+</div>
+<div class="sect2">
+<h3 id="red-hat-openshift-distributed-tracing-2-8-0-technology-preview"><a class="anchor" href="#red-hat-openshift-distributed-tracing-2-8-0-technology-preview"></a>Red Hat OpenShift distributed tracing 2.8.0 Technology Preview</h3>
+<div class="paragraph">
+<p>This release introduces support for Tempo Operator as a Technology Preview feature for Red Hat OpenShift distributed tracing.
+The feature uses version 0.1.0 of Tempo Operator and version 2.0.1 of the upstream Tempo components.</p>
+</div>
+<div class="paragraph">
+<p>You can use Tempo Operator to replace Jaeger so that you can use S3-compatible storage instead of ElasticSearch.
+Most users who use Tempo Operator instead of Jaeger will not notice any difference in functionality because Tempo supports the same ingestion and query protocols as Jaeger and uses the same user interface.</p>
+</div>
+<div class="paragraph">
+<p>If you enable this Technology Preview feature, note the following limitations of the current implementation:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tempo Operator currently does not support disconnected installations. (<a href="https://issues.redhat.com/browse/TRACING-3145">TRACING-3145</a>)</p>
+</li>
+<li>
+<p>When you use the Jaeger user interface (UI) with Tempo Operator, the Jaeger UI lists only services that have sent traces within the last 15 minutes.
+For services that have not sent traces within the last 15 minutes, those traces are still stored even though they are not visible in the Jaeger UI. (<a href="https://issues.redhat.com/browse/TRACING-3139">TRACING-3139</a>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Expanded support for the Tempo Operator is planned for future releases of Red Hat OpenShift distributed tracing.
+Possible additional features might include support for TLS authentication, multitenancy, and multiple clusters.
+For more information about the Tempo Operator, see <a href="https://tempo-operator.netlify.app">the Tempo community documentation</a>.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="red-hat-openshift-distributed-tracing-2-4-0-technology-preview"><a class="anchor" href="#red-hat-openshift-distributed-tracing-2-4-0-technology-preview"></a>Red Hat OpenShift distributed tracing 2.4.0 Technology Preview</h3>

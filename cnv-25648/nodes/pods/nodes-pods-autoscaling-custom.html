@@ -490,6 +490,7 @@
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html">Installing a cluster on vSphere in a restricted network</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-vsphere.html">Installing a cluster on vSphere in a restricted network with user-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-three-node.html">Installing a three-node cluster on vSphere</a></li>
+                  <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-post-installation-configuration.html">Configuring the vSphere connection settings after an installation</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
@@ -627,7 +628,7 @@
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../../web_console/odc-about-web-terminal.html">Web terminal</a></li>
+            <li><a class="" href="../../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
             <li><a class="" href="../../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -1071,6 +1072,7 @@
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-gcp-pd.html">GCP PD CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-google-cloud-file.html">GCP Filestore CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-vpc-block.html">IBM VPC Block CSI Driver Operator</a></li>
+                  <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-powervs-block.html">IBM Power Virtual Server Block CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-cinder.html">OpenStack Cinder CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-manila.html">OpenStack Manila CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ovirt.html">Red Hat Virtualization CSI Driver Operator</a></li>
@@ -1493,18 +1495,10 @@
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-viewing.html">Viewing and listing the nodes in your cluster</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-working.html">Working with nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing.html">Managing nodes</a></li>
+                  <li><a class="" href="../../nodes/nodes/nodes-nodes-graceful-shutdown.html">Managing graceful node shutdown</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing-max-pods.html">Managing the maximum number of pods per node</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-4-5"><span id="ssgSpan-21-4-5" class="fa fa-caret-right"></span>&nbsp;Remediation, fencing, and maintenance</a>
-                  <ul id="topicSubSubGroup-21-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-about-remediation-fencing-maintenance.html" style="padding-left: 70px;">About node remediation, fencing, and maintentance</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-self-node-remediation-operator.html" style="padding-left: 70px;">Using Self Node Remediation</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-machine-health-checks.html" style="padding-left: 70px;">Remediating nodes with Machine Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-health-check-operator.html" style="padding-left: 70px;">Remediating nodes with Node Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-maintenance-operator.html" style="padding-left: 70px;">Placing nodes in maintenance mode with Node Maintenance Operator</a></li>                  </ul>
-                  </li>
-
+                  <li><a class="" href="../../nodes/nodes/nodes-remediating-fencing-maintaining-rhwa.html">Remediating, fencing, and maintaining nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-rebooting.html">Understanding node rebooting</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-garbage-collection.html">Freeing node resources using garbage collection</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-resources-configuring.html">Allocating resources for nodes</a></li>
@@ -1585,17 +1579,27 @@
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
       <ul id="topicGroup24" class="collapse  list-unstyled">
             <li><a class="" href="../../logging/cluster-logging-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.7</a>
               <ul id="topicSubGroup-24-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-release-notes.html">Logging 5.7 Release Notes</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-getting-started.html">Getting started with logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-configuration.html">Configuring Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-administration.html">Administering Logging</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_6/logging-5-6-release-notes.html">Logging 5.6 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-getting-started.html">Getting started with logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_6/logging-5-6-configuration.html">Configuring Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-administration.html">Administering Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-reference.html">Logging Reference</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
-              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-3"><span id="sgSpan-24-3" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
+              <ul id="topicSubGroup-24-3" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_5/logging-5-5-release-notes.html">Logging 5.5 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_5/logging-5-5-getting-started.html">Getting started with logging</a></li>
@@ -1604,8 +1608,8 @@
             </li>
             <li><a class="" href="../../logging/cluster-logging.html">About Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-deploying.html">Installing Logging</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-5"><span id="sgSpan-24-5" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
-              <ul id="topicSubGroup-24-5" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-6"><span id="sgSpan-24-6" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
+              <ul id="topicSubGroup-24-6" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/config/cluster-logging-configuring-cr.html">About the Cluster Logging custom resource</a></li>
                   <li><a class="" href="../../logging/config/cluster-logging-collector.html">Configuring the logging collector</a></li>
@@ -1626,8 +1630,8 @@
             <li><a class="" href="../../logging/cluster-logging-eventrouter.html">Collecting and storing Kubernetes events</a></li>
             <li><a class="" href="../../logging/cluster-logging-upgrading.html">Updating Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-dashboards.html">Viewing cluster dashboards</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-14"><span id="sgSpan-24-14" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
-              <ul id="topicSubGroup-24-14" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-15"><span id="sgSpan-24-15" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
+              <ul id="topicSubGroup-24-15" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-cluster-status.html">Viewing Logging status</a></li>
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-log-store-status.html">Viewing the status of the log store</a></li>
@@ -2232,7 +2236,7 @@
                   <li><a class="" href="../../virt/install/uninstalling-virt.html">Uninstalling OpenShift Virtualization</a></li>              </ul>
             </li>
             <li><a class="" href="../../virt/upgrading-virt.html">Updating OpenShift Virtualization</a></li>
-            <li><a class="" href="../../virt/virt-additional-security-privileges-controller-and-launcher.html">Security policies</a></li>
+            <li><a class="" href="../../virt/virt-security-policies.html">Security policies</a></li>
             <li><a class="" href="../../virt/virt-using-the-cli-tools.html">Using the CLI tools</a></li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-9"><span id="sgSpan-34-9" class="fa fa-caret-right"></span>&nbsp;Virtual machines</a>
               <ul id="topicSubGroup-34-9" class="nav-tertiary list-unstyled collapse">
@@ -2707,6 +2711,7 @@
 <li><a href="#nodes-pods-autoscaling-custom-rn_nodes-pods-autoscaling-custom">Custom Metrics Autoscaler Operator release notes</a>
 <ul class="sectlevel2">
 <li><a href="#nodes-pods-autoscaling-custom-rn-versions_nodes-pods-autoscaling-custom">Supported versions</a></li>
+<li><a href="#nodes-pods-autoscaling-custom-rn-210_nodes-pods-autoscaling-custom">Custom Metrics Autoscaler Operator 2.10 release notes</a></li>
 <li><a href="#nodes-pods-autoscaling-custom-rn-282-174_nodes-pods-autoscaling-custom">Custom Metrics Autoscaler Operator 2.8.2-174 release notes</a></li>
 <li><a href="#nodes-pods-autoscaling-custom-rn-282_nodes-pods-autoscaling-custom">Custom Metrics Autoscaler Operator 2.8.2 release notes</a></li>
 </ul>
@@ -2730,11 +2735,7 @@
 <li><a href="#nodes-pods-autoscaling-custom-pausing_nodes-pods-autoscaling-custom">Pausing the custom metrics autoscaler for a workload</a></li>
 <li><a href="#nodes-pods-autoscaling-custom-audit_nodes-pods-autoscaling-custom">Configuring audit logging</a></li>
 <li><a href="#nodes-pods-autoscaling-custom-gather_nodes-pods-autoscaling-custom">Gathering debugging data</a></li>
-<li><a href="#nodes-pods-autoscaling-custom-metrics-access_nodes-pods-autoscaling-custom">Accessing performance metrics</a>
-<ul class="sectlevel2">
-<li><a href="#nodes-pods-autoscaling-custom-metrics_nodes-pods-autoscaling-custom">Provided metrics</a></li>
-</ul>
-</li>
+<li><a href="#nodes-pods-autoscaling-custom-metrics-access_nodes-pods-autoscaling-custom">Accessing performance metrics</a></li>
 <li><a href="#nodes-pods-autoscaling-custom-adding_nodes-pods-autoscaling-custom">Understanding how to add custom metrics autoscalers</a>
 <ul class="sectlevel2">
 <li><a href="#nodes-pods-autoscaling-custom-creating-workload_nodes-pods-autoscaling-custom">Adding a custom metrics autoscaler to a workload</a></li>
@@ -2746,28 +2747,6 @@
 </div>
 <div class="paragraph">
 <p>As a developer, you can use the custom metrics autoscaler to specify how OpenShift Container Platform should automatically increase or decrease the number of pods for a deployment, stateful set, custom resource, or job based on custom metrics that are not based only on CPU or memory.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Scaling by using a scaled job is a Technology Preview feature only. Technology Preview features
-are not supported with Red Hat production service level agreements (SLAs) and
-might not be functionally complete. Red Hat does not recommend using them
-in production. These features provide early access to upcoming product
-features, enabling customers to test functionality and provide feedback during
-the development process.</p>
-</div>
-<div class="paragraph">
-<p>For more information about the support scope of Red Hat Technology Preview features, see <a href="https://access.redhat.com/support/offerings/techpreview/">Technology Preview Features Support Scope</a>.</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p>The Custom Metrics Autoscaler Operator for Red Hat OpenShift is an optional operator, based on the Kubernetes Event Driven Autoscaler (KEDA), that allows workloads to be scaled using additional metrics sources other than pod metrics.</p>
@@ -2783,7 +2762,7 @@ the development process.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Autoscaling based on Apache Kafka metrics is a Technology Preview feature only. Technology Preview features
+<p>The custom metrics autoscaler is a Technology Preview feature only. Technology Preview features
 are not supported with Red Hat production service level agreements (SLAs) and
 might not be functionally complete. Red Hat does not recommend using them
 in production. These features provide early access to upcoming product
@@ -2803,7 +2782,7 @@ the development process.</p>
 <h2 id="nodes-pods-autoscaling-custom-rn_nodes-pods-autoscaling-custom"><a class="anchor" href="#nodes-pods-autoscaling-custom-rn_nodes-pods-autoscaling-custom"></a>Custom Metrics Autoscaler Operator release notes</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The release notes for the Custom Metrics Autoscaler Operator for Red Hat Openshift describe new features and enhancements, deprecated features, and known issues.</p>
+<p>The release notes for the Custom Metrics Autoscaler Operator for Red Hat OpenShift describe new features and enhancements, deprecated features, and known issues.</p>
 </div>
 <div class="paragraph">
 <p>The Custom Metrics Autoscaler Operator uses the Kubernetes-based Event Driven Autoscaler (KEDA) and is built on top of the OpenShift Container Platform horizontal pod autoscaler (HPA).</p>
@@ -2842,22 +2821,111 @@ the development process.</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.8.2-174</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General availability</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.10</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">4.12</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Technology Preview</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General availability</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.8.2-174</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.10</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">4.11</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Technology Preview</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General availability</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.8.2-174</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.10</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">4.10</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Technology Preview</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General availability</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect2">
+<h3 id="nodes-pods-autoscaling-custom-rn-210_nodes-pods-autoscaling-custom"><a class="anchor" href="#nodes-pods-autoscaling-custom-rn-210_nodes-pods-autoscaling-custom"></a>Custom Metrics Autoscaler Operator 2.10 release notes</h3>
+<div class="paragraph">
+<p>This release of the Custom Metrics Autoscaler Operator 2.10 provides new features and bug fixes for running the Operator in an OpenShift Container Platform cluster. The components of the Custom Metrics Autoscaler Operator 2.10 were released in <a href="https://access.redhat.com/errata/RHEA-:">RHEA-:</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="nodes-pods-autoscaling-custom-rn-210-new_nodes-pods-autoscaling-custom"><a class="anchor" href="#nodes-pods-autoscaling-custom-rn-210-new_nodes-pods-autoscaling-custom"></a>New features and enhancements</h4>
+<div class="sect4">
+<h5 id="nodes-pods-autoscaling-custom-rn-210-ga_nodes-pods-autoscaling-custom"><a class="anchor" href="#nodes-pods-autoscaling-custom-rn-210-ga_nodes-pods-autoscaling-custom"></a>Custom Metrics Autoscaler Operator general availability</h5>
+<div class="paragraph">
+<p>The Custom Metrics Autoscaler Operator is now generally available as of Custom Metrics Autoscaler Operator version 2.10.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Scaling by using a scaled job is a Technology Preview feature only. Technology Preview features
+are not supported with Red Hat production service level agreements (SLAs) and
+might not be functionally complete. Red Hat does not recommend using them
+in production. These features provide early access to upcoming product
+features, enabling customers to test functionality and provide feedback during
+the development process.</p>
+</div>
+<div class="paragraph">
+<p>For more information about the support scope of Red Hat Technology Preview features, see <a href="https://access.redhat.com/support/offerings/techpreview/">Technology Preview Features Support Scope</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="nodes-pods-autoscaling-custom-rn-210-metrics_nodes-pods-autoscaling-custom"><a class="anchor" href="#nodes-pods-autoscaling-custom-rn-210-metrics_nodes-pods-autoscaling-custom"></a>Custom Metrics Autoscaler Operator metrics</h5>
+<div class="paragraph">
+<p>You can now use the Prometheus Query Language (PromQL) to query metrics from the Custom Metrics Autoscaler Operator.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="nodes-pods-autoscaling-custom-rn-210-pause_nodes-pods-autoscaling-custom"><a class="anchor" href="#nodes-pods-autoscaling-custom-rn-210-pause_nodes-pods-autoscaling-custom"></a>Pausing the custom metrics autoscaling for scaled objects</h5>
+<div class="paragraph">
+<p>You can now pause the autoscaling of a scaled object, as needed, and resume autoscaling when ready.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="nodes-pods-autoscaling-custom-rn-210-fall-back_nodes-pods-autoscaling-custom"><a class="anchor" href="#nodes-pods-autoscaling-custom-rn-210-fall-back_nodes-pods-autoscaling-custom"></a>Replica fall back for scaled objects</h5>
+<div class="paragraph">
+<p>You can now specify the number of replicas to fall back to if a scaled object fails to get metrics from the source.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="nodes-pods-autoscaling-custom-rn-210-hpa-name_nodes-pods-autoscaling-custom"><a class="anchor" href="#nodes-pods-autoscaling-custom-rn-210-hpa-name_nodes-pods-autoscaling-custom"></a>Customizable HPA naming for scaled objects</h5>
+<div class="paragraph">
+<p>You can now specify a custom name for the horizontal pod autoscaler in scaled objects.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="nodes-pods-autoscaling-custom-rn-210-activation_nodes-pods-autoscaling-custom"><a class="anchor" href="#nodes-pods-autoscaling-custom-rn-210-activation_nodes-pods-autoscaling-custom"></a>Activation and scaling thresholds</h5>
+<div class="paragraph">
+<p>Because the horizontal pod autoscaler (HPA) cannot scale to or from 0 replicas, the Custom Metrics Autoscaler Operator does that scaling, after which the HPA performs the scaling. You can now specify when the HPA takes over autoscaling, based on the number of replicas. This allows for more flexibility with your scaling policies.</p>
+</div>
+<div class="ulist">
+<div class="title">Additional resources</div>
+<ul>
+<li>
+<p><a href="../../nodes/pods/nodes-pods-autoscaling-custom.html#nodes-pods-autoscaling-custom-metrics-access_nodes-pods-autoscaling-custom">Accessing performance metrics</a></p>
+</li>
+<li>
+<p><a href="../../nodes/pods/nodes-pods-autoscaling-custom.html#nodes-pods-autoscaling-custom-pausing_nodes-pods-autoscaling-custom">Pausing the custom metrics autoscaler for a workload</a></p>
+</li>
+<li>
+<p>For information on using fallback and HPA naming, see <a href="../../nodes/pods/nodes-pods-autoscaling-custom.html#nodes-pods-autoscaling-custom-creating-workload_nodes-pods-autoscaling-custom">Adding a custom metrics autoscaler to a workload</a>.</p>
+</li>
+<li>
+<p>For information on activation and scaling thresholds, see <a href="../../nodes/pods/nodes-pods-autoscaling-custom.html#nodes-pods-autoscaling-custom-about_nodes-pods-autoscaling-custom">Understanding the custom metrics autoscaler</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="nodes-pods-autoscaling-custom-rn-282-174_nodes-pods-autoscaling-custom"><a class="anchor" href="#nodes-pods-autoscaling-custom-rn-282-174_nodes-pods-autoscaling-custom"></a>Custom Metrics Autoscaler Operator 2.8.2-174 release notes</h3>
@@ -4672,14 +4740,6 @@ keda-operator-776cbb6768-zpj5b                        1/1     Running   0       
 </li>
 </ol>
 </div>
-<div class="ulist">
-<div class="title">Additional resources</div>
-<ul>
-<li>
-<p><a href="../../nodes/pods/nodes-pods-autoscaling-custom.html#nodes-pods-autoscaling-custom-audit_nodes-pods-autoscaling-custom">Configuring audit logging</a></p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -4972,85 +5032,6 @@ operating system, run the following command:</p>
 <p>To add multiple queries, select <strong>Add Query</strong>.</p>
 </li>
 </ol>
-</div>
-<div class="sect2">
-<h3 id="nodes-pods-autoscaling-custom-metrics_nodes-pods-autoscaling-custom"><a class="anchor" href="#nodes-pods-autoscaling-custom-metrics_nodes-pods-autoscaling-custom"></a>Provided metrics</h3>
-<div class="paragraph">
-<p>The Custom Metrics Autoscaler Operator exposes the following metrics, which you can view by using the OpenShift Container Platform web console.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Custom Metric Autoscaler Operator metrics</caption>
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Metric name</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keda_scaler_activity</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Whether the particular scaler is active or inactive. A value of <code>1</code> indicates the scaler is active; a value of <code>0</code> indicates the scaler is inactive.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keda_scaler_metrics_value</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The current value for each scaler’s metric, which is used by the Horizontal Pod Autoscaler (HPA) in computing the target average.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keda_scaler_metrics_latency</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The latency of retrieving the current metric from each scaler.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keda_scaler_errors</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The number of errors that have occurred for each scaler.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keda_scaler_errors_total</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The total number of errors encountered for all scalers.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keda_scaled_object_errors</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The number of errors that have occurred for each scaled obejct.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keda_resource_totals</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The total number of Custom Metrics Autoscaler custom resources in each namespace for each custom resource type.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keda_trigger_totals</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The total number of triggers by trigger type.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<div class="title">Custom Metrics Autoscaler Admission webhook metrics</div>
-<p>The Custom Metrics Autoscaler Admission webhook also exposes the following Prometheus metrics.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Metric name</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keda_scaled_object_validation_total</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The number of scaled object validations.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>keda_scaled_object_validation_errors</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The number of validation errors.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 </div>
@@ -5388,6 +5369,9 @@ scaledobject    apps/v1.Deployment   example-deployment     0     50    promethe
 </li>
 <li>
 <p><a href="../../nodes/pods/nodes-pods-autoscaling-custom.html#nodes-pods-autoscaling-custom-trigger-auth_nodes-pods-autoscaling-custom">Understanding custom metrics autoscaler trigger authentications</a></p>
+</li>
+<li>
+<p><a href="../../nodes/pods/nodes-pods-autoscaling-custom.html#nodes-pods-autoscaling-custom-audit_nodes-pods-autoscaling-custom">Configuring audit logging</a></p>
 </li>
 </ul>
 </div>

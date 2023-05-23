@@ -490,6 +490,7 @@
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html">Installing a cluster on vSphere in a restricted network</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-vsphere.html">Installing a cluster on vSphere in a restricted network with user-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-three-node.html">Installing a three-node cluster on vSphere</a></li>
+                  <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-post-installation-configuration.html">Configuring the vSphere connection settings after an installation</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
@@ -627,7 +628,7 @@
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../../web_console/odc-about-web-terminal.html">Web terminal</a></li>
+            <li><a class="" href="../../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
             <li><a class="" href="../../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -1071,6 +1072,7 @@
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-gcp-pd.html">GCP PD CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-google-cloud-file.html">GCP Filestore CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-vpc-block.html">IBM VPC Block CSI Driver Operator</a></li>
+                  <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-powervs-block.html">IBM Power Virtual Server Block CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-cinder.html">OpenStack Cinder CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-manila.html">OpenStack Manila CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ovirt.html">Red Hat Virtualization CSI Driver Operator</a></li>
@@ -1493,18 +1495,10 @@
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-viewing.html">Viewing and listing the nodes in your cluster</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-working.html">Working with nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing.html">Managing nodes</a></li>
+                  <li><a class="" href="../../nodes/nodes/nodes-nodes-graceful-shutdown.html">Managing graceful node shutdown</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing-max-pods.html">Managing the maximum number of pods per node</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-4-5"><span id="ssgSpan-21-4-5" class="fa fa-caret-right"></span>&nbsp;Remediation, fencing, and maintenance</a>
-                  <ul id="topicSubSubGroup-21-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-about-remediation-fencing-maintenance.html" style="padding-left: 70px;">About node remediation, fencing, and maintentance</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-self-node-remediation-operator.html" style="padding-left: 70px;">Using Self Node Remediation</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-machine-health-checks.html" style="padding-left: 70px;">Remediating nodes with Machine Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-health-check-operator.html" style="padding-left: 70px;">Remediating nodes with Node Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-maintenance-operator.html" style="padding-left: 70px;">Placing nodes in maintenance mode with Node Maintenance Operator</a></li>                  </ul>
-                  </li>
-
+                  <li><a class="" href="../../nodes/nodes/nodes-remediating-fencing-maintaining-rhwa.html">Remediating, fencing, and maintaining nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-rebooting.html">Understanding node rebooting</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-garbage-collection.html">Freeing node resources using garbage collection</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-resources-configuring.html">Allocating resources for nodes</a></li>
@@ -1585,17 +1579,27 @@
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
       <ul id="topicGroup24" class="collapse  list-unstyled">
             <li><a class="" href="../../logging/cluster-logging-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.7</a>
               <ul id="topicSubGroup-24-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-release-notes.html">Logging 5.7 Release Notes</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-getting-started.html">Getting started with logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-configuration.html">Configuring Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-administration.html">Administering Logging</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_6/logging-5-6-release-notes.html">Logging 5.6 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-getting-started.html">Getting started with logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_6/logging-5-6-configuration.html">Configuring Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-administration.html">Administering Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-reference.html">Logging Reference</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
-              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-3"><span id="sgSpan-24-3" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
+              <ul id="topicSubGroup-24-3" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_5/logging-5-5-release-notes.html">Logging 5.5 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_5/logging-5-5-getting-started.html">Getting started with logging</a></li>
@@ -1604,8 +1608,8 @@
             </li>
             <li><a class="" href="../../logging/cluster-logging.html">About Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-deploying.html">Installing Logging</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-5"><span id="sgSpan-24-5" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
-              <ul id="topicSubGroup-24-5" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-6"><span id="sgSpan-24-6" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
+              <ul id="topicSubGroup-24-6" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/config/cluster-logging-configuring-cr.html">About the Cluster Logging custom resource</a></li>
                   <li><a class="" href="../../logging/config/cluster-logging-collector.html">Configuring the logging collector</a></li>
@@ -1626,8 +1630,8 @@
             <li><a class="" href="../../logging/cluster-logging-eventrouter.html">Collecting and storing Kubernetes events</a></li>
             <li><a class="" href="../../logging/cluster-logging-upgrading.html">Updating Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-dashboards.html">Viewing cluster dashboards</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-14"><span id="sgSpan-24-14" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
-              <ul id="topicSubGroup-24-14" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-15"><span id="sgSpan-24-15" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
+              <ul id="topicSubGroup-24-15" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-cluster-status.html">Viewing Logging status</a></li>
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-log-store-status.html">Viewing the status of the log store</a></li>
@@ -2232,7 +2236,7 @@
                   <li><a class="" href="../../virt/install/uninstalling-virt.html">Uninstalling OpenShift Virtualization</a></li>              </ul>
             </li>
             <li><a class="" href="../../virt/upgrading-virt.html">Updating OpenShift Virtualization</a></li>
-            <li><a class="" href="../../virt/virt-additional-security-privileges-controller-and-launcher.html">Security policies</a></li>
+            <li><a class="" href="../../virt/virt-security-policies.html">Security policies</a></li>
             <li><a class="" href="../../virt/virt-using-the-cli-tools.html">Using the CLI tools</a></li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-9"><span id="sgSpan-34-9" class="fa fa-caret-right"></span>&nbsp;Virtual machines</a>
               <ul id="topicSubGroup-34-9" class="nav-tertiary list-unstyled collapse">
@@ -2704,12 +2708,20 @@
 <div id="toc" class="toc">
 <div id="toctitle" class="title"></div>
 <ul class="sectlevel1">
+<li><a href="#using-argo-cd-instance-to-manage-cluster-scoped-resourcesconfiguring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations">Using an Argo CD instance to manage cluster-scoped resources</a></li>
+<li><a href="#default-permissions-of-an-argocd-instance.adocconfiguring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations">Default permissions of an Argocd instance</a></li>
 <li><a href="#run-argo-cd-instance-on-cluster_configuring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations">Running the Argo CD instance at the cluster-level</a></li>
 <li><a href="#creating-an-application-by-using-the-argo-cd-dashboard_configuring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations">Creating an application by using the Argo CD dashboard</a></li>
 <li><a href="#creating-an-application-by-using-the-oc-tool_configuring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations">Creating an application by using the <code>oc</code> tool</a></li>
 <li><a href="#synchronizing-your-application-application-with-your-git-repository_configuring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations">Synchronizing your application with your Git repository</a></li>
 <li><a href="#gitops-inbuilt-permissions-for-cluster-config_configuring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations">In-built permissions for cluster configuration</a></li>
 <li><a href="#gitops-additional-permissions-for-cluster-config_configuring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations">Adding permissions for cluster configuration</a></li>
+<li><a href="#gitops-installing-olm-operators-using-gitops_configuring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations">Installing OLM Operators using Red Hat OpenShift GitOps</a>
+<ul class="sectlevel2">
+<li><a href="#installing-cluster-scoped-operators">Installing cluster-scoped Operators</a></li>
+<li><a href="#installing-namepace-scoped-operators">Installing namepace-scoped Operators</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="paragraph">
@@ -2719,12 +2731,150 @@
 <div class="title">Prerequisites</div>
 <ul>
 <li>
-<p>Red Hat OpenShift GitOps is installed in your cluster.</p>
+<p>You have logged in to the <code>product-title</code> cluster as an administrator.</p>
 </li>
 <li>
-<p>Logged into Argo CD instance.</p>
+<p>You have installed the <code>gitops-title</code> Operator in your cluster.</p>
+</li>
+<li>
+<p>You have logged into Argo CD instance.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="using-argo-cd-instance-to-manage-cluster-scoped-resourcesconfiguring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations"><a class="anchor" href="#using-argo-cd-instance-to-manage-cluster-scoped-resourcesconfiguring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations"></a>Using an Argo CD instance to manage cluster-scoped resources</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To manage cluster-scoped resources, update the existing <code>Subscription</code> object for the <code>gitops-title</code> Operator and add the namespace of the Argo CD instance to the <code>ARGOCD_CLUSTER_CONFIG_NAMESPACES</code> environment variable in the <code>spec</code> section.</p>
+</div>
+<div class="olist discrete">
+<div class="title">Procedure</div>
+<ol class="discrete">
+<li>
+<p>In the <strong>Administrator</strong> perspective of the web console, navigate to <strong>Operators</strong> → <strong>Installed Operators</strong> → <strong>Red Hat OpenShift GitOps</strong> → <strong>Subscription</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Actions</strong> drop-down menu then click <strong>Edit Subscription</strong>.</p>
+</li>
+<li>
+<p>On the <strong>openshift-gitops-operator</strong> Subscription details page, under the <strong>YAML</strong> tab, edit the <code>Subscription</code> YAML file by adding the namespace of the Argo CD instance to the <code>ARGOCD_CLUSTER_CONFIG_NAMESPACES</code> environment variable in the <code>spec</code> section:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operators.coreos.com/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Subscription</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">openshift-gitops-operator</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">openshift-operators</span>
+<span class="nn">...</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">config</span><span class="pi">:</span>
+    <span class="na">env</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">ARGOCD_CLUSTER_CONFIG_NAMESPACES</span>
+      <span class="na">value</span><span class="pi">:</span> <span class="s">openshift-gitops, &lt;list of namespaces of cluster-scoped Argo CD instances&gt;</span>
+<span class="nn">...</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>To verify that the Argo instance is configured with a cluster role to manage cluster-scoped resources, perform the following steps:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Navigate to <strong>User Management</strong> → <strong>Roles</strong> and from the <strong>Filter</strong>  drop-down menu select <strong>Cluster-wide Roles</strong>.</p>
+</li>
+<li>
+<p>Search for the <code>argocd-application-controller</code> by using the <strong>Search by name</strong> field.</p>
+<div class="paragraph">
+<p>The <strong>Roles</strong> page displays the created cluster role.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Alternatively, in the OpenShift CLI, run the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">oc auth can-i create oauth -n openshift-gitops --as system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The output <code>yes</code> verifies that the Argo instance is configured with a cluster role to manage cluster-scoped resources. Else, check your configurations and take necessary steps as required.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="default-permissions-of-an-argocd-instance.adocconfiguring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations"><a class="anchor" href="#default-permissions-of-an-argocd-instance.adocconfiguring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations"></a>Default permissions of an Argocd instance</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By default Argo CD instance has the following permissions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Argo CD instance has the <code>admin</code> privileges to manage resources only in the namespace where it is deployed. For instance, an Argo CD instance deployed in the <strong>foo</strong> namespace has the <code>admin</code> privileges to manage resources only for that namespace.</p>
+</li>
+<li>
+<p>Argo CD has the following cluster-scoped permissions because Argo CD requires cluster-wide <code>read</code> privileges on resources to function appropriately:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="pi">-</span> <span class="na">verbs</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">get</span>
+    <span class="pi">-</span> <span class="s">list</span>
+    <span class="pi">-</span> <span class="s">watch</span>
+   <span class="na">apiGroups</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">*'</span>
+   <span class="na">resources</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">*'</span>
+<span class="err"> </span><span class="pi">-</span> <span class="na">verbs</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">get</span>
+    <span class="pi">-</span> <span class="s">list</span>
+   <span class="na">nonResourceURLs</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">*'</span></code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>You can edit the cluster roles used by the <code>argocd-server</code> and <code>argocd-application-controller</code> components where Argo CD is running such that the <code>write</code> privileges are limited to only the namespaces and resources that you wish Argo CD to manage.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc edit clusterrole argocd-server
+<span class="gp">$</span><span class="w"> </span>oc edit clusterrole argocd-application-controller</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -3101,6 +3251,98 @@
 </div>
 </li>
 </ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="gitops-installing-olm-operators-using-gitops_configuring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations"><a class="anchor" href="#gitops-installing-olm-operators-using-gitops_configuring-an-openshift-cluster-by-deploying-an-application-with-cluster-configurations"></a>Installing OLM Operators using Red Hat OpenShift GitOps</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Red Hat OpenShift GitOps with cluster configurations manages specific cluster-scoped resources and takes care of installing cluster Operators or any namespace-scoped OLM Operators.</p>
+</div>
+<div class="paragraph">
+<p>Consider a case where as a cluster administrator, you have to install an OLM Operator such as Tekton. You use the OpenShift Container Platform web console to manually install a Tekton Operator or the OpenShift CLI to manually install a Tekton subscription and Tekton Operator group on your cluster.</p>
+</div>
+<div class="paragraph">
+<p>Red Hat OpenShift GitOps places your Kubernetes resources in your Git repository. As a cluster administrator, use Red Hat OpenShift GitOps to manage and automate the installation of other OLM Operators without any manual procedures. For example, after you place the Tekton subscription in your Git repository by using Red Hat OpenShift GitOps, the Red Hat OpenShift GitOps automatically takes this Tekton subscription from your Git repository and installs the Tekton Operator on your cluster.</p>
+</div>
+<div class="sect2">
+<h3 id="installing-cluster-scoped-operators"><a class="anchor" href="#installing-cluster-scoped-operators"></a>Installing cluster-scoped Operators</h3>
+<div class="paragraph">
+<p>Operator Lifecycle Manager (OLM) uses a default <code>global-operators</code> Operator group in the <code>openshift-operators</code> namespace for cluster-scoped Operators. Hence you do not have to manage the <code>OperatorGroup</code> resource in your Gitops repository. However, for namespace-scoped Operators, you must manage the <code>OperatorGroup</code> resource in that namespace.</p>
+</div>
+<div class="paragraph">
+<p>To install cluster-scoped Operators, create and place the <code>Subscription</code> resource of the required Operator in your Git repository.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example: Grafana Operator subscription</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operators.coreos.com/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Subscription</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">grafana</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">channel</span><span class="pi">:</span> <span class="s">v4</span>
+  <span class="na">installPlanApproval</span><span class="pi">:</span> <span class="s">Automatic</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">grafana-operator</span>
+  <span class="na">source</span><span class="pi">:</span> <span class="s">redhat-operators</span>
+  <span class="na">sourceNamespace</span><span class="pi">:</span> <span class="s">openshift-marketplace</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="installing-namepace-scoped-operators"><a class="anchor" href="#installing-namepace-scoped-operators"></a>Installing namepace-scoped Operators</h3>
+<div class="paragraph">
+<p>To install namespace-scoped Operators, create and place the <code>Subscription</code> and <code>OperatorGroup</code> resources of the required Operator in your Git repository.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example: Ansible Automation Platform Resource Operator</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="nn">...</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Namespace</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">labels</span><span class="pi">:</span>
+    <span class="s">openshift.io/cluster-monitoring</span><span class="pi">:</span> <span class="s2">"</span><span class="s">true"</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">ansible-automation-platform</span>
+<span class="nn">...</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operators.coreos.com/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">OperatorGroup</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">ansible-automation-platform-operator</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">ansible-automation-platform</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">targetNamespaces</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">ansible-automation-platform</span>
+<span class="nn">...</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operators.coreos.com/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Subscription</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">ansible-automation-platform</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">ansible-automation-platform</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">channel</span><span class="pi">:</span> <span class="s">patch-me</span>
+  <span class="na">installPlanApproval</span><span class="pi">:</span> <span class="s">Automatic</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">ansible-automation-platform-operator</span>
+  <span class="na">source</span><span class="pi">:</span> <span class="s">redhat-operators</span>
+  <span class="na">sourceNamespace</span><span class="pi">:</span> <span class="s">openshift-marketplace</span>
+<span class="nn">...</span></code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When deploying multiple Operators using Red Hat OpenShift GitOps, you must create only a single Operator group in the corresponding namespace. If more than one Operator group exists in a single namespace, any CSV created in that namespace transition to a <code>failure</code> state with the <code>TooManyOperatorGroups</code> reason. After the number of Operator groups in their corresponding namespaces reaches one, all the previous <code>failure</code> state CSVs transition to <code>pending</code> state. You must manually approve the pending install plan to complete the Operator installation.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>

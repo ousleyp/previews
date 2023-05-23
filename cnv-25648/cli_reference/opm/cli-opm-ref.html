@@ -490,6 +490,7 @@
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html">Installing a cluster on vSphere in a restricted network</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-vsphere.html">Installing a cluster on vSphere in a restricted network with user-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-three-node.html">Installing a three-node cluster on vSphere</a></li>
+                  <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-post-installation-configuration.html">Configuring the vSphere connection settings after an installation</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
@@ -627,7 +628,7 @@
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../../web_console/odc-about-web-terminal.html">Web terminal</a></li>
+            <li><a class="" href="../../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
             <li><a class="" href="../../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -1071,6 +1072,7 @@
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-gcp-pd.html">GCP PD CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-google-cloud-file.html">GCP Filestore CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-vpc-block.html">IBM VPC Block CSI Driver Operator</a></li>
+                  <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-powervs-block.html">IBM Power Virtual Server Block CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-cinder.html">OpenStack Cinder CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-manila.html">OpenStack Manila CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ovirt.html">Red Hat Virtualization CSI Driver Operator</a></li>
@@ -1493,18 +1495,10 @@
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-viewing.html">Viewing and listing the nodes in your cluster</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-working.html">Working with nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing.html">Managing nodes</a></li>
+                  <li><a class="" href="../../nodes/nodes/nodes-nodes-graceful-shutdown.html">Managing graceful node shutdown</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing-max-pods.html">Managing the maximum number of pods per node</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-4-5"><span id="ssgSpan-21-4-5" class="fa fa-caret-right"></span>&nbsp;Remediation, fencing, and maintenance</a>
-                  <ul id="topicSubSubGroup-21-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-about-remediation-fencing-maintenance.html" style="padding-left: 70px;">About node remediation, fencing, and maintentance</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-self-node-remediation-operator.html" style="padding-left: 70px;">Using Self Node Remediation</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-machine-health-checks.html" style="padding-left: 70px;">Remediating nodes with Machine Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-health-check-operator.html" style="padding-left: 70px;">Remediating nodes with Node Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-maintenance-operator.html" style="padding-left: 70px;">Placing nodes in maintenance mode with Node Maintenance Operator</a></li>                  </ul>
-                  </li>
-
+                  <li><a class="" href="../../nodes/nodes/nodes-remediating-fencing-maintaining-rhwa.html">Remediating, fencing, and maintaining nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-rebooting.html">Understanding node rebooting</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-garbage-collection.html">Freeing node resources using garbage collection</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-resources-configuring.html">Allocating resources for nodes</a></li>
@@ -1585,17 +1579,27 @@
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
       <ul id="topicGroup24" class="collapse  list-unstyled">
             <li><a class="" href="../../logging/cluster-logging-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.7</a>
               <ul id="topicSubGroup-24-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-release-notes.html">Logging 5.7 Release Notes</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-getting-started.html">Getting started with logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-configuration.html">Configuring Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-administration.html">Administering Logging</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_6/logging-5-6-release-notes.html">Logging 5.6 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-getting-started.html">Getting started with logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_6/logging-5-6-configuration.html">Configuring Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-administration.html">Administering Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-reference.html">Logging Reference</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
-              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-3"><span id="sgSpan-24-3" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
+              <ul id="topicSubGroup-24-3" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_5/logging-5-5-release-notes.html">Logging 5.5 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_5/logging-5-5-getting-started.html">Getting started with logging</a></li>
@@ -1604,8 +1608,8 @@
             </li>
             <li><a class="" href="../../logging/cluster-logging.html">About Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-deploying.html">Installing Logging</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-5"><span id="sgSpan-24-5" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
-              <ul id="topicSubGroup-24-5" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-6"><span id="sgSpan-24-6" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
+              <ul id="topicSubGroup-24-6" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/config/cluster-logging-configuring-cr.html">About the Cluster Logging custom resource</a></li>
                   <li><a class="" href="../../logging/config/cluster-logging-collector.html">Configuring the logging collector</a></li>
@@ -1626,8 +1630,8 @@
             <li><a class="" href="../../logging/cluster-logging-eventrouter.html">Collecting and storing Kubernetes events</a></li>
             <li><a class="" href="../../logging/cluster-logging-upgrading.html">Updating Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-dashboards.html">Viewing cluster dashboards</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-14"><span id="sgSpan-24-14" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
-              <ul id="topicSubGroup-24-14" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-15"><span id="sgSpan-24-15" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
+              <ul id="topicSubGroup-24-15" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-cluster-status.html">Viewing Logging status</a></li>
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-log-store-status.html">Viewing the status of the log store</a></li>
@@ -2232,7 +2236,7 @@
                   <li><a class="" href="../../virt/install/uninstalling-virt.html">Uninstalling OpenShift Virtualization</a></li>              </ul>
             </li>
             <li><a class="" href="../../virt/upgrading-virt.html">Updating OpenShift Virtualization</a></li>
-            <li><a class="" href="../../virt/virt-additional-security-privileges-controller-and-launcher.html">Security policies</a></li>
+            <li><a class="" href="../../virt/virt-security-policies.html">Security policies</a></li>
             <li><a class="" href="../../virt/virt-using-the-cli-tools.html">Using the CLI tools</a></li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-9"><span id="sgSpan-34-9" class="fa fa-caret-right"></span>&nbsp;Virtual machines</a>
               <ul id="topicSubGroup-34-9" class="nav-tertiary list-unstyled collapse">
@@ -2704,11 +2708,11 @@
 <div id="toc" class="toc">
 <div id="toctitle" class="title"></div>
 <ul class="sectlevel1">
-<li><a href="#opm-cli-ref-init_cli-opm-ref">init</a></li>
-<li><a href="#opm-cli-ref-render_cli-opm-ref">render</a></li>
-<li><a href="#opm-cli-ref-validate_cli-opm-ref">validate</a></li>
-<li><a href="#opm-cli-ref-server_cli-opm-ref">serve</a></li>
-<li><a href="#opm-cli-ref-migrate_cli-opm-ref">migrate</a></li>
+<li><a href="#opm-cli-ref-generate_cli-opm-ref">generate</a>
+<ul class="sectlevel2">
+<li><a href="#opm-cli-ref-generate-dockerfile_cli-opm-ref">dockerfile</a></li>
+</ul>
+</li>
 <li><a href="#opm-cli-ref-index_cli-opm-ref">index</a>
 <ul class="sectlevel2">
 <li><a href="#opm-cli-ref-index-add_cli-opm-ref">add</a></li>
@@ -2717,11 +2721,11 @@
 <li><a href="#opm-cli-ref-index-rm_cli-opm-ref">rm</a></li>
 </ul>
 </li>
-<li><a href="#opm-cli-ref-generate_cli-opm-ref">generate</a>
-<ul class="sectlevel2">
-<li><a href="#opm-cli-ref-generate-dockerfile_cli-opm-ref">dockerfile</a></li>
-</ul>
-</li>
+<li><a href="#opm-cli-ref-init_cli-opm-ref">init</a></li>
+<li><a href="#opm-cli-ref-migrate_cli-opm-ref">migrate</a></li>
+<li><a href="#opm-cli-ref-render_cli-opm-ref">render</a></li>
+<li><a href="#opm-cli-ref-server_cli-opm-ref">serve</a></li>
+<li><a href="#opm-cli-ref-validate_cli-opm-ref">validate</a></li>
 </ul>
 </div>
 <div class="paragraph">
@@ -2776,170 +2780,60 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="opm-cli-ref-init_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-init_cli-opm-ref"></a>init</h2>
+<h2 id="opm-cli-ref-generate_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-generate_cli-opm-ref"></a>generate</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Generate an <code>olm.package</code> declarative config blob.</p>
+<p>Generate various artifacts for declarative config indexes.</p>
 </div>
 <div class="listingblock">
 <div class="title">Command syntax</div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm init &lt;package_name&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm generate &lt;subcommand&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
 </div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. <code>init</code> flags</caption>
+<caption class="title">Table 2. <code>generate</code> subcommands</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Flag</th>
+<th class="tableblock halign-left valign-top">Subcommand</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-c</code>, <code>--default-channel</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The channel that subscriptions will default to if unspecified.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-d</code>, <code>--description</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Path to the Operator&#8217;s <code>README.md</code> or other documentation.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-i</code>, <code>--icon</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Path to package&#8217;s icon.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-o</code>, <code>--output</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Output format: <code>json</code> (the default value) or <code>yaml</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dockerfile</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Generate a Dockerfile for a declarative config index.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="opm-cli-ref-render_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-render_cli-opm-ref"></a>render</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Generate a declarative config blob from the provided index images, bundle images, and SQLite database files.</p>
-</div>
-<div class="listingblock">
-<div class="title">Command syntax</div>
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm render &lt;index_image | bundle_image | sqlite_file&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
-</div>
-</div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. <code>render</code> flags</caption>
+<caption class="title">Table 3. <code>generate</code> flags</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Flag</th>
+<th class="tableblock halign-left valign-top">Flags</th>
 <th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-o</code>, <code>--output</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Output format: <code>json</code> (the default value) or <code>yaml</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-h</code>, <code>--help</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Help for generate.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="opm-cli-ref-validate_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-validate_cli-opm-ref"></a>validate</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="opm-cli-ref-generate-dockerfile_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-generate-dockerfile_cli-opm-ref"></a>dockerfile</h3>
 <div class="paragraph">
-<p>Validate the declarative config JSON file(s) in a given directory.</p>
+<p>Generate a Dockerfile for a declarative config index.</p>
 </div>
-<div class="listingblock">
-<div class="title">Command syntax</div>
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm validate &lt;directory&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="opm-cli-ref-server_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-server_cli-opm-ref"></a>serve</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Serve declarative configs via a GRPC server.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>The declarative config directory is loaded by the <code>serve</code> command at startup. Changes made to the declarative config after this command starts are not reflected in the served content.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="title">Command syntax</div>
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm serve &lt;source_path&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
-</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 4. <code>serve</code> flags</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Flag</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--cache-dir</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">If this flag is set, it syncs and persists the server cache directory.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--cache-enforce-integrity</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Exits with an error if the cache is not present or is invalidated. The default value is <code>true</code> when the <code>--cache-dir</code> flag is set and the <code>--cache-only</code> flag is <code>false</code>. Otherwise, the default is <code>false</code>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--cache-only</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Syncs the serve cache and exits without serving.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--debug</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enables debug logging.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>h</code>, <code>--help</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Help for serve.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-p</code>, <code>--port</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The port number for the service. The default value is <code>50051</code>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--pprof-addr</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The address of the startup profiling endpoint. The format is <code>Addr:Port</code>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-t</code>, <code>--termination-log</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The path to a container termination log file. The default value is <code>/dev/termination-log</code>.</p></td>
-</tr>
-</tbody>
-</table>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -2948,31 +2842,23 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The SQLite-based catalog format, including the related CLI commands, is a deprecated feature. Deprecated functionality is still included in OpenShift Container Platform and continues to be supported; however, it will be removed in a future release of this product and is not recommended for new deployments.</p>
+<p>This command creates a Dockerfile in the same directory as the <code>&lt;dcRootDir&gt;</code> (named <code>&lt;dcDirName&gt;.Dockerfile</code>) that is used to build the index. If a Dockerfile with the same name already exists, this command fails.</p>
 </div>
 <div class="paragraph">
-<p>For the most recent list of major functionality that has been deprecated or removed within OpenShift Container Platform, refer to the <em>Deprecated and removed features</em> section of the OpenShift Container Platform release notes.</p>
+<p>When specifying extra labels, if duplicate keys exist, only the last value of each duplicate key gets added to the generated Dockerfile.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="opm-cli-ref-migrate_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-migrate_cli-opm-ref"></a>migrate</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Migrate a SQLite database format index image or database file to a file-based catalog.</p>
-</div>
 <div class="listingblock">
 <div class="title">Command syntax</div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm migrate &lt;index_ref&gt; &lt;output_dir&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm generate dockerfile &lt;dcRootDir&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
 </div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. <code>migrate</code> flags</caption>
+<caption class="title">Table 4. <code>generate dockerfile</code> flags</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -2985,11 +2871,34 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-o</code>, <code>--output</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Output format: <code>json</code> (the default value) or <code>yaml</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-i,</code> <code>--binary-image</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Image in which to build catalog. The default value is <code>quay.io/operator-framework/opm:latest</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-l</code>, <code>--extra-labels</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extra labels to include in the generated Dockerfile. Labels have the form <code>key=value</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-h</code>, <code>--help</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Help for Dockerfile.</p></td>
 </tr>
 </tbody>
 </table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To build with the official Red Hat image, use the <code>registry.redhat.io/openshift4/ose-operator-registry:vBranch Build</code> value with the <code>-i</code> flag.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -3025,7 +2934,7 @@
 </div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. <code>index</code> subcommands</caption>
+<caption class="title">Table 5. <code>index</code> subcommands</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -3067,7 +2976,7 @@
 </div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 7. <code>index add</code> flags</caption>
+<caption class="title">Table 6. <code>index add</code> flags</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -3138,7 +3047,7 @@
 </div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 8. <code>index prune</code> flags</caption>
+<caption class="title">Table 7. <code>index prune</code> flags</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -3197,7 +3106,7 @@
 </div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 9. <code>index prune-stranded</code> flags</caption>
+<caption class="title">Table 8. <code>index prune-stranded</code> flags</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -3256,7 +3165,7 @@
 </div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. <code>index rm</code> flags</caption>
+<caption class="title">Table 9. <code>index rm</code> flags</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -3314,120 +3223,6 @@
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="opm-cli-ref-generate_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-generate_cli-opm-ref"></a>generate</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Generate various artifacts for declarative config indexes.</p>
-</div>
-<div class="listingblock">
-<div class="title">Command syntax</div>
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm generate <span class="o">[</span><span class="nb">command</span><span class="o">]</span></code></pre>
-</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. <code>generate</code> flags</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Flags</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-h</code>, <code>--help</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Help for generate.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="listingblock">
-<div class="title">Command syntax</div>
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm generate &lt;subcommand&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
-</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. <code>generate</code> subcommands</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Subcommand</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>dockerfile</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Generate a Dockerfile for a declarative config index.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="sect2">
-<h3 id="opm-cli-ref-generate-dockerfile_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-generate-dockerfile_cli-opm-ref"></a>dockerfile</h3>
-<div class="paragraph">
-<p>Generate a Dockerfile for a declarative config index.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>This command creates a Dockerfile in the same directory as the &lt;dcRootDir&gt; (named &lt;dcDirName&gt;.Dockerfile) that is used to build the index. If a Dockerfile with the same name already exists, this command fails.</p>
-</div>
-<div class="paragraph">
-<p>When specifying extra labels, if duplicate keys exist, only the last value of each duplicate key gets added to the generated Dockerfile.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="title">Command syntax</div>
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm generate dockerfile &lt;dcRootDir&gt; <span class="o">[</span>flags]</code></pre>
-</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 13. <code>generate dockerfile</code> flags</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Flag</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-i,</code> <code>--binary-image</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Image in which to build catalog. The default value is <code>quay.io/operator-framework/opm:latest</code>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-l</code>, <code>--extra-labels</code> (string)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Extra labels to include in the generated Dockerfile. Labels have the form <code>key=value</code>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-h</code>, <code>--help</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Help for Dockerfile.</p></td>
-</tr>
-</tbody>
-</table>
 <div class="ulist _additional-resources">
 <div class="title">Additional resources</div>
 <ul>
@@ -3441,6 +3236,223 @@
 <p><a href="../../installing/disconnected_install/installing-mirroring-disconnected.html#installing-mirroring-disconnected">Mirroring images for a disconnected installation using the oc-mirror plugin</a></p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="opm-cli-ref-init_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-init_cli-opm-ref"></a>init</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Generate an <code>olm.package</code> declarative config blob.</p>
+</div>
+<div class="listingblock">
+<div class="title">Command syntax</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm init &lt;package_name&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 10. <code>init</code> flags</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Flag</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-c</code>, <code>--default-channel</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The channel that subscriptions will default to if unspecified.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-d</code>, <code>--description</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Path to the Operator&#8217;s <code>README.md</code> or other documentation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-i</code>, <code>--icon</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Path to package&#8217;s icon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-o</code>, <code>--output</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output format: <code>json</code> (the default value) or <code>yaml</code>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="opm-cli-ref-migrate_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-migrate_cli-opm-ref"></a>migrate</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Migrate a SQLite database format index image or database file to a file-based catalog.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The SQLite-based catalog format, including the related CLI commands, is a deprecated feature. Deprecated functionality is still included in OpenShift Container Platform and continues to be supported; however, it will be removed in a future release of this product and is not recommended for new deployments.</p>
+</div>
+<div class="paragraph">
+<p>For the most recent list of major functionality that has been deprecated or removed within OpenShift Container Platform, refer to the <em>Deprecated and removed features</em> section of the OpenShift Container Platform release notes.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Command syntax</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm migrate &lt;index_ref&gt; &lt;output_dir&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 11. <code>migrate</code> flags</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Flag</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-o</code>, <code>--output</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output format: <code>json</code> (the default value) or <code>yaml</code>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="opm-cli-ref-render_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-render_cli-opm-ref"></a>render</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Generate a declarative config blob from the provided index images, bundle images, and SQLite database files.</p>
+</div>
+<div class="listingblock">
+<div class="title">Command syntax</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm render &lt;index_image | bundle_image | sqlite_file&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 12. <code>render</code> flags</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Flag</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-o</code>, <code>--output</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output format: <code>json</code> (the default value) or <code>yaml</code>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="opm-cli-ref-server_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-server_cli-opm-ref"></a>serve</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Serve declarative configs via a GRPC server.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The declarative config directory is loaded by the <code>serve</code> command at startup. Changes made to the declarative config after this command starts are not reflected in the served content.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Command syntax</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm serve &lt;source_path&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 13. <code>serve</code> flags</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Flag</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--cache-dir</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If this flag is set, it syncs and persists the server cache directory.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--cache-enforce-integrity</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exits with an error if the cache is not present or is invalidated. The default value is <code>true</code> when the <code>--cache-dir</code> flag is set and the <code>--cache-only</code> flag is <code>false</code>. Otherwise, the default is <code>false</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--cache-only</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Syncs the serve cache and exits without serving.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--debug</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables debug logging.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>h</code>, <code>--help</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Help for serve.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-p</code>, <code>--port</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The port number for the service. The default value is <code>50051</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--pprof-addr</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The address of the startup profiling endpoint. The format is <code>Addr:Port</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-t</code>, <code>--termination-log</code> (string)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The path to a container termination log file. The default value is <code>/dev/termination-log</code>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="opm-cli-ref-validate_cli-opm-ref"><a class="anchor" href="#opm-cli-ref-validate_cli-opm-ref"></a>validate</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Validate the declarative config JSON file(s) in a given directory.</p>
+</div>
+<div class="listingblock">
+<div class="title">Command syntax</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm validate &lt;directory&gt; <span class="o">[</span>&lt;flags&gt;]</code></pre>
 </div>
 </div>
 </div>

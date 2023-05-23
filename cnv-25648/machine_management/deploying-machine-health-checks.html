@@ -490,6 +490,7 @@
                   <li><a class="" href="../installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html">Installing a cluster on vSphere in a restricted network</a></li>
                   <li><a class="" href="../installing/installing_vsphere/installing-restricted-networks-vsphere.html">Installing a cluster on vSphere in a restricted network with user-provisioned infrastructure</a></li>
                   <li><a class="" href="../installing/installing_vsphere/installing-vsphere-three-node.html">Installing a three-node cluster on vSphere</a></li>
+                  <li><a class="" href="../installing/installing_vsphere/installing-vsphere-post-installation-configuration.html">Configuring the vSphere connection settings after an installation</a></li>
                   <li><a class="" href="../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
@@ -627,7 +628,7 @@
                   <li><a class="" href="../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../web_console/odc-about-web-terminal.html">Web terminal</a></li>
+            <li><a class="" href="../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
             <li><a class="" href="../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -1071,6 +1072,7 @@
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-gcp-pd.html">GCP PD CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-google-cloud-file.html">GCP Filestore CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ibm-vpc-block.html">IBM VPC Block CSI Driver Operator</a></li>
+                  <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ibm-powervs-block.html">IBM Power Virtual Server Block CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-cinder.html">OpenStack Cinder CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-manila.html">OpenStack Manila CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ovirt.html">Red Hat Virtualization CSI Driver Operator</a></li>
@@ -1493,18 +1495,10 @@
                   <li><a class="" href="../nodes/nodes/nodes-nodes-viewing.html">Viewing and listing the nodes in your cluster</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-working.html">Working with nodes</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-managing.html">Managing nodes</a></li>
+                  <li><a class="" href="../nodes/nodes/nodes-nodes-graceful-shutdown.html">Managing graceful node shutdown</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-managing-max-pods.html">Managing the maximum number of pods per node</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-4-5"><span id="ssgSpan-21-4-5" class="fa fa-caret-right"></span>&nbsp;Remediation, fencing, and maintenance</a>
-                  <ul id="topicSubSubGroup-21-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-about-remediation-fencing-maintenance.html" style="padding-left: 70px;">About node remediation, fencing, and maintentance</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-self-node-remediation-operator.html" style="padding-left: 70px;">Using Self Node Remediation</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-machine-health-checks.html" style="padding-left: 70px;">Remediating nodes with Machine Health Checks</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-node-health-check-operator.html" style="padding-left: 70px;">Remediating nodes with Node Health Checks</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-node-maintenance-operator.html" style="padding-left: 70px;">Placing nodes in maintenance mode with Node Maintenance Operator</a></li>                  </ul>
-                  </li>
-
+                  <li><a class="" href="../nodes/nodes/nodes-remediating-fencing-maintaining-rhwa.html">Remediating, fencing, and maintaining nodes</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-rebooting.html">Understanding node rebooting</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-garbage-collection.html">Freeing node resources using garbage collection</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-resources-configuring.html">Allocating resources for nodes</a></li>
@@ -1585,17 +1579,27 @@
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
       <ul id="topicGroup24" class="collapse  list-unstyled">
             <li><a class="" href="../logging/cluster-logging-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.7</a>
               <ul id="topicSubGroup-24-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../logging/v5_7/logging-5-7-release-notes.html">Logging 5.7 Release Notes</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-getting-started.html">Getting started with logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-configuration.html">Configuring Logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-administration.html">Administering Logging</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/v5_6/logging-5-6-release-notes.html">Logging 5.6 Release Notes</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-getting-started.html">Getting started with logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../logging/v5_6/logging-5-6-configuration.html">Configuring Logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-administration.html">Administering Logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-reference.html">Logging Reference</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
-              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-3"><span id="sgSpan-24-3" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
+              <ul id="topicSubGroup-24-3" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/v5_5/logging-5-5-release-notes.html">Logging 5.5 Release Notes</a></li>
                   <li><a class="" href="../logging/v5_5/logging-5-5-getting-started.html">Getting started with logging</a></li>
@@ -1604,8 +1608,8 @@
             </li>
             <li><a class="" href="../logging/cluster-logging.html">About Logging</a></li>
             <li><a class="" href="../logging/cluster-logging-deploying.html">Installing Logging</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-5"><span id="sgSpan-24-5" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
-              <ul id="topicSubGroup-24-5" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-6"><span id="sgSpan-24-6" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
+              <ul id="topicSubGroup-24-6" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/config/cluster-logging-configuring-cr.html">About the Cluster Logging custom resource</a></li>
                   <li><a class="" href="../logging/config/cluster-logging-collector.html">Configuring the logging collector</a></li>
@@ -1626,8 +1630,8 @@
             <li><a class="" href="../logging/cluster-logging-eventrouter.html">Collecting and storing Kubernetes events</a></li>
             <li><a class="" href="../logging/cluster-logging-upgrading.html">Updating Logging</a></li>
             <li><a class="" href="../logging/cluster-logging-dashboards.html">Viewing cluster dashboards</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-14"><span id="sgSpan-24-14" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
-              <ul id="topicSubGroup-24-14" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-15"><span id="sgSpan-24-15" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
+              <ul id="topicSubGroup-24-15" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/troubleshooting/cluster-logging-cluster-status.html">Viewing Logging status</a></li>
                   <li><a class="" href="../logging/troubleshooting/cluster-logging-log-store-status.html">Viewing the status of the log store</a></li>
@@ -2232,7 +2236,7 @@
                   <li><a class="" href="../virt/install/uninstalling-virt.html">Uninstalling OpenShift Virtualization</a></li>              </ul>
             </li>
             <li><a class="" href="../virt/upgrading-virt.html">Updating OpenShift Virtualization</a></li>
-            <li><a class="" href="../virt/virt-additional-security-privileges-controller-and-launcher.html">Security policies</a></li>
+            <li><a class="" href="../virt/virt-security-policies.html">Security policies</a></li>
             <li><a class="" href="../virt/virt-using-the-cli-tools.html">Using the CLI tools</a></li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-9"><span id="sgSpan-34-9" class="fa fa-caret-right"></span>&nbsp;Virtual machines</a>
               <ul id="topicSubGroup-34-9" class="nav-tertiary list-unstyled collapse">
@@ -2718,7 +2722,8 @@
 <li><a href="#mgmt-power-remediation-baremetal-about_deploying-machine-health-checks">About power-based remediation of bare metal</a>
 <ul class="sectlevel2">
 <li><a href="#machine-health-checks-bare-metal_deploying-machine-health-checks">MachineHealthChecks on bare metal</a></li>
-<li><a href="#mgmt-understanding-remediation-process_deploying-machine-health-checks">Understanding the remediation process</a></li>
+<li><a href="#mgmt-understanding-remediation-process_deploying-machine-health-checks">Understanding the annotation-based remediation process</a></li>
+<li><a href="#mgmt-understanding-metal3-remediation-process_deploying-machine-health-checks">Understanding the metal3-based remediation process</a></li>
 <li><a href="#mgmt-creating-mhc-baremetal_deploying-machine-health-checks">Creating a MachineHealthCheck resource for bare metal</a></li>
 <li><a href="#troubleshooting-issues-with-power-based-remediation">Troubleshooting issues with power-based remediation</a></li>
 </ul>
@@ -3103,7 +3108,7 @@ There are different remediation implementations depending on the <code>maxUnheal
 <p>Allows the recovery of control plane nodes</p>
 </li>
 <li>
-<p>Reduces the risk data loss in hyperconverged environments</p>
+<p>Reduces the risk of data loss in hyperconverged environments</p>
 </li>
 <li>
 <p>Reduces the downtime associated with recovering physical machines</p>
@@ -3115,18 +3120,28 @@ There are different remediation implementations depending on the <code>maxUnheal
 <div class="paragraph">
 <p>Machine deletion on bare metal cluster triggers reprovisioning of a bare metal host.
 Usually bare metal reprovisioning is a lengthy process, during which the cluster
-is missing compute resources and applications might be interrupted.
-To change the default remediation process from machine deletion to host power-cycle,
-annotate the <code>MachineHealthCheck</code> resource with the
-<code>machine.openshift.io/remediation-strategy: external-baremetal</code> annotation.</p>
+is missing compute resources and applications might be interrupted.</p>
 </div>
 <div class="paragraph">
-<p>After you set the annotation, unhealthy machines are power-cycled by using
-BMC credentials.</p>
+<p>There are two ways to change the default remediation process from machine deletion to host power-cycle:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Annotate the <code>MachineHealthCheck</code> resource with the
+<code>machine.openshift.io/remediation-strategy: external-baremetal</code> annotation.</p>
+</li>
+<li>
+<p>Create a <code>Metal3RemediationTemplate</code> resource, and refer to it in the <code>spec.remediationTemplate</code> of the <code>MachineHealthCheck</code>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>After using one of these methods, unhealthy machines are power-cycled by using Baseboard Management Controller (BMC) credentials.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="mgmt-understanding-remediation-process_deploying-machine-health-checks"><a class="anchor" href="#mgmt-understanding-remediation-process_deploying-machine-health-checks"></a>Understanding the remediation process</h3>
+<h3 id="mgmt-understanding-remediation-process_deploying-machine-health-checks"><a class="anchor" href="#mgmt-understanding-remediation-process_deploying-machine-health-checks"></a>Understanding the annotation-based remediation process</h3>
 <div class="paragraph">
 <p>The remediation process operates as follows:</p>
 </div>
@@ -3168,6 +3183,48 @@ BMC credentials.</p>
 </div>
 </div>
 <div class="sect2">
+<h3 id="mgmt-understanding-metal3-remediation-process_deploying-machine-health-checks"><a class="anchor" href="#mgmt-understanding-metal3-remediation-process_deploying-machine-health-checks"></a>Understanding the metal3-based remediation process</h3>
+<div class="paragraph">
+<p>The remediation process operates as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The MachineHealthCheck (MHC) controller detects that a node is unhealthy.</p>
+</li>
+<li>
+<p>The MHC creates a metal3 remediation custom resource for the metal3 remediation controller, which requests to power-off the unhealthy node.</p>
+</li>
+<li>
+<p>After the power is off, the node is deleted, which allows the cluster to reschedule the affected workload on other nodes.</p>
+</li>
+<li>
+<p>The metal3 remediation controller requests to power on the node.</p>
+</li>
+<li>
+<p>After the node is up, the node re-registers itself with the cluster, resulting in the creation of a new node.</p>
+</li>
+<li>
+<p>After the node is recreated, the metal3 remediation controller restores the annotations and labels that existed on the unhealthy node before its deletion.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If the power operations did not complete, the metal3 remediation controller triggers the reprovisioning of the unhealthy node unless this is a control plane node or a node that was provisioned externally.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
 <h3 id="mgmt-creating-mhc-baremetal_deploying-machine-health-checks"><a class="anchor" href="#mgmt-creating-mhc-baremetal_deploying-machine-health-checks"></a>Creating a MachineHealthCheck resource for bare metal</h3>
 <div class="ulist">
 <div class="title">Prerequisites</div>
@@ -3176,7 +3233,7 @@ BMC credentials.</p>
 <p>The OpenShift Container Platform is installed using installer-provisioned infrastructure (IPI).</p>
 </li>
 <li>
-<p>Access to Baseboard Management Controller (BMC) credentials (or BMC access to each node)</p>
+<p>Access to BMC credentials (or BMC access to each node).</p>
 </li>
 <li>
 <p>Network access to the BMC interface of the unhealthy node.</p>
@@ -3200,7 +3257,7 @@ BMC credentials.</p>
 </div>
 </div>
 <div class="listingblock">
-<div class="title">Sample <code>MachineHealthCheck</code> resource for bare metal</div>
+<div class="title">Sample <code>MachineHealthCheck</code> resource for bare metal, annotation-based remediation</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">machine.openshift.io/v1beta1</span>
 <span class="na">kind</span><span class="pi">:</span> <span class="s">MachineHealthCheck</span>
@@ -3267,6 +3324,61 @@ BMC credentials.</p>
 <td class="content">
 <div class="paragraph">
 <p>The <code>matchLabels</code> are examples only; you must map your machine groups based on your specific needs.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Sample <code>MachineHealthCheck</code> resource for bare metal, metal3-based remediation</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">machine.openshift.io/v1beta1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">MachineHealthCheck</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">example</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">openshift-machine-api</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">selector</span><span class="pi">:</span>
+    <span class="na">matchLabels</span><span class="pi">:</span>
+      <span class="s">machine.openshift.io/cluster-api-machine-role</span><span class="pi">:</span> <span class="s">&lt;role&gt;</span>
+      <span class="s">machine.openshift.io/cluster-api-machine-type</span><span class="pi">:</span> <span class="s">&lt;role&gt;</span>
+      <span class="s">machine.openshift.io/cluster-api-machineset</span><span class="pi">:</span> <span class="s">&lt;cluster_name&gt;-&lt;label&gt;-&lt;zone&gt;</span>
+  <span class="na">selector</span><span class="pi">:</span>
+    <span class="na">apiVersion</span><span class="pi">:</span> <span class="s">infrastructure.cluster.x-k8s.io/v1beta1</span>
+    <span class="na">kind</span><span class="pi">:</span> <span class="s">Metal3RemediationTemplate</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">metal3-remediation-template</span>
+    <span class="na">namespace</span><span class="pi">:</span> <span class="s">openshift-machine-api</span>
+  <span class="na">unhealthyConditions</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span>    <span class="s2">"</span><span class="s">Ready"</span>
+    <span class="na">timeout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">300s"</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Sample <code>Metal3RemediationTemplate</code> resource for bare metal, metal3-based remediation</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">infrastructure.cluster.x-k8s.io/v1beta1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Metal3RemediationTemplate</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">metal3-remediation-template</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">openshift-machine-api</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">template</span><span class="pi">:</span>
+    <span class="na">spec</span><span class="pi">:</span>
+      <span class="na">strategy</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">Reboot</span>
+        <span class="na">retryLimit</span><span class="pi">:</span> <span class="m">1</span>
+        <span class="na">timeout</span><span class="pi">:</span> <span class="s">5m0s</span></code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The <code>matchLabels</code> are examples only; you must map your machine groups based on your specific needs. The <code>annotations</code> section does not apply to metal3-based remediation. Annotation-based remediation and metal3-based remediation are mutually exclusive.</p>
 </div>
 </td>
 </tr>

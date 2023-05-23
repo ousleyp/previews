@@ -490,6 +490,7 @@
                   <li><a class="" href="../installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html">Installing a cluster on vSphere in a restricted network</a></li>
                   <li><a class="" href="../installing/installing_vsphere/installing-restricted-networks-vsphere.html">Installing a cluster on vSphere in a restricted network with user-provisioned infrastructure</a></li>
                   <li><a class="" href="../installing/installing_vsphere/installing-vsphere-three-node.html">Installing a three-node cluster on vSphere</a></li>
+                  <li><a class="" href="../installing/installing_vsphere/installing-vsphere-post-installation-configuration.html">Configuring the vSphere connection settings after an installation</a></li>
                   <li><a class="" href="../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
@@ -627,7 +628,7 @@
                   <li><a class="" href="../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../web_console/odc-about-web-terminal.html">Web terminal</a></li>
+            <li><a class="" href="../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
             <li><a class="" href="../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -1071,6 +1072,7 @@
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-gcp-pd.html">GCP PD CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-google-cloud-file.html">GCP Filestore CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ibm-vpc-block.html">IBM VPC Block CSI Driver Operator</a></li>
+                  <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ibm-powervs-block.html">IBM Power Virtual Server Block CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-cinder.html">OpenStack Cinder CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-manila.html">OpenStack Manila CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ovirt.html">Red Hat Virtualization CSI Driver Operator</a></li>
@@ -1493,18 +1495,10 @@
                   <li><a class="" href="../nodes/nodes/nodes-nodes-viewing.html">Viewing and listing the nodes in your cluster</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-working.html">Working with nodes</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-managing.html">Managing nodes</a></li>
+                  <li><a class="" href="../nodes/nodes/nodes-nodes-graceful-shutdown.html">Managing graceful node shutdown</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-managing-max-pods.html">Managing the maximum number of pods per node</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-4-5"><span id="ssgSpan-21-4-5" class="fa fa-caret-right"></span>&nbsp;Remediation, fencing, and maintenance</a>
-                  <ul id="topicSubSubGroup-21-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-about-remediation-fencing-maintenance.html" style="padding-left: 70px;">About node remediation, fencing, and maintentance</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-self-node-remediation-operator.html" style="padding-left: 70px;">Using Self Node Remediation</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-machine-health-checks.html" style="padding-left: 70px;">Remediating nodes with Machine Health Checks</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-node-health-check-operator.html" style="padding-left: 70px;">Remediating nodes with Node Health Checks</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-node-maintenance-operator.html" style="padding-left: 70px;">Placing nodes in maintenance mode with Node Maintenance Operator</a></li>                  </ul>
-                  </li>
-
+                  <li><a class="" href="../nodes/nodes/nodes-remediating-fencing-maintaining-rhwa.html">Remediating, fencing, and maintaining nodes</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-rebooting.html">Understanding node rebooting</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-garbage-collection.html">Freeing node resources using garbage collection</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-resources-configuring.html">Allocating resources for nodes</a></li>
@@ -1585,17 +1579,27 @@
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
       <ul id="topicGroup24" class="collapse  list-unstyled">
             <li><a class="" href="../logging/cluster-logging-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.7</a>
               <ul id="topicSubGroup-24-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../logging/v5_7/logging-5-7-release-notes.html">Logging 5.7 Release Notes</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-getting-started.html">Getting started with logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-configuration.html">Configuring Logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-administration.html">Administering Logging</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/v5_6/logging-5-6-release-notes.html">Logging 5.6 Release Notes</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-getting-started.html">Getting started with logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../logging/v5_6/logging-5-6-configuration.html">Configuring Logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-administration.html">Administering Logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-reference.html">Logging Reference</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
-              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-3"><span id="sgSpan-24-3" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
+              <ul id="topicSubGroup-24-3" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/v5_5/logging-5-5-release-notes.html">Logging 5.5 Release Notes</a></li>
                   <li><a class="" href="../logging/v5_5/logging-5-5-getting-started.html">Getting started with logging</a></li>
@@ -1604,8 +1608,8 @@
             </li>
             <li><a class="" href="../logging/cluster-logging.html">About Logging</a></li>
             <li><a class="" href="../logging/cluster-logging-deploying.html">Installing Logging</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-5"><span id="sgSpan-24-5" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
-              <ul id="topicSubGroup-24-5" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-6"><span id="sgSpan-24-6" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
+              <ul id="topicSubGroup-24-6" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/config/cluster-logging-configuring-cr.html">About the Cluster Logging custom resource</a></li>
                   <li><a class="" href="../logging/config/cluster-logging-collector.html">Configuring the logging collector</a></li>
@@ -1626,8 +1630,8 @@
             <li><a class="" href="../logging/cluster-logging-eventrouter.html">Collecting and storing Kubernetes events</a></li>
             <li><a class="" href="../logging/cluster-logging-upgrading.html">Updating Logging</a></li>
             <li><a class="" href="../logging/cluster-logging-dashboards.html">Viewing cluster dashboards</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-14"><span id="sgSpan-24-14" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
-              <ul id="topicSubGroup-24-14" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-15"><span id="sgSpan-24-15" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
+              <ul id="topicSubGroup-24-15" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/troubleshooting/cluster-logging-cluster-status.html">Viewing Logging status</a></li>
                   <li><a class="" href="../logging/troubleshooting/cluster-logging-log-store-status.html">Viewing the status of the log store</a></li>
@@ -2232,7 +2236,7 @@
                   <li><a class="" href="../virt/install/uninstalling-virt.html">Uninstalling OpenShift Virtualization</a></li>              </ul>
             </li>
             <li><a class="" href="../virt/upgrading-virt.html">Updating OpenShift Virtualization</a></li>
-            <li><a class="" href="../virt/virt-additional-security-privileges-controller-and-launcher.html">Security policies</a></li>
+            <li><a class="" href="../virt/virt-security-policies.html">Security policies</a></li>
             <li><a class="" href="../virt/virt-using-the-cli-tools.html">Using the CLI tools</a></li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-9"><span id="sgSpan-34-9" class="fa fa-caret-right"></span>&nbsp;Virtual machines</a>
               <ul id="topicSubGroup-34-9" class="nav-tertiary list-unstyled collapse">
@@ -2720,7 +2724,7 @@
 <div class="paragraph">
 <p>Start with <a href="../architecture/architecture.html#architecture-overview-architecture">Architecture</a> and
 <a href="../security/container_security/security-understanding.html#understanding-security">Security and compliance</a>.
-Then, see the
+Next, view the
 <a href="../release_notes/ocp-4-13-release-notes.html#ocp-4-13-release-notes">release notes</a>.</p>
 </div>
 </div>
@@ -2729,7 +2733,7 @@ Then, see the
 <h2 id="cluster-installer-activities"><a class="anchor" href="#cluster-installer-activities"></a>Cluster installer activities</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Explore these OpenShift Container Platform installation tasks.</p>
+<p>Explore the following OpenShift Container Platform installation tasks:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2774,7 +2778,7 @@ You can also deploy a cluster on AWS infrastructure that you provisioned yoursel
 <p><strong><a href="../installing/installing_bare_metal_ipi/ipi-install-overview.html#ipi-install-overview">Install an installer-provisioned cluster on bare metal</a></strong>: You can install OpenShift Container Platform on bare metal with an installer-provisioned architecture.</p>
 </li>
 <li>
-<p><strong><a href="../installing/installing_bare_metal/installing-bare-metal.html#installing-bare-metal">Install a user-provisioned cluster on bare metal</a></strong>: If none of the available platform and cloud provider deployment options meet your needs, you can install OpenShift Container Platform on user-provisioned bare metal infrastructure.</p>
+<p><strong><a href="../installing/installing_bare_metal/installing-bare-metal.html#installing-bare-metal">Install a user-provisioned cluster on bare metal</a></strong>: If none of the available platform and cloud provider deployment options meet your needs, you can install OpenShift Container Platform on user-provisioned, bare-metal infrastructure.</p>
 </li>
 <li>
 <p><strong>Install a cluster on Red Hat OpenStack Platform (RHOSP)</strong>: You can install a cluster on
@@ -2801,14 +2805,14 @@ user-provisioned infrastructure on
 <a href="../installing/installing_ibm_z/installing-restricted-networks-ibm-z.html#installing-restricted-networks-ibm-z">IBM zSystems and IBM&#174; LinuxONE with z/VM</a>, <a href="../installing/installing_ibm_z/installing-restricted-networks-ibm-z-kvm.html#installing-restricted-networks-ibm-z-kvm">IBM zSystems and IBM&#174; LinuxONE with RHEL KVM</a>, <a href="../installing/installing_ibm_power/installing-restricted-networks-ibm-power.html#installing-restricted-networks-ibm-power">IBM Power</a>,
  or
 <a href="../installing/installing_bare_metal/installing-restricted-networks-bare-metal.html#installing-restricted-networks-bare-metal">bare metal</a>
-does not have full access to the internet, then mirror the OpenShift Container Platform installation images using one of the following methods and install a cluster in a restricted network.</p>
+does not have full access to the internet, then mirror the OpenShift Container Platform installation images by using one of the following methods and install a cluster in a restricted network.</p>
 <div class="ulist">
 <ul>
 <li>
 <p><a href="../installing/disconnected_install/installing-mirroring-installation-images.html#installing-mirroring-installation-images">Mirroring images for a disconnected installation</a></p>
 </li>
 <li>
-<p><a href="../installing/disconnected_install/installing-mirroring-disconnected.html#installing-mirroring-disconnected">Mirroring images for a disconnected installation using the oc-mirror plug-in</a></p>
+<p><a href="../installing/disconnected_install/installing-mirroring-disconnected.html#installing-mirroring-disconnected">Mirroring images for a disconnected installation by using the oc-mirror plug-in</a></p>
 </li>
 </ul>
 </div>
@@ -2818,7 +2822,7 @@ does not have full access to the internet, then mirror the OpenShift Container P
 <a href="../installing/installing_aws/installing-aws-vpc.html#installing-aws-vpc">AWS</a> or
 <a href="../installing/installing_gcp/installing-gcp-vpc.html#installing-gcp-vpc">GCP</a> or an existing
 <a href="../installing/installing_azure/installing-azure-vnet.html#installing-azure-vnet">VNet</a>
-on Azure, you can install a cluster.</p>
+on Azure, you can install a cluster. You can install a cluster in <a href="../installing/installing_gcp/installing-gcp-shared-vpc.html#installation-gcp-shared-vpc-prerequisites_installing-gcp-shared-vpc">Installing a cluster on GCP into a shared VPC</a></p>
 </li>
 <li>
 <p><strong>Install a private cluster</strong>: If your cluster does not require external
@@ -2826,8 +2830,7 @@ internet access, you can install a private cluster on
 <a href="../installing/installing_aws/installing-aws-private.html#installing-aws-private">AWS</a>,
 <a href="../installing/installing_azure/installing-azure-private.html#installing-aws-private">Azure</a>,
 <a href="../installing/installing_gcp/installing-gcp-private.html#installing-gcp-private">GCP</a>, or
-<a href="../installing/installing_ibm_cloud_public/preparing-to-install-on-ibm-cloud.html#preparing-to-install-on-ibm-cloud">IBM Cloud VPC</a>
-Internet access is still required to access the cloud APIs and installation media.</p>
+<a href="../installing/installing_ibm_cloud_public/preparing-to-install-on-ibm-cloud.html#preparing-to-install-on-ibm-cloud">IBM Cloud VPC</a>. Internet access is still required to access the cloud APIs and installation media.</p>
 </li>
 <li>
 <p><strong><a href="../installing/installing-troubleshooting.html#installing-troubleshooting">Check installation logs</a></strong>: Access installation logs to evaluate issues that occur during OpenShift Container Platform installation.</p>
@@ -2839,10 +2842,10 @@ Internet access is still required to access the cloud APIs and installation medi
 <p><strong><a href="../storage/persistent_storage/persistent-storage-ocs.html#red-hat-openshift-data-foundation">Install Red Hat OpenShift Data Foundation</a></strong>: You can install Red Hat OpenShift Data Foundation as an Operator to provide highly integrated and simplified persistent storage management for containers.</p>
 </li>
 <li>
-<p><strong><a href="../installing/installing_nutanix/preparing-to-install-on-nutanix.html#preparing-to-install-nutanix">Install a cluster on Nutanix</a></strong>: You can install a cluster on your Nutanix instance that uses installer-provisioned infrastructure. This type of installation lets you use the installation program to deploy a cluster on infrastructure that the installation program provisions and the cluster maintains.</p>
+<p><strong><a href="../installing/installing_nutanix/preparing-to-install-on-nutanix.html#preparing-to-install-nutanix">Install a cluster on Nutanix</a></strong>: You can install a cluster on your Nutanix instance that uses installer-provisioned infrastructure. With this type of installation, you can use the installation program to deploy a cluster on infrastructure that the installation program provisions and the cluster maintains.</p>
 </li>
 <li>
-<p><strong><a href="../post_installation_configuration/coreos-layering.html#coreos-layering">Red Hat Enterprise Linux CoreOS (RHCOS) image layering</a></strong> allows you to add new images on top of the base RHCOS image. This layering does not modify the base RHCOS image. Instead, it creates a custom layered image that includes all RHCOS functionality and adds additional functionality to specific nodes in the cluster.</p>
+<p><strong><a href="../post_installation_configuration/coreos-layering.html#coreos-layering">Red Hat Enterprise Linux CoreOS (RHCOS) image layering</a></strong> provides a way for you to add new images on top of the base RHCOS image. This layering does not modify the base RHCOS image. Instead, the layering creates a custom layered image that includes all RHCOS functionality and adds additional functionality to specific nodes in the cluster.</p>
 </li>
 </ul>
 </div>
@@ -2863,7 +2866,7 @@ Internet access is still required to access the cloud APIs and installation medi
 <p><strong><a href="../applications/projects/working-with-projects.html#working-with-projects">Work with projects</a></strong>: Create projects from the OpenShift Container Platform web console or OpenShift CLI (<code>oc</code>) to organize and share the software you develop.</p>
 </li>
 <li>
-<p><strong><a href="../applications/creating_applications/odc-creating-applications-using-developer-perspective.html#odc-creating-applications-using-developer-perspective">Work with applications</a></strong>:</p>
+<p><strong><a href="../applications/creating_applications/odc-creating-applications-using-developer-perspective.html#odc-creating-applications-using-developer-perspective">Work with applications</a></strong>.</p>
 </li>
 <li>
 <p><strong>Use the <a href="../web_console/web-console-overview.html#about-developer-perspective_web-console-overview"><strong>Developer perspective</strong></a></strong> in the OpenShift Container Platform web console to
@@ -2874,42 +2877,38 @@ Internet access is still required to access the cloud APIs and installation medi
 to see your applications, monitor status, connect and group components, and modify your code base.</p>
 </li>
 <li>
-<p><strong><a href="../applications/connecting_applications_to_services/understanding-service-binding-operator.html#understanding-service-binding-operator">Connect your workloads to backing services</a></strong>: The Service Binding Operator enables application developers to easily bind workloads with Operator-managed backing services by automatically collecting and sharing binding data with the workloads. The Service Binding Operator improves the development lifecycle with a consistent and declarative service binding method that prevents discrepancies in cluster environments.</p>
-</li>
-<li>
-<p><strong> <a href="../cli_reference/odo-important-update.html#odo-important_update">Use the developer CLI tool (<code>odo</code>)</a> </strong>:
-The <code>odo</code> CLI tool lets developers create single or multi-component applications easily and automates deployment, build, and service route configurations. It abstracts complex Kubernetes and OpenShift Container Platform concepts, allowing you to focus on developing your applications.</p>
+<p><strong><a href="../applications/connecting_applications_to_services/understanding-service-binding-operator.html#understanding-service-binding-operator">Connect your workloads to backing services</a></strong>: With the Service Binding Operator, an application developer can bind workloads with Operator-managed backing services by automatically collecting and sharing binding data with the workloads. The Service Binding Operator improves the development lifecycle with a consistent and declarative service binding method that prevents discrepancies in cluster environments.</p>
 </li>
 <li>
 <p><strong><a href="../cicd/pipelines/understanding-openshift-pipelines.html#op-key-features">Create CI/CD Pipelines</a></strong>: Pipelines are serverless, cloud-native, continuous integration and continuous deployment systems that run in isolated containers.
-They use standard Tekton custom resources to automate deployments and are designed for decentralized teams that work on microservice-based architecture.</p>
+Pipelines use standard Tekton custom resources to automate deployments and are designed for decentralized teams that work on microservice-based architecture.</p>
 </li>
 <li>
-<p><strong><a href="../cicd/gitops/understanding-openshift-gitops.html#understanding-openshift-gitops">Manage your infrastructure and application configurations</a></strong>: GitOps is a declarative way to implement continuous deployment for cloud native applications. GitOps defines infrastructure and application definitions as code. Then, it uses this code to manage multiple workspaces and clusters to simplify the creation of infrastructure and application configurations. GitOps also handles and automates complex deployments at a fast pace, saving time during deployment and release cycles.</p>
+<p><strong><a href="../cicd/gitops/understanding-openshift-gitops.html#understanding-openshift-gitops">Manage your infrastructure and application configurations</a></strong>: GitOps is a declarative way to implement continuous deployment for cloud native applications. GitOps defines infrastructure and application definitions as code. GitOps uses this code to manage multiple workspaces and clusters to simplify the creation of infrastructure and application configurations. GitOps also handles and automates complex deployments at a fast pace, which saves time during deployment and release cycles.</p>
 </li>
 <li>
 <p><strong><a href="../applications/working_with_helm_charts/configuring-custom-helm-chart-repositories.html#installing-a-helm-chart-on-an-openshift-cluster_configuring-custom-helm-chart-repositories">Deploy Helm charts</a></strong>:
-<a href="../applications/working_with_helm_charts/understanding-helm.html#understanding-helm">Helm</a> is a software package manager that simplifies deployment of applications and services to OpenShift Container Platform clusters. Helm uses a packaging format called charts. A Helm chart is a collection of files that describes the OpenShift Container Platform resources.</p>
+<a href="../applications/working_with_helm_charts/understanding-helm.html#understanding-helm">Helm</a> is a software package manager that simplifies deployment of applications and services to OpenShift Container Platform clusters. Helm uses a packaging format called <em>charts</em>. A Helm chart is a collection of files that describes the OpenShift Container Platform resources.</p>
 </li>
 <li>
-<p><strong><a href="../cicd/builds/understanding-image-builds.html#understanding-image-builds">Understand image builds</a></strong>: Choose from different build strategies (Docker, S2I, custom, and pipeline) that can include different kinds of source materials (from places like Git repositories, local binary inputs, and external artifacts). Then, follow examples of build types from basic builds to advanced builds.</p>
+<p><strong><a href="../cicd/builds/understanding-image-builds.html#understanding-image-builds">Understand image builds</a></strong>: Choose from different build strategies (Docker, S2I, custom, and pipeline) that can include different kinds of source materials, such as Git repositories, local binary inputs, and external artifacts. You can follow examples of build types from basic builds to advanced builds.</p>
 </li>
 <li>
-<p><strong><a href="../openshift_images/index.html#overview-of-images">Create container images</a></strong>: A container image is the most basic building block in OpenShift Container Platform (and Kubernetes) applications. Defining image streams lets you gather multiple versions of an image in one place as you continue its development. S2I containers let you insert your source code into a base container that is set up to run code of a particular type, such as Ruby, Node.js, or Python.</p>
+<p><strong><a href="../openshift_images/index.html#overview-of-images">Create container images</a></strong>: A container image is the most basic building block in OpenShift Container Platform and Kubernetes applications. By defining image streams, you can gather multiple versions of an image in one place as you continue to development the image stream. With S2I containers, you can insert your source code into a base container. The base container is configured to run code of a particular type, such as Ruby, Node.js, or Python.</p>
 </li>
 <li>
 <p><strong><a href="../applications/deployments/what-deployments-are.html#what-deployments-are">Create deployments</a></strong>:  Use <code>Deployment</code> and <code>DeploymentConfig</code> objects to exert fine-grained management over applications.
-<a href="../applications/deployments/managing-deployment-processes.html#deployment-operations">Manage deployments</a> using the <strong>Workloads</strong> page or OpenShift CLI (<code>oc</code>). Learn <a href="../applications/deployments/deployment-strategies.html#deployment-strategies">rolling, recreate, and custom</a> deployment strategies.</p>
+<a href="../applications/deployments/managing-deployment-processes.html#deployment-operations">Manage deployments</a> by using the <strong>Workloads</strong> page or OpenShift CLI (<code>oc</code>). Learn <a href="../applications/deployments/deployment-strategies.html#deployment-strategies">rolling, recreate, and custom</a> deployment strategies.</p>
 </li>
 <li>
 <p><strong><a href="../openshift_images/using-templates.html#using-templates">Create templates</a></strong>: Use existing templates or create your own templates that describe how an application is built or deployed. A template can combine images with descriptions, parameters, replicas, exposed ports and other content that defines how an application can be run or built.</p>
 </li>
 <li>
-<p><strong><a href="../operators/understanding/olm-what-operators-are.html#olm-what-operators-are">Understand Operators</a></strong>: Operators are the preferred method for creating on-cluster applications for OpenShift Container Platform Branch Build. Learn about the Operator Framework and how to deploy applications using installed Operators into your projects.</p>
+<p><strong><a href="../operators/understanding/olm-what-operators-are.html#olm-what-operators-are">Understand Operators</a></strong>: Operators are the preferred method for creating on-cluster applications for OpenShift Container Platform Branch Build. Learn about the Operator Framework and how to deploy applications by using installed Operators into your projects.</p>
 </li>
 <li>
-<p><strong><a href="../operators/operator_sdk/osdk-about.html#osdk-about">Develop Operators</a></strong>: Operators are the preferred method for creating on-cluster applications for OpenShift Container Platform Branch Build. Learn the workflow for building, testing, and deploying Operators. Then, create your own Operators based on <a href="../operators/operator_sdk/ansible/osdk-ansible-support.html#osdk-ansible-support">Ansible</a> or
-<a href="../operators/operator_sdk/helm/osdk-helm-support.html#osdk-helm-support">Helm</a>, or configure <a href="../operators/operator_sdk/osdk-monitoring-prometheus.html#osdk-monitoring-prometheus">built-in Prometheus monitoring</a> using the Operator SDK.</p>
+<p><strong><a href="../operators/operator_sdk/osdk-about.html#osdk-about">Develop Operators</a></strong>: Operators are the preferred method for creating on-cluster applications for OpenShift Container Platform Branch Build. Learn the workflow for building, testing, and deploying Operators. You can then create your own Operators based on <a href="../operators/operator_sdk/ansible/osdk-ansible-support.html#osdk-ansible-support">Ansible</a> or
+<a href="../operators/operator_sdk/helm/osdk-helm-support.html#osdk-helm-support">Helm</a>, or configure <a href="../operators/operator_sdk/osdk-monitoring-prometheus.html#osdk-monitoring-prometheus">built-in Prometheus monitoring</a> by using the Operator SDK.</p>
 </li>
 <li>
 <p><strong><a href="../rest_api/index.html#api-index">REST API reference</a></strong>: Learn about OpenShift Container Platform application programming interface endpoints.</p>
@@ -2922,7 +2921,7 @@ They use standard Tekton custom resources to automate deployments and are design
 <h2 id="cluster-administrator-activities"><a class="anchor" href="#cluster-administrator-activities"></a>Cluster administrator activities</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>As a cluster administrator for OpenShift Container Platform, this documentation helps you:</p>
+<p>Manage machines, provide services to users, and follow monitoring and logging reports. This documentation helps you:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2948,7 +2947,7 @@ or
 by <a href="../machine_management/deploying-machine-health-checks.html#deploying-machine-health-checks">deploying health checks</a> and <a href="../machine_management/applying-autoscaling.html#applying-autoscaling">applying autoscaling to machines</a>.</p>
 </li>
 <li>
-<p><strong><a href="../registry/index.html#registry-overview">Manage container registries</a></strong>: Each OpenShift Container Platform cluster includes a built-in container registry for storing its images. You can also configure a separate <a href="https://access.redhat.com/documentation/en-us/red_hat_quay/">Red Hat Quay</a> registry to use with OpenShift Container Platform. The <a href="https://quay.io">Quay.io</a> web site provides a public container registry that stores OpenShift Container Platform containers and Operators.</p>
+<p><strong><a href="../registry/index.html#registry-overview">Manage container registries</a></strong>: Each OpenShift Container Platform cluster includes a built-in container registry for storing its images. You can also configure a separate <a href="https://access.redhat.com/documentation/en-us/red_hat_quay/">Red Hat Quay</a> registry to use with OpenShift Container Platform. The <a href="https://quay.io">Quay.io</a> website provides a public container registry that stores OpenShift Container Platform containers and Operators.</p>
 </li>
 <li>
 <p><strong><a href="../authentication/understanding-authentication.html#understanding-authentication">Manage users and groups</a></strong>: Add users and groups with different levels of permissions to use or modify clusters.</p>
@@ -2957,17 +2956,14 @@ by <a href="../machine_management/deploying-machine-health-checks.html#deploying
 <p><strong><a href="../authentication/understanding-authentication.html#understanding-authentication">Manage authentication</a></strong>: Learn how user, group, and API authentication works in OpenShift Container Platform. OpenShift Container Platform supports <a href="../authentication/understanding-identity-provider.html#supported-identity-providers">multiple identity providers</a>.</p>
 </li>
 <li>
-<p><strong>Manage <a href="../security/certificates/replacing-default-ingress-certificate.html#replacing-default-ingress">ingress</a>, <a href="../security/certificates/api-server.html#api-server-certificates">API server</a>, and <a href="../security/certificates/service-serving-certificate.html#add-service-serving">service</a> certificates</strong>: OpenShift Container Platform creates certificates by default for the Ingress Operator, the API server, and for
-services needed by complex middleware applications that require encryption. You might need to change, add, or
-rotate these certificates.</p>
+<p><strong>Manage <a href="../security/certificates/replacing-default-ingress-certificate.html#replacing-default-ingress">ingress</a>, <a href="../security/certificates/api-server.html#api-server-certificates">API server</a>, and <a href="../security/certificates/service-serving-certificate.html#add-service-serving">service</a> certificates</strong>: OpenShift Container Platform creates certificates by default for the Ingress Operator, the API server, and for services needed by complex middleware applications that require encryption. You might need to change, add, or rotate these certificates.</p>
 </li>
 <li>
-<p><strong><a href="../networking/understanding-networking.html#understanding-networking">Manage networking</a></strong>: The cluster network in OpenShift Container Platform is managed by the <a href="../networking/cluster-network-operator.html#cluster-network-operator">Cluster Network Operator</a> (CNO). The CNO uses iptables rules in <a href="../networking/openshift_sdn/configuring-kube-proxy.html#configuring-kube-proxy">kube-proxy</a> to direct traffic between nodes and pods running on those nodes. The Multus Container Network Interface adds the capability to attach <a href="../networking/multiple_networks/understanding-multiple-networks.html#understanding-multiple-networks">multiple network interfaces</a> to a pod. Using
+<p><strong><a href="../networking/understanding-networking.html#understanding-networking">Manage networking</a></strong>: The cluster network in OpenShift Container Platform is managed by the <a href="../networking/cluster-network-operator.html#cluster-network-operator">Cluster Network Operator</a> (CNO). The CNO uses <code>iptables</code> rules in <a href="../networking/openshift_sdn/configuring-kube-proxy.html#configuring-kube-proxy">kube-proxy</a> to direct traffic between nodes and pods running on those nodes. The Multus Container Network Interface adds the capability to attach <a href="../networking/multiple_networks/understanding-multiple-networks.html#understanding-multiple-networks">multiple network interfaces</a> to a pod. By using
 <a href="../networking/network_policy/about-network-policy.html#about-network-policy">network policy</a> features, you can isolate your pods or permit selected traffic.</p>
 </li>
 <li>
-<p><strong><a href="../storage/understanding-persistent-storage.html#understanding-persistent-storage">Manage storage</a></strong>: OpenShift Container Platform allows cluster administrators to
-configure persistent storage using
+<p><strong><a href="../storage/understanding-persistent-storage.html#understanding-persistent-storage">Manage storage</a></strong>: With OpenShift Container Platform, a cluster administrator can configure persistent storage by using
 <a href="../storage/persistent_storage/persistent-storage-ocs.html#red-hat-openshift-data-foundation">Red Hat OpenShift Data Foundation</a>,
 <a href="../storage/persistent_storage/persistent-storage-aws.html#persistent-storage-using-aws-ebs">AWS Elastic Block Store</a>,
 <a href="../storage/persistent_storage/persistent-storage-nfs.html#persistent-storage-using-nfs">NFS</a>,
@@ -2977,8 +2973,7 @@ and more.
 You can <a href="../storage/expanding-persistent-volumes.html#expanding-persistent-volumes">expand persistent volumes</a>, configure <a href="../storage/dynamic-provisioning.html#dynamic-provisioning">dynamic provisioning</a>, and use CSI to <a href="../storage/container_storage_interface/persistent-storage-csi.html#persistent-storage-using-csi">configure</a>, <a href="../storage/container_storage_interface/persistent-storage-csi-cloning.html#persistent-storage-csi-cloning">clone</a>, and use <a href="../storage/container_storage_interface/persistent-storage-csi-snapshots.html#persistent-storage-csi-snapshots">snapshots</a> of persistent storage.</p>
 </li>
 <li>
-<p><strong><a href="../operators/understanding/olm-understanding-operatorhub.html#olm-understanding-operatorhub">Manage Operators</a></strong>: Lists of Red Hat, ISV, and community Operators can
-be reviewed by cluster administrators and <a href="../operators/admin/olm-adding-operators-to-cluster.html#olm-adding-operators-to-a-cluster">installed on their clusters</a>. After you install them, you can <a href="../operators/user/olm-creating-apps-from-installed-operators.html#olm-creating-apps-from-installed-operators">run</a>, <a href="../operators/admin/olm-upgrading-operators.html#olm-upgrading-operators">upgrade</a>, back up, or otherwise manage the Operator on your cluster.</p>
+<p><strong><a href="../operators/understanding/olm-understanding-operatorhub.html#olm-understanding-operatorhub">Manage Operators</a></strong>: Lists of Red Hat, ISV, and community Operators can be reviewed by cluster administrators and <a href="../operators/admin/olm-adding-operators-to-cluster.html#olm-adding-operators-to-a-cluster">installed on their clusters</a>. After you install them, you can <a href="../operators/user/olm-creating-apps-from-installed-operators.html#olm-creating-apps-from-installed-operators">run</a>, <a href="../operators/admin/olm-upgrading-operators.html#olm-upgrading-operators">upgrade</a>, back up, or otherwise manage the Operator on your cluster.</p>
 </li>
 </ul>
 </div>
@@ -3011,7 +3006,7 @@ Use the Cluster Version Operator (CVO) to upgrade your OpenShift Container Platf
 <p><strong><a href="../updating/updating-restricted-network-cluster/restricted-network-update-osus.html#update-service-overview_updating-restricted-network-cluster-osus">Understanding the OpenShift Update Service</a></strong>: Learn about installing and managing a local OpenShift Update Service for recommending OpenShift Container Platform updates in disconnected environments.</p>
 </li>
 <li>
-<p><strong><a href="../nodes/clusters/nodes-cluster-worker-latency-profiles.html#nodes-cluster-worker-latency-profiles">Improving cluster stability in high latency environments using worker latency profiles</a></strong>: If your network has latency issues, you can use one of three <em>worker latency profiles</em> to help ensure that your control plane does not accidentally evict pods in case it cannot reach a worker node. You can configure or modify the profile at any time during the life of the cluster.</p>
+<p><strong><a href="../nodes/clusters/nodes-cluster-worker-latency-profiles.html#nodes-cluster-worker-latency-profiles">Improving cluster stability in high latency environments by using worker latency profiles</a></strong>: If your network has latency issues, you can use one of three <em>worker latency profiles</em> to help ensure that your control plane does not accidentally evict pods in case it cannot reach a worker node. You can configure or modify the profile at any time during the life of the cluster.</p>
 </li>
 </ul>
 </div>
@@ -3029,7 +3024,7 @@ Learn to  <a href="../monitoring/configuring-the-monitoring-stack.html#configuri
 After configuring monitoring, use the web console to access <a href="../monitoring/reviewing-monitoring-dashboards.html#reviewing-monitoring-dashboards">monitoring dashboards</a>. In addition to infrastructure metrics, you can also scrape and view metrics for your own services.</p>
 </li>
 <li>
-<p><strong><a href="../support/remote_health_monitoring/about-remote-health-monitoring.html#about-remote-health-monitoring_about-remote-health-monitoring">Remote health monitoring</a></strong>: OpenShift Container Platform collects anonymized aggregated information about your cluster. Using Telemetry and the Insights Operator, this data is received by Red Hat and used to improve OpenShift Container Platform. You can view the <a href="../support/remote_health_monitoring/showing-data-collected-by-remote-health-monitoring.html#showing-data-collected-by-remote-health-monitoring_showing-data-collected-by-remote-health-monitoring">data collected by remote health monitoring</a>.</p>
+<p><strong><a href="../support/remote_health_monitoring/about-remote-health-monitoring.html#about-remote-health-monitoring_about-remote-health-monitoring">Remote health monitoring</a></strong>: OpenShift Container Platform collects anonymized aggregated information about your cluster. By using Telemetry and the Insights Operator, this data is received by Red Hat and used to improve OpenShift Container Platform. You can view the <a href="../support/remote_health_monitoring/showing-data-collected-by-remote-health-monitoring.html#showing-data-collected-by-remote-health-monitoring_showing-data-collected-by-remote-health-monitoring">data collected by remote health monitoring</a>.</p>
 </li>
 </ul>
 </div>

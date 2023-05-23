@@ -490,6 +490,7 @@
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html">Installing a cluster on vSphere in a restricted network</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-vsphere.html">Installing a cluster on vSphere in a restricted network with user-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-three-node.html">Installing a three-node cluster on vSphere</a></li>
+                  <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-post-installation-configuration.html">Configuring the vSphere connection settings after an installation</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
@@ -627,7 +628,7 @@
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../../web_console/odc-about-web-terminal.html">Web terminal</a></li>
+            <li><a class="" href="../../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
             <li><a class="" href="../../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -1071,6 +1072,7 @@
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-gcp-pd.html">GCP PD CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-google-cloud-file.html">GCP Filestore CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-vpc-block.html">IBM VPC Block CSI Driver Operator</a></li>
+                  <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-powervs-block.html">IBM Power Virtual Server Block CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-cinder.html">OpenStack Cinder CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-manila.html">OpenStack Manila CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ovirt.html">Red Hat Virtualization CSI Driver Operator</a></li>
@@ -1493,18 +1495,10 @@
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-viewing.html">Viewing and listing the nodes in your cluster</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-working.html">Working with nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing.html">Managing nodes</a></li>
+                  <li><a class="" href="../../nodes/nodes/nodes-nodes-graceful-shutdown.html">Managing graceful node shutdown</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing-max-pods.html">Managing the maximum number of pods per node</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-4-5"><span id="ssgSpan-21-4-5" class="fa fa-caret-right"></span>&nbsp;Remediation, fencing, and maintenance</a>
-                  <ul id="topicSubSubGroup-21-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-about-remediation-fencing-maintenance.html" style="padding-left: 70px;">About node remediation, fencing, and maintentance</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-self-node-remediation-operator.html" style="padding-left: 70px;">Using Self Node Remediation</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-machine-health-checks.html" style="padding-left: 70px;">Remediating nodes with Machine Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-health-check-operator.html" style="padding-left: 70px;">Remediating nodes with Node Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-maintenance-operator.html" style="padding-left: 70px;">Placing nodes in maintenance mode with Node Maintenance Operator</a></li>                  </ul>
-                  </li>
-
+                  <li><a class="" href="../../nodes/nodes/nodes-remediating-fencing-maintaining-rhwa.html">Remediating, fencing, and maintaining nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-rebooting.html">Understanding node rebooting</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-garbage-collection.html">Freeing node resources using garbage collection</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-resources-configuring.html">Allocating resources for nodes</a></li>
@@ -1585,17 +1579,27 @@
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
       <ul id="topicGroup24" class="collapse  list-unstyled">
             <li><a class="" href="../../logging/cluster-logging-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.7</a>
               <ul id="topicSubGroup-24-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-release-notes.html">Logging 5.7 Release Notes</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-getting-started.html">Getting started with logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-configuration.html">Configuring Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-administration.html">Administering Logging</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_6/logging-5-6-release-notes.html">Logging 5.6 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-getting-started.html">Getting started with logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_6/logging-5-6-configuration.html">Configuring Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-administration.html">Administering Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-reference.html">Logging Reference</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
-              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-3"><span id="sgSpan-24-3" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
+              <ul id="topicSubGroup-24-3" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_5/logging-5-5-release-notes.html">Logging 5.5 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_5/logging-5-5-getting-started.html">Getting started with logging</a></li>
@@ -1604,8 +1608,8 @@
             </li>
             <li><a class="" href="../../logging/cluster-logging.html">About Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-deploying.html">Installing Logging</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-5"><span id="sgSpan-24-5" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
-              <ul id="topicSubGroup-24-5" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-6"><span id="sgSpan-24-6" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
+              <ul id="topicSubGroup-24-6" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/config/cluster-logging-configuring-cr.html">About the Cluster Logging custom resource</a></li>
                   <li><a class="" href="../../logging/config/cluster-logging-collector.html">Configuring the logging collector</a></li>
@@ -1626,8 +1630,8 @@
             <li><a class="" href="../../logging/cluster-logging-eventrouter.html">Collecting and storing Kubernetes events</a></li>
             <li><a class="" href="../../logging/cluster-logging-upgrading.html">Updating Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-dashboards.html">Viewing cluster dashboards</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-14"><span id="sgSpan-24-14" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
-              <ul id="topicSubGroup-24-14" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-15"><span id="sgSpan-24-15" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
+              <ul id="topicSubGroup-24-15" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-cluster-status.html">Viewing Logging status</a></li>
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-log-store-status.html">Viewing the status of the log store</a></li>
@@ -2232,7 +2236,7 @@
                   <li><a class="" href="../../virt/install/uninstalling-virt.html">Uninstalling OpenShift Virtualization</a></li>              </ul>
             </li>
             <li><a class="" href="../../virt/upgrading-virt.html">Updating OpenShift Virtualization</a></li>
-            <li><a class="" href="../../virt/virt-additional-security-privileges-controller-and-launcher.html">Security policies</a></li>
+            <li><a class="" href="../../virt/virt-security-policies.html">Security policies</a></li>
             <li><a class="" href="../../virt/virt-using-the-cli-tools.html">Using the CLI tools</a></li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-9"><span id="sgSpan-34-9" class="fa fa-caret-right"></span>&nbsp;Virtual machines</a>
               <ul id="topicSubGroup-34-9" class="nav-tertiary list-unstyled collapse">
@@ -2710,7 +2714,20 @@
 <li><a href="#persistent-storage-csi-vsphere-rwx_persistent-storage-csi-vsphere">ReadWriteMany vSphere volume support</a></li>
 <li><a href="#vsphere-csi-driver-reqs_persistent-storage-csi-vsphere">VMware vSphere CSI Driver Operator requirements</a></li>
 <li><a href="#persistent-storage-csi-vsphere-install-issues_persistent-storage-csi-vsphere">Removing a third-party vSphere CSI Operator Driver</a></li>
-<li><a href="#persistent-storage-csi-vsphere-top-aware_persistent-storage-csi-vsphere">Configuring vSphere CSI Topology</a></li>
+<li><a href="#vsphere-pv-encryption">vSphere persistent disks encryption</a>
+<ul class="sectlevel2">
+<li><a href="#persistent-storage-csi-vsphere-encryption-datastore-url_persistent-storage-csi-vsphere">Using datastore URL</a></li>
+<li><a href="#persistent-storage-csi-vsphere-encryption-tag-based_persistent-storage-csi-vsphere">Using tag-based placement</a></li>
+</ul>
+</li>
+<li><a href="#persistent-storage-csi-vsphere-top-aware-overview_persistent-storage-csi-vsphere">vSphere CSI topology overview</a>
+<ul class="sectlevel2">
+<li><a href="#persistent-storage-csi-vsphere-top-aware-during-install_persistent-storage-csi-vsphere">Creating vSphere storage topology during installation</a></li>
+<li><a href="#persistent-storage-csi-vsphere-top-aware-post-install_persistent-storage-csi-vsphere">Creating vSphere storage topology post-installation</a></li>
+<li><a href="#persistent-storage-csi-vsphere-top-aware-infra-top_persistent-storage-csi-vsphere">Creating vSphere storage topology without an infra topology</a></li>
+<li><a href="#persistent-storage-csi-vsphere-top-aware-results_persistent-storage-csi-vsphere">Results</a></li>
+</ul>
+</li>
 <li><a href="#additional-resources">Additional resources</a></li>
 </ul>
 </div>
@@ -2734,7 +2751,7 @@
 <p><strong>vSphere CSI Driver Operator</strong>: The Operator provides a storage class, called <code>thin-csi</code>, that you can use to create persistent volumes claims (PVCs). The vSphere CSI Driver Operator supports dynamic volume provisioning by allowing storage volumes to be created on-demand, eliminating the need for cluster administrators to pre-provision storage. You can disable this default storage class if desired (see <a href="../../storage/container_storage_interface/persistent-storage-csi-sc-manage.html#persistent-storage-csi-sc-manage">Managing the default storage class</a>).</p>
 </li>
 <li>
-<p><strong>vSphere CSI driver</strong>: The driver enables you to create and mount vSphere PVs. In OpenShift Container Platform 4.12, the driver version is 2.6.1. The vSphere CSI driver supports all of the file systems supported by the underlying Red Hat Core OS release, including XFS and Ext4. For more information about supported file systems, see <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_systems/assembly_overview-of-available-file-systems_managing-file-systems">Overview of available file systems</a>.</p>
+<p><strong>vSphere CSI driver</strong>: The driver enables you to create and mount vSphere PVs. In OpenShift Container Platform 4.13, the driver version is 3.0.1. The vSphere CSI driver supports all of the file systems supported by the underlying Red Hat Core OS release, including XFS and Ext4. For more information about supported file systems, see <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_systems/assembly_overview-of-available-file-systems_managing-file-systems">Overview of available file systems</a>.</p>
 </li>
 </ul>
 </div>
@@ -2746,10 +2763,20 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>OpenShift Container Platform defaults to using an in-tree (non-CSI) plugin to provision vSphere storage.</p>
+<p>For vSphere:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>For new installations of OpenShift Container Platform 4.13, or later, automatic migration is enabled by default.</p>
 <div class="paragraph">
-<p>In future OpenShift Container Platform versions, volumes provisioned using existing in-tree plugins are planned for migration to their equivalent CSI driver. CSI automatic migration should be seamless. Migration does not change how you use all existing API objects, such as persistent volumes, persistent volume claims, and storage classes. For more information about migration, see <a href="../../storage/container_storage_interface/persistent-storage-csi-migration.html#persistent-storage-csi-migration">CSI automatic migration</a>.</p>
+<p>CSI automatic migration should be seamless. Migration does not change how you use all existing API objects, such as persistent volumes, persistent volume claims, and storage classes. For more information about migration, see <a href="../../storage/container_storage_interface/persistent-storage-csi-migration.html#persistent-storage-csi-migration">CSI automatic migration</a>.</p>
+</div>
+</li>
+<li>
+<p>When upgrading from OpenShift Container Platform 4.12, or earlier, to 4.13, automatic CSI migration for vSphere only occurs if you opt in. If you do not opt in, OpenShift Container Platform defaults to using the in-tree (non-CSI) plugin to provision vSphere storage. <a href="../../storage/container_storage_interface/persistent-storage-csi-migration.html#upgrading-openshift-container-platform">Carefully review the indicated consequences before opting in to migration</a>.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>After full migration, in-tree plugins will eventually be removed in future versions of OpenShift Container Platform.</p>
@@ -2925,10 +2952,10 @@ OpenShift Container Platform supports provisioning of ReadWriteMany (RWX) volume
 </div>
 </div>
 <div class="sect1">
-<h2 id="persistent-storage-csi-vsphere-top-aware_persistent-storage-csi-vsphere"><a class="anchor" href="#persistent-storage-csi-vsphere-top-aware_persistent-storage-csi-vsphere"></a>Configuring vSphere CSI Topology</h2>
+<h2 id="vsphere-pv-encryption"><a class="anchor" href="#vsphere-pv-encryption"></a>vSphere persistent disks encryption</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>OpenShift Container Platform provides the ability to deploy OpenShift Container Platform for vSphere on different zones and regions, which allows you to deploy over multiple compute clusters, thus helping to avoid a single point of failure.</p>
+<p>You can encrypt virtual machines (VMs) and dynamically provisioned persistent volumes (PVs) on OpenShift Container Platform running on top of vSphere.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2938,28 +2965,175 @@ OpenShift Container Platform supports provisioning of ReadWriteMany (RWX) volume
 </td>
 <td class="content">
 <div class="paragraph">
-<p>OpenShift Container Platform on vSphere does not support multiple Datacenters.</p>
+<p>OpenShift Container Platform does not support RWX-encrypted PVs. You cannot request RWX PVs out of a storage class that uses an encrypted storage policy.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>This is accomplished by defining zone and region categories in vCenter, and then assigning these categories to different failure domains, such as a compute cluster, by creating tags for these zone and region categories. After you have created the appropriate categories, and assigned tags to vCenter objects, you can create additional machinesets that create virtual machines (VMs) that are responsible for scheduling pods in those failure domains.</p>
+<p>You must encrypt VMs before you can encrypt PVs, which you can do during installation or post-installation.</p>
+</div>
+<div class="paragraph">
+<p>For information about encrypting VMs, see:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../installing/installing_vsphere/installing-vsphere.html#installation-vsphere-encrypted-vms_installing-vsphere">Requirements for encrypting virtual machines</a></p>
+</li>
+<li>
+<p><a href="../../installing/installing_vsphere/installing-vsphere.html#installation-vsphere-machines_installing-vsphere">During installation: Step 7 of Installing RHCOS and starting the OpenShift Container Platform bootstrap process</a></p>
+</li>
+<li>
+<p><a href="../../post_installation_configuration/vsphere-post-installation-encryption.html">Post-installation enabling encryption on a vSphere cluster</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>After encrypting VMs, you can configure a storage class that supports dynamic encryption volume provisioning using the vSphere Container Storage Interface (CSI) driver. This can be accomplished in one of two ways using:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../storage/container_storage_interface/persistent-storage-csi-vsphere.html#persistent-storage-csi-vsphere-encryption-datastore-url_persistent-storage-csi-vsphere">Datastore URL</a>: This approach is not very flexible, and forces you to use a single datastore. It also does not support topology-aware provisioning.</p>
+</li>
+<li>
+<p><a href="../../storage/container_storage_interface/persistent-storage-csi-vsphere.html#persistent-storage-csi-vsphere-encryption-tag-based_persistent-storage-csi-vsphere">Tag-based placement</a>: Encrypts the provisioned volumes and uses tag-based placement to target specific datastores.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="persistent-storage-csi-vsphere-encryption-datastore-url_persistent-storage-csi-vsphere"><a class="anchor" href="#persistent-storage-csi-vsphere-encryption-datastore-url_persistent-storage-csi-vsphere"></a>Using datastore URL</h3>
+<div class="paragraph">
+<div class="title">Procedure</div>
+<p>To encrypt using the datastore URL:</p>
 </div>
 <div class="olist arabic">
-<div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>In the VMware vCenter vSphere client GUI, define appropriate zone and region catagories and tags.</p>
+<p>Find out the name of the default storage policy in your datastore that supports encryption.</p>
 <div class="paragraph">
-<p>While vSphere allows you to create categories with any arbitrary name, OpenShift Container Platform strongly recommends use of <code>openshift-region</code> and <code>openshift-zone</code> names for defining topology.</p>
+<p>This is same policy that was used for encrypting your VMs.</p>
+</div>
+</li>
+<li>
+<p>Create a storage class that uses this storage policy:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">kind</span><span class="pi">:</span> <span class="s">StorageClass</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">storage.k8s.io/v1</span>
+<span class="na">metadata</span><span class="pi">:</span>
+ <span class="na">name</span><span class="pi">:</span> <span class="s">encryption</span>
+<span class="na">provisioner</span><span class="pi">:</span> <span class="s">csi.vsphere.vmware.com</span>
+<span class="na">parameters</span><span class="pi">:</span>
+ <span class="na">storagePolicyName</span><span class="pi">:</span> <span class="s">&lt;storage-policy-name&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+ <span class="na">datastoreurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">ds:///vmfs/volumes/vsan:522e875627d-b090c96b526bb79c/"</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Name of default storage policy in your datastore that supports encryption</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="persistent-storage-csi-vsphere-encryption-tag-based_persistent-storage-csi-vsphere"><a class="anchor" href="#persistent-storage-csi-vsphere-encryption-tag-based_persistent-storage-csi-vsphere"></a>Using tag-based placement</h3>
+<div class="paragraph">
+<div class="title">Procedure</div>
+<p>To encrypt using tag-based placement:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In vCenter create a category for tagging datastores that will be made available to this storage class. Also, ensure that <strong>StoragePod(Datastore clusters)</strong>, <strong>Datastore</strong>, and <strong>Folder</strong> are selected as Associable Entities for the created category.</p>
+</li>
+<li>
+<p>In vCenter, create a tag that uses the category created earlier.</p>
+</li>
+<li>
+<p>Assign the previously created tag to each datastore that will be made available to the storage class. Make sure that datastores are shared with hosts participating in the OpenShift Container Platform cluster.</p>
+</li>
+<li>
+<p>In vCenter, from the main menu, click <strong>Policies and Profiles</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Policies and Profiles</strong> page, in the navigation pane, click <strong>VM Storage Policies</strong>.</p>
+</li>
+<li>
+<p>Click <strong>CREATE</strong>.</p>
+</li>
+<li>
+<p>Type a name for the storage policy.</p>
+</li>
+<li>
+<p>Select <strong>Enable host based rules</strong> and <strong>Enable tag based placement rules</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Next</strong> tab:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select <strong>Encryption</strong> and <strong>Default Encryption Properties</strong>.</p>
+</li>
+<li>
+<p>Select the tag category created earlier, and select tag selected. Verify that the policy is selecting matching datastores.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Create the storage policy.</p>
+</li>
+<li>
+<p>Create a storage class that uses the storage policy:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">kind</span><span class="pi">:</span> <span class="s">StorageClass</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">storage.k8s.io/v1</span>
+<span class="na">metadata</span><span class="pi">:</span>
+ <span class="na">name</span><span class="pi">:</span>  <span class="s">csi-encrypted</span>
+<span class="na">provisioner</span><span class="pi">:</span> <span class="s">csi.vsphere.vmware.com</span>
+<span class="na">reclaimPolicy</span><span class="pi">:</span> <span class="s">Delete</span>
+<span class="na">volumeBindingMode</span><span class="pi">:</span> <span class="s">WaitForFirstConsumer</span>
+<span class="na">parameters</span><span class="pi">:</span>
+ <span class="na">storagePolicyName</span><span class="pi">:</span> <span class="s">&lt;storage-policy-name&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Name of the storage policy that you created for encryption</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="persistent-storage-csi-vsphere-top-aware-overview_persistent-storage-csi-vsphere"><a class="anchor" href="#persistent-storage-csi-vsphere-top-aware-overview_persistent-storage-csi-vsphere"></a>vSphere CSI topology overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>OpenShift Container Platform provides the ability to deploy OpenShift Container Platform for vSphere on different zones and regions, which allows you to deploy over multiple compute clusters and datacenters, thus helping to avoid a single point of failure.</p>
+</div>
+<div class="paragraph">
+<p>This is accomplished by defining zone and region categories in vCenter, and then assigning these categories to different failure domains, such as a compute cluster, by creating tags for these zone and region categories. After you have created the appropriate categories, and assigned tags to vCenter objects, you can create additional machinesets that create virtual machines (VMs) that are responsible for scheduling pods in those failure domains.</p>
 </div>
 <div class="paragraph">
 <p>The following example defines two failure domains with one region and two zones:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. vSphere topology with one region and two zones</caption>
+<caption class="title">Table 1. vSphere storage topology with one region and two zones</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -2987,6 +3161,213 @@ Datacenter: Atlanta</p></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="persistent-storage-csi-vsphere-top-aware-during-install_persistent-storage-csi-vsphere"><a class="anchor" href="#persistent-storage-csi-vsphere-top-aware-during-install_persistent-storage-csi-vsphere"></a>Creating vSphere storage topology during installation</h3>
+<div class="sect3">
+<h4 id="procedure"><a class="anchor" href="#procedure"></a>Procedure</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Specify the topology during installation. See the <em>Configuring regions and zones for a VMware vCenter</em> section.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>No additional action is necessary and the default storage class that is created by OpenShift Container Platform
+is topology aware and should allow provisioning of volumes in different failure domains.</p>
+</div>
+<div class="ulist _additional-resources">
+<div class="title">Additional resources</div>
+<ul>
+<li>
+<p><a href="../../installing/installing_vsphere/installing-vsphere-installer-provisioned-network-customizations.html#configuring-vsphere-regions-zones_installing-vsphere-installer-provisioned-network-customizations">Configuring regions and zones for a VMware vCenter</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="persistent-storage-csi-vsphere-top-aware-post-install_persistent-storage-csi-vsphere"><a class="anchor" href="#persistent-storage-csi-vsphere-top-aware-post-install_persistent-storage-csi-vsphere"></a>Creating vSphere storage topology post-installation</h3>
+<div class="sect3">
+<h4 id="procedure-2"><a class="anchor" href="#procedure-2"></a>Procedure</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the VMware vCenter vSphere client GUI, define appropriate zone and region catagories and tags.</p>
+<div class="paragraph">
+<p>While vSphere allows you to create categories with any arbitrary name, OpenShift Container Platform strongly recommends use of <code>openshift-region</code> and <code>openshift-zone</code> names for defining topology categories.</p>
+</div>
+<div class="paragraph">
+<p>For more information about vSphere categories and tags, see the VMware vSphere documentation.</p>
+</div>
+</li>
+<li>
+<p>In OpenShift Container Platform, create failure domains. See the <em>Specifying multiple regions and zones for your cluster on vSphere</em> section.</p>
+</li>
+<li>
+<p>Create a tag to assign to datastores across failure domains:</p>
+<div class="paragraph">
+<p>When an OpenShift Container Platform spans more than one failure domain, the datastore might not be shared across those failure domains, which is where topology-aware provisioning of persistent volumes (PVs) is useful.</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>In vCenter, create a category for tagging the datastores. For example, <code>openshift-zonal-datastore-cat</code>. You can use any other category name, provided the category uniquely is used for tagging datastores participating in OpenShift Container Platform cluster. Also, ensure that <code>StoragePod</code>, <code>Datastore</code>, and <code>Folder</code> are selected as Associable Entities for the created category.</p>
+</li>
+<li>
+<p>In vCenter, create a tag that uses the previously created category. This example uses the tag name <code>openshift-zonal-datastore</code>.</p>
+</li>
+<li>
+<p>Assign the previously created tag (in this example <code>openshift-zonal-datastore</code>) to each datastore in a failure domain that would be considered for dynamic provisioning.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You can use any names you like for datastore categories and tags. The names used in this example are provided as recommendations. Ensure that the tags and categories that you define uniquely identify only datastores that are shared with all hosts in the OpenShift Container Platform cluster.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>As needed, create a storage policy that targets the tag-based datastores in each failure domain:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>In vCenter, from the main menu, click <strong>Policies and Profiles</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Policies and Profiles</strong> page, in the navigation pane, click <strong>VM Storage Policies</strong>.</p>
+</li>
+<li>
+<p>Click <strong>CREATE</strong>.</p>
+</li>
+<li>
+<p>Type a name for the storage policy.</p>
+</li>
+<li>
+<p>For the rules, choose Tag Placement rules and select the tag and category that targets the desired datastores (in this example, the <code>openshift-zonal-datastore</code> tag).</p>
+<div class="paragraph">
+<p>The datastores are listed in the storage compatibility table.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Create a new storage class that uses the new zoned storage policy:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Click <strong>Storage</strong> &gt; <strong>StorageClasses</strong>.</p>
+</li>
+<li>
+<p>On the <strong>StorageClasses</strong> page, click <strong>Create StorageClass</strong>.</p>
+</li>
+<li>
+<p>Type a name for the new storage class in <strong>Name</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Provisioner</strong>, select <strong>csi.vsphere.vmware.com</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Additional parameters</strong>, for the StoragePolicyName parameter, set <strong>Value</strong> to the name of the new zoned storage policy that you created earlier.</p>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">kind</span><span class="pi">:</span> <span class="s">StorageClass</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">storage.k8s.io/v1</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">zoned-sc</span> <i class="conum" data-value="1"></i><b>(1)</b>
+<span class="na">provisioner</span><span class="pi">:</span> <span class="s">csi.vsphere.vmware.com</span>
+<span class="na">parameters</span><span class="pi">:</span>
+  <span class="na">StoragePolicyName</span><span class="pi">:</span> <span class="s">zoned-storage-policy</span> <i class="conum" data-value="2"></i><b>(2)</b>
+<span class="na">reclaimPolicy</span><span class="pi">:</span> <span class="s">Delete</span>
+<span class="na">allowVolumeExpansion</span><span class="pi">:</span> <span class="no">true</span>
+<span class="na">volumeBindingMode</span><span class="pi">:</span> <span class="s">WaitForFirstConsumer</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>New topology aware storage class name.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Specify zoned storage policy.</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You can also create the storage class by editing the preceding YAML file and running the command <code>oc create -f $FILE</code>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="ulist _additional-resources">
+<div class="title">Additional resources</div>
+<ul>
+<li>
+<p><a href="../../post_installation_configuration/post-install-vsphere-zones-regions-configuration.html#specifying-regions-zones-infrastructure-vsphere_post-install-vsphere-zones-regions-configuration">Specifying multiple regions and zones for your cluster on vSphere</a></p>
+</li>
+<li>
+<p><a href="https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-vcenter-esxi-management/GUID-16422FF7-235B-4A44-92E2-532F6AED0923.html?hWord=N4IghgNiBcIC5gOYgL5A">VMware vSphere tag documenation</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="persistent-storage-csi-vsphere-top-aware-infra-top_persistent-storage-csi-vsphere"><a class="anchor" href="#persistent-storage-csi-vsphere-top-aware-infra-top_persistent-storage-csi-vsphere"></a>Creating vSphere storage topology without an infra topology</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>OpenShift Container Platform recommends using the infrastructure object for specifying failure domains in a topology aware setup. Specifying failure domains in the infrastructure object and specify topology-categories in the <code>ClusterCSIDriver</code> object at the same time is an unsupported operation.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="procedure-3"><a class="anchor" href="#procedure-3"></a>Procedure</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the VMware vCenter vSphere client GUI, define appropriate zone and region catagories and tags.</p>
+<div class="paragraph">
+<p>While vSphere allows you to create categories with any arbitrary name, OpenShift Container Platform strongly recommends use of <code>openshift-region</code> and <code>openshift-zone</code> names for defining topology.</p>
+</div>
 <div class="paragraph">
 <p>For more information about vSphere categories and tags, see the VMware vSphere documentation.</p>
 </div>
@@ -3011,19 +3392,19 @@ Datacenter: Atlanta</p></td>
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">apiVersion: operator.openshift.io/v1
 kind: ClusterCSIDriver
 metadata:
- name: csi.vsphere.vmware.com
+  name: csi.vsphere.vmware.com
 spec:
- logLevel: Normal
- managementState: Managed
- observedConfig: null
- operatorLogLevel: Normal
- unsupportedConfigOverrides: null
- driverConfig:
-  driverType: vSphere <i class="conum" data-value="1"></i><b>(1)</b>
-    vSphere:
-      topologyCategories: <i class="conum" data-value="2"></i><b>(2)</b>
-      - openshift-zone
-      - openshift-region</span></code></pre>
+  logLevel: Normal
+  managementState: Managed
+  observedConfig: null
+  operatorLogLevel: Normal
+  unsupportedConfigOverrides: null
+  driverConfig:
+    driverType: vSphere <i class="conum" data-value="1"></i><b>(1)</b>
+      vSphere:
+        topologyCategories: <i class="conum" data-value="2"></i><b>(2)</b>
+        - openshift-zone
+        - openshift-region</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -3052,14 +3433,14 @@ spec:
 <div class="listingblock">
 <div class="title">Example output</div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">NAME                        DRIVERS     AGE
-co8-4s88d-infra-2m5vd       1           27m
-co8-4s88d-master-0          1           70m
-co8-4s88d-master-1          1           70m
-co8-4s88d-master-2          1           70m
-co8-4s88d-worker-j2hmg      1           47m
-co8-4s88d-worker-mbb46      1           47m
-co8-4s88d-worker-zlk7d      1           47m</span></code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">NAME DRIVERS AGE
+co8-4s88d-infra-2m5vd 1 27m
+co8-4s88d-master-0 1 70m
+co8-4s88d-master-1 1 70m
+co8-4s88d-master-2 1 70m
+co8-4s88d-worker-j2hmg 1 47m
+co8-4s88d-worker-mbb46 1 47m
+co8-4s88d-worker-zlk7d 1 47m</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -3072,14 +3453,14 @@ co8-4s88d-worker-zlk7d      1           47m</span></code></pre>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="c">...
 </span><span class="go">spec:
-    drivers:
-    - allocatable:
-        count: 59
-    name: csi-vsphere.vmware.com
-    nodeID: co8-4s88d-worker-j2hmg
-    topologyKeys: <i class="conum" data-value="1"></i><b>(1)</b>
-    - topology.csi.vmware.com/openshift-zone
-    - topology.csi.vmware.com/openshift-region</span></code></pre>
+  drivers:
+  - allocatable:
+      count: 59
+  name: csi-vsphere.vmware.com
+  nodeID: co8-4s88d-worker-j2hmg
+  topologyKeys: <i class="conum" data-value="1"></i><b>(1)</b>
+  - topology.csi.vmware.com/openshift-zone
+  - topology.csi.vmware.com/openshift-region</span></code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -3231,8 +3612,19 @@ co8-4s88d-worker-zlk7d      1           47m</span></code></pre>
 </li>
 </ol>
 </div>
+<div class="ulist _additional-resources">
+<div class="title">Additional resources</div>
+<ul>
+<li>
+<p><a href="https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-vcenter-esxi-management/GUID-16422FF7-235B-4A44-92E2-532F6AED0923.html?hWord=N4IghgNiBcIC5gOYgL5A">VMware vSphere tag documenation</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="persistent-storage-csi-vsphere-top-aware-results_persistent-storage-csi-vsphere"><a class="anchor" href="#persistent-storage-csi-vsphere-top-aware-results_persistent-storage-csi-vsphere"></a>Results</h3>
 <div class="paragraph">
-<div class="title">Results</div>
 <p>Creating persistent volume claims (PVCs) and PVs from the topology aware storage class are truly zonal, and should use the datastore in their respective zone depending on how pods are scheduled:</p>
 </div>
 <div class="listingblock">
@@ -3275,13 +3667,6 @@ co8-4s88d-worker-zlk7d      1           47m</span></code></pre>
 </tr>
 </table>
 </div>
-<div class="ulist _additional-resources">
-<div class="title">Additional resources</div>
-<ul>
-<li>
-<p><a href="https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-vcenter-esxi-management/GUID-16422FF7-235B-4A44-92E2-532F6AED0923.html?hWord=N4IghgNiBcIC5gOYgL5A">VMware vSphere tag documenation</a></p>
-</li>
-</ul>
 </div>
 </div>
 </div>

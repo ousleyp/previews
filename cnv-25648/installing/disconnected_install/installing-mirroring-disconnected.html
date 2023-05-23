@@ -490,6 +490,7 @@
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html">Installing a cluster on vSphere in a restricted network</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-vsphere.html">Installing a cluster on vSphere in a restricted network with user-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-three-node.html">Installing a three-node cluster on vSphere</a></li>
+                  <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-post-installation-configuration.html">Configuring the vSphere connection settings after an installation</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
@@ -627,7 +628,7 @@
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../../web_console/odc-about-web-terminal.html">Web terminal</a></li>
+            <li><a class="" href="../../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
             <li><a class="" href="../../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -1071,6 +1072,7 @@
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-gcp-pd.html">GCP PD CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-google-cloud-file.html">GCP Filestore CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-vpc-block.html">IBM VPC Block CSI Driver Operator</a></li>
+                  <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-powervs-block.html">IBM Power Virtual Server Block CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-cinder.html">OpenStack Cinder CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-manila.html">OpenStack Manila CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ovirt.html">Red Hat Virtualization CSI Driver Operator</a></li>
@@ -1493,18 +1495,10 @@
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-viewing.html">Viewing and listing the nodes in your cluster</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-working.html">Working with nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing.html">Managing nodes</a></li>
+                  <li><a class="" href="../../nodes/nodes/nodes-nodes-graceful-shutdown.html">Managing graceful node shutdown</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing-max-pods.html">Managing the maximum number of pods per node</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-4-5"><span id="ssgSpan-21-4-5" class="fa fa-caret-right"></span>&nbsp;Remediation, fencing, and maintenance</a>
-                  <ul id="topicSubSubGroup-21-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-about-remediation-fencing-maintenance.html" style="padding-left: 70px;">About node remediation, fencing, and maintentance</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-self-node-remediation-operator.html" style="padding-left: 70px;">Using Self Node Remediation</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-machine-health-checks.html" style="padding-left: 70px;">Remediating nodes with Machine Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-health-check-operator.html" style="padding-left: 70px;">Remediating nodes with Node Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-maintenance-operator.html" style="padding-left: 70px;">Placing nodes in maintenance mode with Node Maintenance Operator</a></li>                  </ul>
-                  </li>
-
+                  <li><a class="" href="../../nodes/nodes/nodes-remediating-fencing-maintaining-rhwa.html">Remediating, fencing, and maintaining nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-rebooting.html">Understanding node rebooting</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-garbage-collection.html">Freeing node resources using garbage collection</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-resources-configuring.html">Allocating resources for nodes</a></li>
@@ -1585,17 +1579,27 @@
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
       <ul id="topicGroup24" class="collapse  list-unstyled">
             <li><a class="" href="../../logging/cluster-logging-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.7</a>
               <ul id="topicSubGroup-24-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-release-notes.html">Logging 5.7 Release Notes</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-getting-started.html">Getting started with logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-configuration.html">Configuring Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-administration.html">Administering Logging</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_6/logging-5-6-release-notes.html">Logging 5.6 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-getting-started.html">Getting started with logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_6/logging-5-6-configuration.html">Configuring Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-administration.html">Administering Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-reference.html">Logging Reference</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
-              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-3"><span id="sgSpan-24-3" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
+              <ul id="topicSubGroup-24-3" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_5/logging-5-5-release-notes.html">Logging 5.5 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_5/logging-5-5-getting-started.html">Getting started with logging</a></li>
@@ -1604,8 +1608,8 @@
             </li>
             <li><a class="" href="../../logging/cluster-logging.html">About Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-deploying.html">Installing Logging</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-5"><span id="sgSpan-24-5" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
-              <ul id="topicSubGroup-24-5" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-6"><span id="sgSpan-24-6" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
+              <ul id="topicSubGroup-24-6" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/config/cluster-logging-configuring-cr.html">About the Cluster Logging custom resource</a></li>
                   <li><a class="" href="../../logging/config/cluster-logging-collector.html">Configuring the logging collector</a></li>
@@ -1626,8 +1630,8 @@
             <li><a class="" href="../../logging/cluster-logging-eventrouter.html">Collecting and storing Kubernetes events</a></li>
             <li><a class="" href="../../logging/cluster-logging-upgrading.html">Updating Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-dashboards.html">Viewing cluster dashboards</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-14"><span id="sgSpan-24-14" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
-              <ul id="topicSubGroup-24-14" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-15"><span id="sgSpan-24-15" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
+              <ul id="topicSubGroup-24-15" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-cluster-status.html">Viewing Logging status</a></li>
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-log-store-status.html">Viewing the status of the log store</a></li>
@@ -2232,7 +2236,7 @@
                   <li><a class="" href="../../virt/install/uninstalling-virt.html">Uninstalling OpenShift Virtualization</a></li>              </ul>
             </li>
             <li><a class="" href="../../virt/upgrading-virt.html">Updating OpenShift Virtualization</a></li>
-            <li><a class="" href="../../virt/virt-additional-security-privileges-controller-and-launcher.html">Security policies</a></li>
+            <li><a class="" href="../../virt/virt-security-policies.html">Security policies</a></li>
             <li><a class="" href="../../virt/virt-using-the-cli-tools.html">Using the CLI tools</a></li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-9"><span id="sgSpan-34-9" class="fa fa-caret-right"></span>&nbsp;Virtual machines</a>
               <ul id="topicSubGroup-34-9" class="nav-tertiary list-unstyled collapse">
@@ -2729,7 +2733,7 @@
 </ul>
 </li>
 <li><a href="#oc-mirror-dry-run_installing-mirroring-disconnected">Performing a dry run</a></li>
-<li><a href="#oc-mirror-oci-format_installing-mirroring-disconnected">Mirroring file-based catalog Operator images in OCI format</a></li>
+<li><a href="#oc-mirror-oci-format_installing-mirroring-disconnected">Including local OCI Operator catalogs</a></li>
 <li><a href="#oc-mirror-imageset-config-params_installing-mirroring-disconnected">Image set configuration parameters</a></li>
 <li><a href="#oc-mirror-image-set-examples_installing-mirroring-disconnected">Image set configuration examples</a></li>
 <li><a href="#oc-mirror-command-reference_installing-mirroring-disconnected">Command reference for oc-mirror</a></li>
@@ -2827,10 +2831,24 @@
 <h2 id="oc-mirror-support_installing-mirroring-disconnected"><a class="anchor" href="#oc-mirror-support_installing-mirroring-disconnected"></a>oc-mirror compatibility and support</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The oc-mirror plugin supports mirroring OpenShift Container Platform payload images and Operator catalogs for OpenShift Container Platform versions 4.9 and later.</p>
+<p>The oc-mirror plugin supports mirroring OpenShift Container Platform payload images and Operator catalogs for OpenShift Container Platform versions 4.10 and later.</p>
 </div>
 <div class="paragraph">
 <p>Use the latest available version of the oc-mirror plugin regardless of which versions of OpenShift Container Platform you need to mirror.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you used the Technology Preview OCI local catalogs feature for the oc-mirror plugin for OpenShift Container Platform 4.12, you can no longer use the OCI local catalogs feature of the oc-mirror plugin to copy a catalog locally and convert it to OCI format as a first step to mirroring to a fully disconnected cluster.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -3287,7 +3305,7 @@ the mirror registry.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Set the back-end location to save the image set metadata to. This location can be a registry or local directory. It is required to specify <code>storageConfig</code> values, unless you are using the Technology Preview OCI feature.</td>
+<td>Set the back-end location to save the image set metadata to. This location can be a registry or local directory. It is required to specify <code>storageConfig</code> values.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
@@ -3977,10 +3995,13 @@ Writing image mapping to oc-mirror-workspace/mapping.txt</span></code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="oc-mirror-oci-format_installing-mirroring-disconnected"><a class="anchor" href="#oc-mirror-oci-format_installing-mirroring-disconnected"></a>Mirroring file-based catalog Operator images in OCI format</h2>
+<h2 id="oc-mirror-oci-format_installing-mirroring-disconnected"><a class="anchor" href="#oc-mirror-oci-format_installing-mirroring-disconnected"></a>Including local OCI Operator catalogs</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can use the oc-mirror plugin to mirror Operators in the Open Container Initiative (OCI) image format, instead of Docker v2 format. You can copy Operator images to a file-based catalog on disk in OCI format. Then you can copy local OCI images to your target mirror registry.</p>
+<p>While mirroring OpenShift Container Platform releases, Operator catalogs, and additional images from a registry to a partially disconnected cluster, you can include Operator catalog images from a local file-based catalog on disk. The local catalog must be in the Open Container Initiative (OCI) format.</p>
+</div>
+<div class="paragraph">
+<p>The local catalog and its contents are mirrored to your target mirror registry based on the filtering information in the image set configuration file.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -3990,15 +4011,27 @@ Writing image mapping to oc-mirror-workspace/mapping.txt</span></code></pre>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Using the oc-mirror plugin to mirror Operator images in OCI format is a Technology Preview feature only. Technology Preview features
-are not supported with Red Hat production service level agreements (SLAs) and
-might not be functionally complete. Red Hat does not recommend using them
-in production. These features provide early access to upcoming product
-features, enabling customers to test functionality and provide feedback during
-the development process.</p>
+<p>When mirroring local OCI catalogs, any OpenShift Container Platform releases or additional images that you want to mirror along with the local OCI-formatted catalog must be pulled from a registry.</p>
 </div>
 <div class="paragraph">
-<p>For more information about the support scope of Red Hat Technology Preview features, see <a href="https://access.redhat.com/support/offerings/techpreview/">Technology Preview Features Support Scope</a>.</p>
+<p>You cannot mirror OCI catalogs along with an oc-mirror image set file on disk.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>One example use case for using the OCI feature is if you have a CI/CD system building an OCI catalog to a location on disk, and you want to mirror that OCI catalog along with an OpenShift Container Platform release to your mirror registry.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you used the Technology Preview OCI local catalogs feature for the oc-mirror plugin for OpenShift Container Platform 4.12, you can no longer use the OCI local catalogs feature of the oc-mirror plugin to copy a catalog locally and convert it to OCI format as a first step to mirroring to a fully disconnected cluster.</p>
 </div>
 </td>
 </tr>
@@ -4022,49 +4055,66 @@ the development process.</p>
 <div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>Optional: Retrieve the catalogs and images that you require and save them to disk. If you already have the catalog image in OCI format on disk, you can skip this step.</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Create the image set configuration file:</p>
+<p>Create the image set configuration file and adjust the settings as necessary.</p>
+<div class="paragraph">
+<p>The following example image set configuration mirrors an OCI catalog on disk along with an OpenShift Container Platform release and a UBI image from <code>registry.redhat.io</code>.</p>
+</div>
 <div class="listingblock">
-<div class="title">Example image set configuration file for copying to disk</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">kind</span><span class="pi">:</span> <span class="s">ImageSetConfiguration</span>
 <span class="na">apiVersion</span><span class="pi">:</span> <span class="s">mirror.openshift.io/v1alpha2</span>
+<span class="na">storageConfig</span><span class="pi">:</span>
+  <span class="na">local</span><span class="pi">:</span>
+    <span class="na">path</span><span class="pi">:</span> <span class="s">/home/user/metadata</span>                                                <i class="conum" data-value="1"></i><b>(1)</b>
 <span class="na">mirror</span><span class="pi">:</span>
- <span class="na">operators</span><span class="pi">:</span>
- <span class="pi">-</span> <span class="na">catalog</span><span class="pi">:</span> <span class="s">registry.redhat.io/redhat/redhat-operator-index:v4.13</span>
-   <span class="na">packages</span><span class="pi">:</span>
-   <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">aws-load-balancer-operator</span></code></pre>
+  <span class="na">platform</span><span class="pi">:</span>
+    <span class="na">channels</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">stable-4.13</span>                                                      <i class="conum" data-value="2"></i><b>(2)</b>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">ocp</span>
+    <span class="na">graph</span><span class="pi">:</span> <span class="no">false</span>
+  <span class="na">operators</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">catalog</span><span class="pi">:</span> <span class="s">oci:///home/user/oc-mirror/my-oci-catalog</span>                       <i class="conum" data-value="3"></i><b>(3)</b>
+    <span class="na">packages</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">aws-load-balancer-operator</span>
+  <span class="pi">-</span> <span class="na">catalog</span><span class="pi">:</span> <span class="s">registry.redhat.io/redhat/redhat-operator-index:v4.13</span>           <i class="conum" data-value="4"></i><b>(4)</b>
+    <span class="na">packages</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">rhacs-operator</span>
+  <span class="na">additionalImages</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">registry.redhat.io/ubi8/ubi:latest</span>                                 <i class="conum" data-value="5"></i><b>(5)</b></code></pre>
 </div>
 </div>
-<div class="admonitionblock note">
+<div class="colist arabic">
 <table>
 <tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>When using the OCI feature, only the <code>mirror.operators.catalog</code> setting is available for use.</p>
-</div>
-<div class="paragraph">
-<p>The <code>storageConfig</code> setting is ignored in favor of the location passed in to the <code>oc mirror</code> command.</p>
-</div>
-</td>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Set the back-end location to save the image set metadata to. This location can be a registry or local directory. It is required to specify <code>storageConfig</code> values.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Optionally, include an OpenShift Container Platform release to mirror from <code>registry.redhat.io</code>.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Specify the absolute path to the location of the OCI catalog on disk. The path must start with <code>oci://</code> when using the OCI feature.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Optionally, specify additional Operator catalogs to pull from a registry.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Optionally, specify additional images to pull from a registry.</td>
 </tr>
 </table>
 </div>
 </li>
 <li>
-<p>Run the <code>oc mirror</code> command to mirror the images from the specified image set configuration to disk:</p>
+<p>Run the <code>oc mirror</code> command to mirror the OCI catalog to a target mirror registry:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc mirror <span class="nt">--config</span><span class="o">=</span>./imageset-config.yaml <span class="se">\ </span><i class="conum" data-value="1"></i><b>(1)</b>
-<span class="go">  --use-oci-feature \                         <i class="conum" data-value="2"></i><b>(2)</b>
-  --oci-feature-action=copy \                 <i class="conum" data-value="3"></i><b>(3)</b>
-  oci://my-oci-catalog                        <i class="conum" data-value="4"></i><b>(4)</b>
+<span class="go">  --include-local-oci-catalogs                <i class="conum" data-value="2"></i><b>(2)</b>
+  docker://registry.example:5000              <i class="conum" data-value="3"></i><b>(3)</b>
 </span></code></pre>
 </div>
 </div>
@@ -4076,28 +4126,26 @@ the development process.</p>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Use the <code>--use-oci-feature</code> flag to enable the OCI feature.</td>
+<td>Use the <code>--include-local-oci-catalogs</code> flag to enable mirroring local OCI catalogs along with other remote content.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>To copy the catalog to disk, set the <code>--oci-feature-action</code> flag to <code>copy</code>.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>Specify a directory on disk where you want to output the catalog. This procedure assumes that it is named <code>my-oci-catalog</code>. The path must start with <code>oci://</code>. If the specified directory is not a full path, the directory is created in the current working directory where the <code>oc mirror</code> command is run.</td>
+<td>Specify the registry to mirror the content to. The registry must start with <code>docker://</code>. If you specify a top-level namespace for the mirror registry, you must also use this same namespace on subsequent executions.</td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
 <div class="paragraph">
-<p>You can optionally use the <code>--oci-registries-config</code> flag to specify the path to a TOML-formatted <code>registries.conf</code> file. You can use this to mirror from a different registry, such as a pre-production location for testing, without having to change the image set configuration file.</p>
+<p>Optionally, you can specify other flags to adjust the behavior of the OCI feature:</p>
 </div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>--oci-insecure-signature-policy</code></dt>
+<dd>
+<p>Do not push signatures to the target mirror registry.</p>
+</dd>
+<dt class="hdlist1"><code>--oci-registries-config</code></dt>
+<dd>
+<p>Specify the path to a TOML-formatted <code>registries.conf</code> file. You can use this to mirror from a different registry, such as a pre-production location for testing, without having to change the image set configuration file. This flag only affects local OCI catalogs, not any other mirrored content.</p>
 <div class="listingblock">
 <div class="title">Example registries.conf file</div>
 <div class="content">
@@ -4112,117 +4160,8 @@ the development process.</p>
     <span class="py">insecure</span> <span class="p">=</span> <span class="kc">false</span></code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>Set the <code>location</code> field in the <code>registry.mirror</code> section to an alternative registry location that you want to pull images from. The <code>location</code> field in the <code>registry</code> section must be the same registry location as the one you specify in the image set configuration file.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</li>
-<li>
-<p>List your directory contents and verify that the following directories were created:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">ls</span> <span class="nt">-l</span></code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">Example output</div>
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">my-oci-catalog      <i class="conum" data-value="1"></i><b>(1)</b>
-oc-mirror-workspace <i class="conum" data-value="2"></i><b>(2)</b>
-olm_artifacts       <i class="conum" data-value="3"></i><b>(3)</b>
-</span></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Directory that contains the OCI catalog. This procedure assumes that it is named <code>my-oci-catalog</code>.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Directory that contains each image in the catalog in its original format.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>Directory that contains the files that describe the Operator bundles that this catalog references.</td>
-</tr>
-</table>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Update the image set configuration file to specify the location of the catalog on disk to mirror to the target mirror registry:</p>
-<div class="listingblock">
-<div class="title">Example image set configuration file for mirroring to mirror registry</div>
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">kind</span><span class="pi">:</span> <span class="s">ImageSetConfiguration</span>
-<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">mirror.openshift.io/v1alpha2</span>
-<span class="na">mirror</span><span class="pi">:</span>
- <span class="na">operators</span><span class="pi">:</span>
- <span class="pi">-</span> <span class="na">catalog</span><span class="pi">:</span> <span class="s">oci:///home/user/oc-mirror/my-oci-catalog/redhat-operator-index</span> <i class="conum" data-value="1"></i><b>(1)</b>
-   <span class="na">packages</span><span class="pi">:</span>
-   <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">aws-load-balancer-operator</span></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Specify the absolute path to the location of the OCI catalog on disk. This procedure assumes that you used <code>my-oci-catalog</code> as the directory and mirrored the <code>redhat-operator-index</code> catalog. The path must start with <code>oci://</code>.</td>
-</tr>
-</table>
-</div>
-</li>
-<li>
-<p>Run the oc mirror command to process the image set file on disk and mirror the contents to a target mirror registry:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc mirror <span class="nt">--config</span><span class="o">=</span>./imageset-config.yaml <span class="se">\ </span><i class="conum" data-value="1"></i><b>(1)</b>
-<span class="go">  --use-oci-feature \                         <i class="conum" data-value="2"></i><b>(2)</b>
-  --oci-feature-action=mirror \               <i class="conum" data-value="3"></i><b>(3)</b>
-  docker://registry.example:5000              <i class="conum" data-value="4"></i><b>(4)</b>
-</span></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Pass in the updated image set configuration file. This procedure assumes that it is named <code>imageset-config.yaml</code>.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Use the <code>--use-oci-feature</code> flag to enable the OCI feature.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>To mirror the catalog to the target mirror registry, set the <code>--oci-feature-action</code> flag to <code>mirror</code>.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>Specify the registry to mirror the image set file to. The registry must start with <code>docker://</code>. If you specify a top-level namespace for the mirror registry, you must also use this same namespace on subsequent executions.</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>You can optionally use the <code>--oci-insecure-signature-policy</code> flag to not push signatures to the target mirror registry.</p>
-</div>
-</td>
-</tr>
-</table>
+</dd>
+</dl>
 </div>
 </li>
 </ol>
@@ -4239,7 +4178,7 @@ olm_artifacts       <i class="conum" data-value="3"></i><b>(3)</b>
 <div class="title">Additional resources</div>
 <ul>
 <li>
-<p><a href="../../operators/admin/olm-managing-custom-catalogs.html#olm-managing-custom-catalogs-fb">File-based catalogs</a></p>
+<p><a href="../../installing/disconnected_install/installing-mirroring-disconnected.html#oc-mirror-updating-cluster-manifests_installing-mirroring-disconnected">Configuring your cluster to use the resources generated by oc-mirror</a></p>
 </li>
 </ul>
 </div>
@@ -4569,9 +4508,21 @@ olm_artifacts       <i class="conum" data-value="3"></i><b>(3)</b>
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>mirror.operators.targetCatalog</code></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>An alternative name and optional namespace hierarchy to mirror the referenced catalog as.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>String. For example: <code>my-namespace/my-operator-catalog</code></p>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>mirror.operators.targetName</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Optional alternative name to mirror the referenced catalog as.</p>
+<p>An alternative name to mirror the referenced catalog as.</p>
+</div>
+<div class="paragraph">
+<p>The <code>targetName</code> parameter is deprecated. Use the <code>targetCatalog</code> parameter instead.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>String. For example: <code>my-operator-catalog</code></p>
@@ -4580,7 +4531,7 @@ olm_artifacts       <i class="conum" data-value="3"></i><b>(3)</b>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>mirror.operators.targetTag</code></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Optional alternative tag to append to the <code>targetName</code>.</p>
+<p>An alternative tag to append to the <code>targetName</code> or <code>targetCatalog</code>.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>String. For example: <code>v1</code></p>
@@ -4651,7 +4602,7 @@ olm_artifacts       <i class="conum" data-value="3"></i><b>(3)</b>
 <p>The minimum version of the referenced platform to be mirrored.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>String. For example: <code>4.9.6</code></p>
+<p>String. For example: <code>4.12.6</code></p>
 </div></div></td>
 </tr>
 <tr>
@@ -4811,7 +4762,7 @@ olm_artifacts       <i class="conum" data-value="3"></i><b>(3)</b>
 </div>
 <h3 id="oc-mirror-image-set-examples-shortest-upgrade-path_installing-mirroring-disconnected" class="discrete">Use case: Including the shortest OpenShift Container Platform upgrade path</h3>
 <div class="paragraph">
-<p>The following <code>ImageSetConfiguration</code> file uses a local storage backend and includes all OpenShift Container Platform versions along the shortest upgrade path from the minimum version of <code>4.9.37</code> to the maximum version of <code>4.10.22</code>.</p>
+<p>The following <code>ImageSetConfiguration</code> file uses a local storage backend and includes all OpenShift Container Platform versions along the shortest upgrade path from the minimum version of <code>4.11.37</code> to the maximum version of <code>4.12.15</code>.</p>
 </div>
 <div class="listingblock">
 <div class="title">Example <code>ImageSetConfiguration</code> file</div>
@@ -4825,8 +4776,8 @@ olm_artifacts       <i class="conum" data-value="3"></i><b>(3)</b>
   <span class="na">platform</span><span class="pi">:</span>
     <span class="na">channels</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">stable-4.10</span>
-        <span class="na">minVersion</span><span class="pi">:</span> <span class="s">4.9.37</span>
-        <span class="na">maxVersion</span><span class="pi">:</span> <span class="s">4.10.22</span>
+        <span class="na">minVersion</span><span class="pi">:</span> <span class="s">4.11.37</span>
+        <span class="na">maxVersion</span><span class="pi">:</span> <span class="s">4.12.15</span>
         <span class="na">shortestPath</span><span class="pi">:</span> <span class="no">true</span></code></pre>
 </div>
 </div>
@@ -5001,6 +4952,10 @@ olm_artifacts       <i class="conum" data-value="3"></i><b>(3)</b>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ignore past mirrors when downloading images and packing layers. Disables incremental mirroring and might download more data.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--include-local-oci-catalogs</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable mirroring for local OCI catalogs on disk to the target mirror registry.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--manifests-only</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Generate manifests for <code>ImageContentSourcePolicy</code> objects to configure a cluster to use the mirror registry, but do not actually mirror any images.</p></td>
 </tr>
@@ -5013,16 +4968,12 @@ olm_artifacts       <i class="conum" data-value="3"></i><b>(3)</b>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Specify the number of concurrent requests allowed per registry. The default is <code>6</code>.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--oci-feature-action</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The action to perform when using the Technology Preview OCI feature. The options are <code>copy</code> or <code>mirror</code>.</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--oci-insecure-signature-policy</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Do not push signatures when using the Technology Preview OCI feature.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Do not push signatures when mirroring local OCI catalogs (with <code>--include-local-oci-catalogs</code>).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--oci-registries-config</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Provide a registries configuration file to specify an alternative registry location to copy from when using the Technology Preview OCI feature.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provide a registries configuration file to specify an alternative registry location to copy from when mirroring local OCI catalogs (with <code>--include-local-oci-catalogs</code>).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--skip-cleanup</code></p></td>
@@ -5058,7 +5009,8 @@ olm_artifacts       <i class="conum" data-value="3"></i><b>(3)</b>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--use-oci-feature</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Use the Technology Preview OCI feature for copying OCI-formatted images.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable mirroring for local OCI catalogs on disk to the target mirror registry.</p>
+<p class="tableblock">The <code>--use-oci-feature</code> flag is deprecated. Use the <code>--include-local-oci-catalogs</code> flag instead.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>-v</code>, <code>--verbose</code> <code>&lt;int&gt;</code></p></td>

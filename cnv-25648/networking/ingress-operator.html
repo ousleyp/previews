@@ -490,6 +490,7 @@
                   <li><a class="" href="../installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html">Installing a cluster on vSphere in a restricted network</a></li>
                   <li><a class="" href="../installing/installing_vsphere/installing-restricted-networks-vsphere.html">Installing a cluster on vSphere in a restricted network with user-provisioned infrastructure</a></li>
                   <li><a class="" href="../installing/installing_vsphere/installing-vsphere-three-node.html">Installing a three-node cluster on vSphere</a></li>
+                  <li><a class="" href="../installing/installing_vsphere/installing-vsphere-post-installation-configuration.html">Configuring the vSphere connection settings after an installation</a></li>
                   <li><a class="" href="../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
@@ -627,7 +628,7 @@
                   <li><a class="" href="../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../web_console/odc-about-web-terminal.html">Web terminal</a></li>
+            <li><a class="" href="../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
             <li><a class="" href="../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -1071,6 +1072,7 @@
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-gcp-pd.html">GCP PD CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-google-cloud-file.html">GCP Filestore CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ibm-vpc-block.html">IBM VPC Block CSI Driver Operator</a></li>
+                  <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ibm-powervs-block.html">IBM Power Virtual Server Block CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-cinder.html">OpenStack Cinder CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-manila.html">OpenStack Manila CSI Driver Operator</a></li>
                   <li><a class="" href="../storage/container_storage_interface/persistent-storage-csi-ovirt.html">Red Hat Virtualization CSI Driver Operator</a></li>
@@ -1493,18 +1495,10 @@
                   <li><a class="" href="../nodes/nodes/nodes-nodes-viewing.html">Viewing and listing the nodes in your cluster</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-working.html">Working with nodes</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-managing.html">Managing nodes</a></li>
+                  <li><a class="" href="../nodes/nodes/nodes-nodes-graceful-shutdown.html">Managing graceful node shutdown</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-managing-max-pods.html">Managing the maximum number of pods per node</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-4-5"><span id="ssgSpan-21-4-5" class="fa fa-caret-right"></span>&nbsp;Remediation, fencing, and maintenance</a>
-                  <ul id="topicSubSubGroup-21-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-about-remediation-fencing-maintenance.html" style="padding-left: 70px;">About node remediation, fencing, and maintentance</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-self-node-remediation-operator.html" style="padding-left: 70px;">Using Self Node Remediation</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-machine-health-checks.html" style="padding-left: 70px;">Remediating nodes with Machine Health Checks</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-node-health-check-operator.html" style="padding-left: 70px;">Remediating nodes with Node Health Checks</a></li>
-                    <li><a class="" href="../nodes/nodes/ecosystems/eco-node-maintenance-operator.html" style="padding-left: 70px;">Placing nodes in maintenance mode with Node Maintenance Operator</a></li>                  </ul>
-                  </li>
-
+                  <li><a class="" href="../nodes/nodes/nodes-remediating-fencing-maintaining-rhwa.html">Remediating, fencing, and maintaining nodes</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-rebooting.html">Understanding node rebooting</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-garbage-collection.html">Freeing node resources using garbage collection</a></li>
                   <li><a class="" href="../nodes/nodes/nodes-nodes-resources-configuring.html">Allocating resources for nodes</a></li>
@@ -1585,17 +1579,27 @@
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
       <ul id="topicGroup24" class="collapse  list-unstyled">
             <li><a class="" href="../logging/cluster-logging-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.7</a>
               <ul id="topicSubGroup-24-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../logging/v5_7/logging-5-7-release-notes.html">Logging 5.7 Release Notes</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-getting-started.html">Getting started with logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-configuration.html">Configuring Logging</a></li>
+                  <li><a class="" href="../logging/v5_7/logging-5-7-administration.html">Administering Logging</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/v5_6/logging-5-6-release-notes.html">Logging 5.6 Release Notes</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-getting-started.html">Getting started with logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../logging/v5_6/logging-5-6-configuration.html">Configuring Logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-administration.html">Administering Logging</a></li>
                   <li><a class="" href="../logging/v5_6/logging-5-6-reference.html">Logging Reference</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
-              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-3"><span id="sgSpan-24-3" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
+              <ul id="topicSubGroup-24-3" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/v5_5/logging-5-5-release-notes.html">Logging 5.5 Release Notes</a></li>
                   <li><a class="" href="../logging/v5_5/logging-5-5-getting-started.html">Getting started with logging</a></li>
@@ -1604,8 +1608,8 @@
             </li>
             <li><a class="" href="../logging/cluster-logging.html">About Logging</a></li>
             <li><a class="" href="../logging/cluster-logging-deploying.html">Installing Logging</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-5"><span id="sgSpan-24-5" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
-              <ul id="topicSubGroup-24-5" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-6"><span id="sgSpan-24-6" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
+              <ul id="topicSubGroup-24-6" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/config/cluster-logging-configuring-cr.html">About the Cluster Logging custom resource</a></li>
                   <li><a class="" href="../logging/config/cluster-logging-collector.html">Configuring the logging collector</a></li>
@@ -1626,8 +1630,8 @@
             <li><a class="" href="../logging/cluster-logging-eventrouter.html">Collecting and storing Kubernetes events</a></li>
             <li><a class="" href="../logging/cluster-logging-upgrading.html">Updating Logging</a></li>
             <li><a class="" href="../logging/cluster-logging-dashboards.html">Viewing cluster dashboards</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-14"><span id="sgSpan-24-14" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
-              <ul id="topicSubGroup-24-14" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-15"><span id="sgSpan-24-15" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
+              <ul id="topicSubGroup-24-15" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../logging/troubleshooting/cluster-logging-cluster-status.html">Viewing Logging status</a></li>
                   <li><a class="" href="../logging/troubleshooting/cluster-logging-log-store-status.html">Viewing the status of the log store</a></li>
@@ -2232,7 +2236,7 @@
                   <li><a class="" href="../virt/install/uninstalling-virt.html">Uninstalling OpenShift Virtualization</a></li>              </ul>
             </li>
             <li><a class="" href="../virt/upgrading-virt.html">Updating OpenShift Virtualization</a></li>
-            <li><a class="" href="../virt/virt-additional-security-privileges-controller-and-launcher.html">Security policies</a></li>
+            <li><a class="" href="../virt/virt-security-policies.html">Security policies</a></li>
             <li><a class="" href="../virt/virt-using-the-cli-tools.html">Using the CLI tools</a></li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-9"><span id="sgSpan-34-9" class="fa fa-caret-right"></span>&nbsp;Virtual machines</a>
               <ul id="topicSubGroup-34-9" class="nav-tertiary list-unstyled collapse">
@@ -2735,6 +2739,7 @@
 <li><a href="#nw-ingress-configuring-application-domain_configuring-ingress">Specifying an alternative cluster domain using the appsDomain option</a></li>
 <li><a href="#nw-ingress-converting-http-header-case_configuring-ingress">Converting HTTP header case</a></li>
 <li><a href="#nw-configuring-router-compression_configuring-ingress">Using router compression</a></li>
+<li><a href="#nw-exposing-router-metrics_configuring-ingress">Exposing router metrics</a></li>
 <li><a href="#nw-customize-ingress-error-pages_configuring-ingress">Customizing HAProxy error code response pages</a></li>
 <li><a href="#nw-ingress-setting-max-connections_configuring-ingress">Setting the Ingress Controller maximum connections</a></li>
 </ul>
@@ -3084,8 +3089,10 @@ Ingress Controller. This is useful for implementing shards.</p>
 <p><code>clientTLS</code> has the required subfields, <code>spec.clientTLS.clientCertificatePolicy</code> and <code>spec.clientTLS.ClientCA</code>.</p>
 </div>
 <div class="paragraph">
-<p>The <code>ClientCertificatePolicy</code> subfield accepts one of the two values: <code>Required</code> or <code>Optional</code>. The <code>ClientCA</code> subfield specifies a config map that is in the openshift-config namespace. The config map should contain a CA certificate bundle.
-The <code>AllowedSubjectPatterns</code> is an optional value that specifies a list of regular expressions, which are matched against the distinguished name on a valid client certificate to filter requests. The regular expressions must use PCRE syntax. At least one pattern must match a client certificate&#8217;s distinguished name; otherwise, the Ingress Controller rejects the certificate and denies the connection. If not specified, the Ingress Controller does not reject certificates based on the distinguished name.</p>
+<p>The <code>ClientCertificatePolicy</code> subfield accepts one of the two values: <code>Required</code> or <code>Optional</code>. The <code>ClientCA</code> subfield specifies a config map that is in the openshift-config namespace. The config map should contain a CA certificate bundle.</p>
+</div>
+<div class="paragraph">
+<p>The <code>AllowedSubjectPatterns</code> is an optional value that specifies a list of regular expressions, which are matched against the distinguished name on a valid client certificate to filter requests. The regular expressions must use PCRE syntax. At least one pattern must match a client certificate&#8217;s distinguished name; otherwise, the Ingress Controller rejects the certificate and denies the connection. If not specified, the Ingress Controller does not reject certificates based on the distinguished name.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -3710,10 +3717,10 @@ Kind:         IngressController
 <div class="sect3">
 <h4 id="nw-mutual-tls-auth_configuring-ingress"><a class="anchor" href="#nw-mutual-tls-auth_configuring-ingress"></a>Configuring mutual TLS authentication</h4>
 <div class="paragraph">
-<p>You can configure the Ingress Controller to enable mutual TLS (mTLS) authentication by setting a <code>spec.clientTLS</code> value. The <code>clientTLS</code> value configures the Ingress Controller to verify client certificates. This configuration includes setting a <code>clientCA</code> value, which is a reference to a config map. The config map contains the PEM-encoded CA certificate bundle that is used to verify a client&#8217;s certificate. Optionally, you can configure a list of certificate subject filters.</p>
+<p>You can configure the Ingress Controller to enable mutual TLS (mTLS) authentication by setting a <code>spec.clientTLS</code> value. The <code>clientTLS</code> value configures the Ingress Controller to verify client certificates. This configuration includes setting a <code>clientCA</code> value, which is a reference to a config map. The config map contains the PEM-encoded CA certificate bundle that is used to verify a client&#8217;s certificate. Optionally, you can also configure a list of certificate subject filters.</p>
 </div>
 <div class="paragraph">
-<p>If the <code>clientCA</code> value specifies an X509v3 certificate revocation list (CRL) distribution point, the Ingress Operator downloads the CRL and configures the Ingress Controller to acknowledge it. Requests that do not provide valid certificates are rejected.</p>
+<p>If the <code>clientCA</code> value specifies an X509v3 certificate revocation list (CRL) distribution point, the Ingress Operator downloads and manages a CRL config map based on the HTTP URI X509v3 <code>CRL Distribution Point</code> specified in each provided certificate. The Ingress Controller uses this config map during mTLS/TLS negotiation. Requests that do not provide valid certificates are rejected.</p>
 </div>
 <div class="ulist">
 <div class="title">Prerequisites</div>
@@ -3721,29 +3728,40 @@ Kind:         IngressController
 <li>
 <p>You have access to the cluster as a user with the <code>cluster-admin</code> role.</p>
 </li>
+<li>
+<p>You have a PEM-encoded CA certificate bundle.</p>
+</li>
+<li>
+<p>If your CA bundle references a CRL distribution point, you must have also included the end-entity or leaf certificate to the client CA bundle. This certificate must have included an HTTP URI under <code>CRL Distribution Points</code>, as described in RFC 5280. For example:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go"> Issuer: C=US, O=Example Inc, CN=Example Global G2 TLS RSA SHA256 2020 CA1
+         Subject: SOME SIGNED CERT            X509v3 CRL Distribution Points:
+                Full Name:
+                  URI:http://crl.example.com/example.crl</span></code></pre>
+</div>
+</div>
+</li>
 </ul>
 </div>
 <div class="olist arabic">
 <div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>Create a config map that is in the <code>openshift-config</code> namespace:</p>
+<p>In the <code>openshift-config</code> namespace, create a config map from your CA bundle:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc create configmap router-ca-certs-default <span class="nt">--from-file</span><span class="o">=</span>ca-bundle.pem<span class="o">=</span>client-ca.crt <span class="nt">-n</span> openshift-config</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc create configmap <span class="se">\</span>
+   router-ca-certs-default <span class="se">\</span>
+   <span class="nt">--from-file</span><span class="o">=</span>ca-bundle.pem<span class="o">=</span>client-ca.crt <span class="se">\</span><i class="conum" data-value="1"></i><b>(1)</b>
+   <span class="nt">-n</span> openshift-config</code></pre>
 </div>
 </div>
-<div class="admonitionblock note">
+<div class="colist arabic">
 <table>
 <tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>The config map data key must be <code>ca-bundle.pem</code>, and the data value must be a CA certificate in PEM format.</p>
-</div>
-</td>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The config map data key must be <code>ca-bundle.pem</code>, and the data value must be a CA certificate in PEM format.</td>
 </tr>
 </table>
 </div>
@@ -3757,7 +3775,7 @@ Kind:         IngressController
 </div>
 </li>
 <li>
-<p>Add the spec.clientTLS field and subfields to configure mutual TLS:</p>
+<p>Add the <code>spec.clientTLS</code> field and subfields to configure mutual TLS:</p>
 <div class="listingblock">
 <div class="title">Sample <code>IngressController</code> CR for a <code>clientTLS</code> profile that specifies filtering patterns</div>
 <div class="content">
@@ -5820,6 +5838,143 @@ EOF</span></code></pre>
 </div>
 </li>
 </ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="nw-exposing-router-metrics_configuring-ingress"><a class="anchor" href="#nw-exposing-router-metrics_configuring-ingress"></a>Exposing router metrics</h3>
+<div class="paragraph">
+<p>You can expose the HAProxy router metrics by default in Prometheus format on the default stats port, 1936. The external metrics collection and aggregation systems such as Prometheus can access the HAProxy router metrics. You can view the HAProxy router metrics in a browser in the HTML and comma separated values (CSV) format.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You configured your firewall to access the default stats port, 1936.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Get the router pod name by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc get pods <span class="nt">-n</span> openshift-ingress</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">NAME                              READY   STATUS    RESTARTS   AGE
+router-default-76bfffb66c-46qwp   1/1     Running   0          11h</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Get the router&#8217;s username and password, which the router pod stores in the <code>/var/lib/haproxy/conf/metrics-auth/statsUsername</code> and <code>/var/lib/haproxy/conf/metrics-auth/statsPassword</code> files:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Get the username by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc rsh &lt;router_pod_name&gt; <span class="nb">cat </span>metrics-auth/statsUsername</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Get the password by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc rsh &lt;router_pod_name&gt; <span class="nb">cat </span>metrics-auth/statsPassword</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Get the router IP and metrics certificates by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc describe pod &lt;router_pod&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Get the raw statistics in Prometheus format by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>curl <span class="nt">-u</span> &lt;user&gt;:&lt;password&gt; http://&lt;router_IP&gt;:&lt;stats_port&gt;/metrics</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Access the metrics securely by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>curl <span class="nt">-u</span> user:password https://&lt;router_IP&gt;:&lt;stats_port&gt;/metrics <span class="nt">-k</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Access the default stats port, 1936, by running the following command:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>curl <span class="nt">-u</span> &lt;user&gt;:&lt;password&gt; http://&lt;router_IP&gt;:&lt;stats_port&gt;/metrics</code></pre>
+</div>
+</div>
+<details>
+<summary class="title">Example output</summary>
+<div class="content">
+<div class="paragraph">
+<p>&#8230;&#8203;
+# HELP haproxy_backend_connections_total Total number of connections.
+# TYPE haproxy_backend_connections_total gauge
+haproxy_backend_connections_total{backend="http",namespace="default",route="hello-route"} 0
+haproxy_backend_connections_total{backend="http",namespace="default",route="hello-route-alt"} 0
+haproxy_backend_connections_total{backend="http",namespace="default",route="hello-route01"} 0
+&#8230;&#8203;
+# HELP haproxy_exporter_server_threshold Number of servers tracked and the current threshold value.
+# TYPE haproxy_exporter_server_threshold gauge
+haproxy_exporter_server_threshold{type="current"} 11
+haproxy_exporter_server_threshold{type="limit"} 500
+&#8230;&#8203;
+# HELP haproxy_frontend_bytes_in_total Current total of incoming bytes.
+# TYPE haproxy_frontend_bytes_in_total gauge
+haproxy_frontend_bytes_in_total{frontend="fe_no_sni"} 0
+haproxy_frontend_bytes_in_total{frontend="fe_sni"} 0
+haproxy_frontend_bytes_in_total{frontend="public"} 119070
+&#8230;&#8203;
+# HELP haproxy_server_bytes_in_total Current total of incoming bytes.
+# TYPE haproxy_server_bytes_in_total gauge
+haproxy_server_bytes_in_total{namespace="",pod="",route="",server="fe_no_sni",service=""} 0
+haproxy_server_bytes_in_total{namespace="",pod="",route="",server="fe_sni",service=""} 0
+haproxy_server_bytes_in_total{namespace="default",pod="docker-registry-5-nk5fz",route="docker-registry",server="10.130.0.89:5000",service="docker-registry"} 0
+haproxy_server_bytes_in_total{namespace="default",pod="hello-rc-vkjqx",route="hello-route",server="10.130.0.90:8080",service="hello-svc-1"} 0
+&#8230;&#8203;</p>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>Launch the stats window by entering the following URL in a browser:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">http://&lt;user&gt;</span>:&lt;password&gt;@&lt;router_IP&gt;:&lt;stats_port&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Optional: Get the stats in CSV format by entering the following URL in a browser:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">http://&lt;user&gt;</span>:&lt;password&gt;@&lt;router_ip&gt;:1936/metrics<span class="p">;</span>csv</code></pre>
+</div>
 </div>
 </li>
 </ol>

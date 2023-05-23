@@ -490,6 +490,7 @@
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html">Installing a cluster on vSphere in a restricted network</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-restricted-networks-vsphere.html">Installing a cluster on vSphere in a restricted network with user-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-three-node.html">Installing a three-node cluster on vSphere</a></li>
+                  <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-post-installation-configuration.html">Configuring the vSphere connection settings after an installation</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
@@ -627,7 +628,7 @@
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../../web_console/odc-about-web-terminal.html">Web terminal</a></li>
+            <li><a class="" href="../../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
             <li><a class="" href="../../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -1071,6 +1072,7 @@
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-gcp-pd.html">GCP PD CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-google-cloud-file.html">GCP Filestore CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-vpc-block.html">IBM VPC Block CSI Driver Operator</a></li>
+                  <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ibm-powervs-block.html">IBM Power Virtual Server Block CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-cinder.html">OpenStack Cinder CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-manila.html">OpenStack Manila CSI Driver Operator</a></li>
                   <li><a class="" href="../../storage/container_storage_interface/persistent-storage-csi-ovirt.html">Red Hat Virtualization CSI Driver Operator</a></li>
@@ -1493,18 +1495,10 @@
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-viewing.html">Viewing and listing the nodes in your cluster</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-working.html">Working with nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing.html">Managing nodes</a></li>
+                  <li><a class="" href="../../nodes/nodes/nodes-nodes-graceful-shutdown.html">Managing graceful node shutdown</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-managing-max-pods.html">Managing the maximum number of pods per node</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-4-5"><span id="ssgSpan-21-4-5" class="fa fa-caret-right"></span>&nbsp;Remediation, fencing, and maintenance</a>
-                  <ul id="topicSubSubGroup-21-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-about-remediation-fencing-maintenance.html" style="padding-left: 70px;">About node remediation, fencing, and maintentance</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-self-node-remediation-operator.html" style="padding-left: 70px;">Using Self Node Remediation</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-machine-health-checks.html" style="padding-left: 70px;">Remediating nodes with Machine Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-health-check-operator.html" style="padding-left: 70px;">Remediating nodes with Node Health Checks</a></li>
-                    <li><a class="" href="../../nodes/nodes/ecosystems/eco-node-maintenance-operator.html" style="padding-left: 70px;">Placing nodes in maintenance mode with Node Maintenance Operator</a></li>                  </ul>
-                  </li>
-
+                  <li><a class="" href="../../nodes/nodes/nodes-remediating-fencing-maintaining-rhwa.html">Remediating, fencing, and maintaining nodes</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-rebooting.html">Understanding node rebooting</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-garbage-collection.html">Freeing node resources using garbage collection</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-resources-configuring.html">Allocating resources for nodes</a></li>
@@ -1585,17 +1579,27 @@
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
       <ul id="topicGroup24" class="collapse  list-unstyled">
             <li><a class="" href="../../logging/cluster-logging-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-1"><span id="sgSpan-24-1" class="fa fa-caret-right"></span>&nbsp;Logging 5.7</a>
               <ul id="topicSubGroup-24-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-release-notes.html">Logging 5.7 Release Notes</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-getting-started.html">Getting started with logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-configuration.html">Configuring Logging</a></li>
+                  <li><a class="" href="../../logging/v5_7/logging-5-7-administration.html">Administering Logging</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.6</a>
+              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_6/logging-5-6-release-notes.html">Logging 5.6 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-getting-started.html">Getting started with logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-architecture.html">Understanding Logging</a></li>
+                  <li><a class="" href="../../logging/v5_6/logging-5-6-configuration.html">Configuring Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-administration.html">Administering Logging</a></li>
                   <li><a class="" href="../../logging/v5_6/logging-5-6-reference.html">Logging Reference</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-2"><span id="sgSpan-24-2" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
-              <ul id="topicSubGroup-24-2" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-3"><span id="sgSpan-24-3" class="fa fa-caret-right"></span>&nbsp;Logging 5.5</a>
+              <ul id="topicSubGroup-24-3" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/v5_5/logging-5-5-release-notes.html">Logging 5.5 Release Notes</a></li>
                   <li><a class="" href="../../logging/v5_5/logging-5-5-getting-started.html">Getting started with logging</a></li>
@@ -1604,8 +1608,8 @@
             </li>
             <li><a class="" href="../../logging/cluster-logging.html">About Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-deploying.html">Installing Logging</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-5"><span id="sgSpan-24-5" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
-              <ul id="topicSubGroup-24-5" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-6"><span id="sgSpan-24-6" class="fa fa-caret-right"></span>&nbsp;Configuring your Logging deployment</a>
+              <ul id="topicSubGroup-24-6" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/config/cluster-logging-configuring-cr.html">About the Cluster Logging custom resource</a></li>
                   <li><a class="" href="../../logging/config/cluster-logging-collector.html">Configuring the logging collector</a></li>
@@ -1626,8 +1630,8 @@
             <li><a class="" href="../../logging/cluster-logging-eventrouter.html">Collecting and storing Kubernetes events</a></li>
             <li><a class="" href="../../logging/cluster-logging-upgrading.html">Updating Logging</a></li>
             <li><a class="" href="../../logging/cluster-logging-dashboards.html">Viewing cluster dashboards</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-14"><span id="sgSpan-24-14" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
-              <ul id="topicSubGroup-24-14" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-24-15"><span id="sgSpan-24-15" class="fa fa-caret-right"></span>&nbsp;Troubleshooting Logging</a>
+              <ul id="topicSubGroup-24-15" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-cluster-status.html">Viewing Logging status</a></li>
                   <li><a class="" href="../../logging/troubleshooting/cluster-logging-log-store-status.html">Viewing the status of the log store</a></li>
@@ -2232,7 +2236,7 @@
                   <li><a class="" href="../../virt/install/uninstalling-virt.html">Uninstalling OpenShift Virtualization</a></li>              </ul>
             </li>
             <li><a class="" href="../../virt/upgrading-virt.html">Updating OpenShift Virtualization</a></li>
-            <li><a class="" href="../../virt/virt-additional-security-privileges-controller-and-launcher.html">Security policies</a></li>
+            <li><a class="" href="../../virt/virt-security-policies.html">Security policies</a></li>
             <li><a class="" href="../../virt/virt-using-the-cli-tools.html">Using the CLI tools</a></li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-34-9"><span id="sgSpan-34-9" class="fa fa-caret-right"></span>&nbsp;Virtual machines</a>
               <ul id="topicSubGroup-34-9" class="nav-tertiary list-unstyled collapse">
@@ -2801,7 +2805,7 @@
 <div class="sect2">
 <h3 id="olm-creating-fb-catalog-image_olm-managing-custom-catalogs"><a class="anchor" href="#olm-creating-fb-catalog-image_olm-managing-custom-catalogs"></a>Creating a file-based catalog image</h3>
 <div class="paragraph">
-<p>You can create a catalog image that uses the plain text <em>file-based catalog</em> format (JSON or YAML), which replaces the deprecated SQLite database format. The <code>opm</code> CLI provides tooling that helps initialize a catalog in the file-based format, render new records into it, and validate that the catalog is valid.</p>
+<p>You can use the <code>opm</code> CLI to create a catalog image that uses the plain text <em>file-based catalog</em> format (JSON or YAML), which replaces the deprecated SQLite database format.</p>
 </div>
 <div class="ulist">
 <div class="title">Prerequisites</div>
@@ -2821,37 +2825,32 @@
 <div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>Initialize a catalog for a file-based catalog:</p>
+<p>Initialize the catalog:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Create a directory for the catalog:</p>
+<p>Create a directory for the catalog by running the following command:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">mkdir</span> &lt;operator_name&gt;-index</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">mkdir</span> &lt;catalog_dir&gt;</code></pre>
 </div>
 </div>
 </li>
 <li>
-<p>Create a Dockerfile that can build a catalog image:</p>
+<p>Generate a Dockerfile that can build a catalog image by running the <code>opm generate dockerfile</code> command:</p>
 <div class="listingblock">
-<div class="title">Example <code>&lt;operator_name&gt;-index.Dockerfile</code></div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="bash"><span class="c"># The base image is expected to contain</span>
-<span class="c"># /bin/opm (with a serve subcommand) and /bin/grpc_health_probe</span>
-FROM registry.redhat.io/openshift4/ose-operator-registry:v4.9
-
-<span class="c"># Configure the entrypoint and command</span>
-ENTRYPOINT <span class="o">[</span><span class="s2">"/bin/opm"</span><span class="o">]</span>
-CMD <span class="o">[</span><span class="s2">"serve"</span>, <span class="s2">"/configs"</span><span class="o">]</span>
-
-<span class="c"># Copy declarative config root into image at /configs</span>
-ADD &lt;operator_name&gt;-index /configs
-
-<span class="c"># Set DC-specific label for the location of the DC root directory</span>
-<span class="c"># in the image</span>
-LABEL operators.operatorframework.io.index.configs.v1<span class="o">=</span>/configs</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm generate dockerfile &lt;catalog_dir&gt; <span class="se">\</span>
+    <span class="nt">-i</span> registry.redhat.io/openshift4/ose-operator-registry:vBranch Build <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
 </div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Specify the official Red Hat base image by using the <code>-i</code> flag, otherwise the Dockerfile uses the default upstream image.</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>The Dockerfile must be in the same parent directory as the catalog directory that you created in the previous step:</p>
@@ -2859,14 +2858,30 @@ LABEL operators.operatorframework.io.index.configs.v1<span class="o">=</span>/co
 <div class="listingblock">
 <div class="title">Example directory structure</div>
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="c">.
-</span><span class="gp">├── &lt;operator_name&gt;</span><span class="nt">-index</span>
-<span class="gp">└── &lt;operator_name&gt;</span><span class="nt">-index</span>.Dockerfile</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="c">. <i class="conum" data-value="1"></i><b>(1)</b>
+</span><span class="gp">├── &lt;catalog_dir&gt;</span><span class="w"> <i class="conum" data-value="2"></i><b>(2)</b>
+</span><span class="gp">└── &lt;catalog_dir&gt;</span>.Dockerfile <i class="conum" data-value="3"></i><b>(3)</b></code></pre>
 </div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Parent directory</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Catalog directory</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Dockerfile generated by the <code>opm generate dockerfile</code> command</td>
+</tr>
+</table>
 </div>
 </li>
 <li>
-<p>Populate the catalog with your package definition:</p>
+<p>Populate the catalog with the package definition for your Operator by running the <code>opm init</code> command:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm init &lt;operator_name&gt; <span class="se">\ </span><i class="conum" data-value="1"></i><b>(1)</b>
@@ -2874,34 +2889,34 @@ LABEL operators.operatorframework.io.index.configs.v1<span class="o">=</span>/co
     --description=./README.md \ <i class="conum" data-value="3"></i><b>(3)</b>
     --icon=./operator-icon.svg \ <i class="conum" data-value="4"></i><b>(4)</b>
     --output yaml \ <i class="conum" data-value="5"></i><b>(5)</b>
-</span><span class="gp">    &gt;</span><span class="w"> </span>&lt;operator_name&gt;-index/index.yaml <i class="conum" data-value="6"></i><b>(6)</b></code></pre>
+</span><span class="gp">    &gt;</span><span class="w"> </span>&lt;catalog_dir&gt;/index.yaml <i class="conum" data-value="6"></i><b>(6)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Operator, or package, name.</td>
+<td>Operator, or package, name</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Channel that subscription will default to if unspecified.</td>
+<td>Channel that subscriptions default to if unspecified</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>Path to the Operator&#8217;s <code>README.md</code> or other documentation.</td>
+<td>Path to the Operator&#8217;s <code>README.md</code> or other documentation</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>Path to the Operator&#8217;s icon.</td>
+<td>Path to the Operator&#8217;s icon</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="5"></i><b>5</b></td>
-<td>Output format: JSON or YAML.</td>
+<td>Output format: JSON or YAML</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="6"></i><b>6</b></td>
-<td>Path for creating the catalog configuration file.</td>
+<td>Path for creating the catalog configuration file</td>
 </tr>
 </table>
 </div>
@@ -2913,28 +2928,25 @@ LABEL operators.operatorframework.io.index.configs.v1<span class="o">=</span>/co
 </div>
 </li>
 <li>
-<p>Add a bundle to the catalog:</p>
+<p>Add a bundle to the catalog by running the <code>opm render</code> command:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm render &lt;registry&gt;/&lt;namespace&gt;/&lt;bundle_image_name&gt;:&lt;tag&gt; <span class="se">\ </span><i class="conum" data-value="1"></i><b>(1)</b>
 <span class="gp">    --output=yaml \
-    &gt;</span><span class="o">&gt;</span> &lt;operator_name&gt;-index/index.yaml <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
+    &gt;</span><span class="o">&gt;</span> &lt;catalog_dir&gt;/index.yaml <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
 </div>
 <div class="colist arabic">
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Pull spec for the bundle image.</td>
+<td>Pull spec for the bundle image</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Path to the catalog configuration file.</td>
+<td>Path to the catalog configuration file</td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>The <code>opm render</code> command generates a declarative config blob from the provided catalog images and bundle images.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2952,7 +2964,7 @@ LABEL operators.operatorframework.io.index.configs.v1<span class="o">=</span>/co
 </div>
 </li>
 <li>
-<p>Add a channel entry for the bundle. For example, modify the following example to your specifications, and add it to your <code>&lt;operator_name&gt;-index/index.yaml</code> file:</p>
+<p>Add a channel entry for the bundle. For example, modify the following example to your specifications, and add it to your <code>&lt;catalog_dir&gt;/index.yaml</code> file:</p>
 <div class="listingblock">
 <div class="title">Example channel entry</div>
 <div class="content">
@@ -2968,7 +2980,7 @@ LABEL operators.operatorframework.io.index.configs.v1<span class="o">=</span>/co
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Ensure that you include the period (<code>.</code>) after <code>&lt;operator_name&gt;</code> but before the <code>v</code> in the version. Otherwise, the entry will fail to pass the <code>opm validate</code> command.</td>
+<td>Ensure that you include the period (<code>.</code>) after <code>&lt;operator_name&gt;</code> but before the <code>v</code> in the version. Otherwise, the entry fails to pass the <code>opm validate</code> command.</td>
 </tr>
 </table>
 </div>
@@ -2981,7 +2993,7 @@ LABEL operators.operatorframework.io.index.configs.v1<span class="o">=</span>/co
 <p>Run the <code>opm validate</code> command against the catalog directory:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm validate &lt;operator_name&gt;-index</code></pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>opm validate &lt;catalog_dir&gt;</code></pre>
 </div>
 </div>
 </li>
@@ -3003,11 +3015,11 @@ LABEL operators.operatorframework.io.index.configs.v1<span class="o">=</span>/co
 </div>
 </li>
 <li>
-<p>Build the catalog image:</p>
+<p>Build the catalog image by running the <code>podman build</code> command:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>podman build <span class="nb">.</span> <span class="se">\</span>
-    <span class="nt">-f</span> &lt;operator_name&gt;-index.Dockerfile <span class="se">\</span>
+    <span class="nt">-f</span> &lt;catalog_dir&gt;.Dockerfile <span class="se">\</span>
     <span class="nt">-t</span> &lt;registry&gt;/&lt;namespace&gt;/&lt;catalog_image_name&gt;:&lt;tag&gt;</code></pre>
 </div>
 </div>
@@ -3017,7 +3029,7 @@ LABEL operators.operatorframework.io.index.configs.v1<span class="o">=</span>/co
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>If required, authenticate with your target registry:</p>
+<p>If required, authenticate with your target registry by running the <code>podman login</code> command:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>podman login &lt;registry&gt;</code></pre>
@@ -3025,7 +3037,7 @@ LABEL operators.operatorframework.io.index.configs.v1<span class="o">=</span>/co
 </div>
 </li>
 <li>
-<p>Push the catalog image:</p>
+<p>Push the catalog image by running the <code>podman push</code> command:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>podman push &lt;registry&gt;/&lt;namespace&gt;/&lt;catalog_image_name&gt;:&lt;tag&gt;</code></pre>
@@ -3036,6 +3048,14 @@ LABEL operators.operatorframework.io.index.configs.v1<span class="o">=</span>/co
 </div>
 </li>
 </ol>
+</div>
+<div class="ulist _additional-resources">
+<div class="title">Additional resources</div>
+<ul>
+<li>
+<p><a href="../../cli_reference/opm/cli-opm-ref.html#cli-opm-ref"><code>opm</code> CLI reference</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
