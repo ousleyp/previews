@@ -1,10 +1,10 @@
 #!/bin/bash
 #
 # prerequisites:
-# 0. change the username in the `open` command to your own
-# 1. cd to your openshift-docs directory
-# 2. check out the branch that you want to build
-# 3. run this script from the openshift-docs directory
+# * you changed the username in the `open` command to your own
+# * your openshift-docs and previews directories have the same parent
+# * you are in the openshift-docs directory when running this script
+# * you checked out the branch that you want to build
 
 asciibinder
 
