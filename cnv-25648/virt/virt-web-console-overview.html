@@ -171,6 +171,8 @@
 
       
 
+      
+
       <li class="sitename">
         <a href="/">
           Documentation</a>
@@ -183,6 +185,7 @@
             </a>
           
           <select id="version-selector" onchange="versionSelector(this);">
+              <option value="4.13">4.13</option>
               <option value="4.12">4.12</option>
               <option value="4.11">4.11</option>
               <option value="4.10">4.10</option>
@@ -252,7 +255,7 @@
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup1"><span id="tgSpan1" class="fa fa-angle-right"></span>Release notes</a>
       <ul id="topicGroup1" class="collapse  list-unstyled">
-            <li><a class="" href="../release_notes/ocp-4-13-release-notes.html">OpenShift Container Platform 4.13 release notes</a></li>
+            <li><a class="" href="../release_notes/ocp-4-14-release-notes.html">OpenShift Container Platform 4.14 release notes</a></li>
       </ul>
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup2"><span id="tgSpan2" class="fa fa-angle-right"></span>Getting started</a>
@@ -454,8 +457,20 @@
                   <li><a class="" href="../installing/installing_ibm_power/installing-ibm-power.html">Installing a cluster on IBM Power</a></li>
                   <li><a class="" href="../installing/installing_ibm_power/installing-restricted-networks-ibm-power.html">Restricted network IBM Power installation</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-20"><span id="sgSpan-4-20" class="fa fa-caret-right"></span>&nbsp;Installing on OpenStack</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-20"><span id="sgSpan-4-20" class="fa fa-caret-right"></span>&nbsp;Installing on IBM Power Virtual Server</a>
               <ul id="topicSubGroup-4-20" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../installing/installing_ibm_powervs/preparing-to-install-on-ibm-power-vs.html">Preparing to install on IBM Power Virtual Server</a></li>
+                  <li><a class="" href="../installing/installing_ibm_powervs/installing-ibm-cloud-account-power-vs.html">Configuring an IBM Cloud account</a></li>
+                  <li><a class="" href="../installing/installing_ibm_powervs/creating-ibm-power-vs-workspace.html">Creating an IBM Power Virtual Server workspace</a></li>
+                  <li><a class="" href="../installing/installing_ibm_powervs/installing-ibm-power-vs-customizations.html">Installing a cluster on IBM Power Virtual Server with customizations</a></li>
+                  <li><a class="" href="../installing/installing_ibm_powervs/installing-ibm-powervs-vpc.html">Installing a cluster on IBM Power Virtual Server into an existing VPC</a></li>
+                  <li><a class="" href="../installing/installing_ibm_powervs/installing-ibm-power-vs-private-cluster.html">Installing a private cluster on IBM Power Virtual Server</a></li>
+                  <li><a class="" href="../installing/installing_ibm_powervs/installing-restricted-networks-ibm-power-vs.html">Installing a cluster on IBM Power Virtual Server in a restricted network</a></li>
+                  <li><a class="" href="../installing/installing_ibm_powervs/uninstalling-cluster-ibm-power-vs.html">Uninstalling a cluster on IBM Power Virtual Server</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-21"><span id="sgSpan-4-21" class="fa fa-caret-right"></span>&nbsp;Installing on OpenStack</a>
+              <ul id="topicSubGroup-4-21" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../installing/installing_openstack/preparing-to-install-on-openstack.html">Preparing to install on OpenStack</a></li>
                   <li><a class="" href="../installing/installing_openstack/installing-openstack-nfv-preparing.html">Preparing to install a cluster that uses SR-IOV or OVS-DPDK on OpenStack</a></li>
@@ -468,8 +483,8 @@
                   <li><a class="" href="../installing/installing_openstack/uninstalling-cluster-openstack.html">Uninstalling a cluster on OpenStack</a></li>
                   <li><a class="" href="../installing/installing_openstack/uninstalling-openstack-user.html">Uninstalling a cluster on OpenStack from your own infrastructure</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-21"><span id="sgSpan-4-21" class="fa fa-caret-right"></span>&nbsp;Installing on RHV</a>
-              <ul id="topicSubGroup-4-21" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-22"><span id="sgSpan-4-22" class="fa fa-caret-right"></span>&nbsp;Installing on RHV</a>
+              <ul id="topicSubGroup-4-22" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../installing/installing_rhv/preparing-to-install-on-rhv.html">Preparing to install on RHV</a></li>
                   <li><a class="" href="../installing/installing_rhv/installing-rhv-default.html">Installing a cluster quickly on RHV</a></li>
@@ -478,8 +493,8 @@
                   <li><a class="" href="../installing/installing_rhv/installing-rhv-restricted-network.html">Installing a cluster on RHV in a restricted network</a></li>
                   <li><a class="" href="../installing/installing_rhv/uninstalling-cluster-rhv.html">Uninstalling a cluster on RHV</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-22"><span id="sgSpan-4-22" class="fa fa-caret-right"></span>&nbsp;Installing on vSphere</a>
-              <ul id="topicSubGroup-4-22" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-23"><span id="sgSpan-4-23" class="fa fa-caret-right"></span>&nbsp;Installing on vSphere</a>
+              <ul id="topicSubGroup-4-23" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../installing/installing_vsphere/preparing-to-install-on-vsphere.html">Preparing to install on vSphere</a></li>
                   <li><a class="" href="../installing/installing_vsphere/installing-vsphere-installer-provisioned.html">Installing a cluster on vSphere</a></li>
@@ -494,8 +509,8 @@
                   <li><a class="" href="../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-23"><span id="sgSpan-4-23" class="fa fa-caret-right"></span>&nbsp;Installing on VMC</a>
-              <ul id="topicSubGroup-4-23" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-24"><span id="sgSpan-4-24" class="fa fa-caret-right"></span>&nbsp;Installing on VMC</a>
+              <ul id="topicSubGroup-4-24" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../installing/installing_vmc/preparing-to-install-on-vmc.html">Preparing to install on VMC</a></li>
                   <li><a class="" href="../installing/installing_vmc/installing-vmc.html">Installing a cluster on VMC</a></li>
@@ -508,13 +523,13 @@
                   <li><a class="" href="../installing/installing_vmc/installing-vmc-three-node.html">Installing a three-node cluster on VMC</a></li>
                   <li><a class="" href="../installing/installing_vmc/uninstalling-cluster-vmc.html">Uninstalling a cluster on VMC</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-24"><span id="sgSpan-4-24" class="fa fa-caret-right"></span>&nbsp;Installing on any platform</a>
-              <ul id="topicSubGroup-4-24" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-25"><span id="sgSpan-4-25" class="fa fa-caret-right"></span>&nbsp;Installing on any platform</a>
+              <ul id="topicSubGroup-4-25" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../installing/installing_platform_agnostic/installing-platform-agnostic.html">Installing a cluster on any platform</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-25"><span id="sgSpan-4-25" class="fa fa-caret-right"></span>&nbsp;Installation configuration</a>
-              <ul id="topicSubGroup-4-25" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-26"><span id="sgSpan-4-26" class="fa fa-caret-right"></span>&nbsp;Installation configuration</a>
+              <ul id="topicSubGroup-4-26" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../installing/install_config/installing-customizing.html">Customizing nodes</a></li>
                   <li><a class="" href="../installing/install_config/configuring-firewall.html">Configuring your firewall</a></li>
@@ -927,6 +942,7 @@
                   <li><a class="" href="../networking/ovn_kubernetes_network_provider/ovn-kubernetes-tracing-using-ovntrace.html">OVN-Kubernetes traffic tracing</a></li>
                   <li><a class="" href="../networking/ovn_kubernetes_network_provider/migrate-from-openshift-sdn.html">Migrating from the OpenShift SDN network plugin</a></li>
                   <li><a class="" href="../networking/ovn_kubernetes_network_provider/rollback-to-openshift-sdn.html">Rolling back to the OpenShift SDN network plugin</a></li>
+                  <li><a class="" href="../networking/ovn_kubernetes_network_provider/migrate-from-kuryr-sdn.html">Migrating from Kuryr</a></li>
                   <li><a class="" href="../networking/ovn_kubernetes_network_provider/converting-to-dual-stack.html">Converting to IPv4/IPv6 dual stack networking</a></li>
                   <li><a class="" href="../networking/ovn_kubernetes_network_provider/logging-network-policy.html">Logging for egress firewall and network policy rules</a></li>
                   <li><a class="" href="../networking/ovn_kubernetes_network_provider/configuring-ipsec-ovn.html">Configuring IPsec encryption</a></li>
@@ -1400,10 +1416,12 @@
                   <li><a class="" href="../machine_management/creating_machinesets/creating-machineset-azure-stack-hub.html">Creating a compute machine set on Azure Stack Hub</a></li>
                   <li><a class="" href="../machine_management/creating_machinesets/creating-machineset-gcp.html">Creating a compute machine set on GCP</a></li>
                   <li><a class="" href="../machine_management/creating_machinesets/creating-machineset-ibm-cloud.html">Creating a compute machine set on IBM Cloud</a></li>
+                  <li><a class="" href="../machine_management/creating_machinesets/creating-machineset-ibm-power-vs.html">Creating a compute machine set on IBM Power Virtual Server</a></li>
                   <li><a class="" href="../machine_management/creating_machinesets/creating-machineset-nutanix.html">Creating a compute machine set on Nutanix</a></li>
                   <li><a class="" href="../machine_management/creating_machinesets/creating-machineset-osp.html">Creating a compute machine set on OpenStack</a></li>
                   <li><a class="" href="../machine_management/creating_machinesets/creating-machineset-rhv.html">Creating a compute machine set on RHV</a></li>
-                  <li><a class="" href="../machine_management/creating_machinesets/creating-machineset-vsphere.html">Creating a compute machine set on vSphere</a></li>              </ul>
+                  <li><a class="" href="../machine_management/creating_machinesets/creating-machineset-vsphere.html">Creating a compute machine set on vSphere</a></li>
+                  <li><a class="" href="../machine_management/creating_machinesets/creating-machineset-bare-metal.html">Creating a compute machine set on bare metal</a></li>              </ul>
             </li>
             <li><a class="" href="../machine_management/manually-scaling-machineset.html">Manually scaling a compute machine set</a></li>
             <li><a class="" href="../machine_management/modifying-machineset.html">Modifying a compute machine set</a></li>
@@ -1441,6 +1459,7 @@
             <li><a class="" href="../hosted_control_planes/index.html">Hosted control planes overview</a></li>
             <li><a class="" href="../hosted_control_planes/hcp-configuring.html">Configuring hosted control planes</a></li>
             <li><a class="" href="../hosted_control_planes/hcp-managing.html">Managing hosted control planes</a></li>
+            <li><a class="" href="../hosted_control_planes/hcp-backup-restore-dr.html">Backup, restore, and disaster recovery for hosted control planes</a></li>
       </ul>
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup21"><span id="tgSpan21" class="fa fa-angle-right"></span>Nodes</a>
@@ -1459,7 +1478,16 @@
                   <li><a class="" href="../nodes/pods/nodes-pods-configmaps.html">Creating and using config maps</a></li>
                   <li><a class="" href="../nodes/pods/nodes-pods-plugins.html">Using Device Manager to make devices available to nodes</a></li>
                   <li><a class="" href="../nodes/pods/nodes-pods-priority.html">Including pod priority in pod scheduling decisions</a></li>
-                  <li><a class="" href="../nodes/pods/nodes-pods-node-selectors.html">Placing pods on specific nodes using node selectors</a></li>              </ul>
+                  <li><a class="" href="../nodes/pods/nodes-pods-node-selectors.html">Placing pods on specific nodes using node selectors</a></li>
+                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-1-11"><span id="ssgSpan-21-1-11" class="fa fa-caret-right"></span>&nbsp;Run Once Duration Override Operator</a>
+                  <ul id="topicSubSubGroup-21-1-11" class="nav-tertiary list-unstyled collapse">
+
+                    <li><a class="" href="../nodes/pods/run_once_duration_override/index.html" style="padding-left: 70px;">Run Once Duration Override Operator overview</a></li>
+                    <li><a class="" href="../nodes/pods/run_once_duration_override/run-once-duration-override-release-notes.html" style="padding-left: 70px;">Run Once Duration Override Operator release notes</a></li>
+                    <li><a class="" href="../nodes/pods/run_once_duration_override/run-once-duration-override-install.html" style="padding-left: 70px;">Overriding the active deadline for run-once pods</a></li>
+                    <li><a class="" href="../nodes/pods/run_once_duration_override/run-once-duration-override-uninstall.html" style="padding-left: 70px;">Uninstalling the Run Once Duration Override Operator</a></li>                  </ul>
+                  </li>
+              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-2"><span id="sgSpan-21-2" class="fa fa-caret-right"></span>&nbsp;Controlling pod placement onto nodes (scheduling)</a>
               <ul id="topicSubGroup-21-2" class="nav-tertiary list-unstyled collapse">
@@ -1663,17 +1691,26 @@
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup26"><span id="tgSpan26" class="fa fa-angle-right"></span>Scalability and performance</a>
       <ul id="topicGroup26" class="collapse  list-unstyled">
-            <li><a class="" href="../scalability_and_performance/recommended-host-practices.html">Recommended performance and scalability practices</a></li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-26-0"><span id="sgSpan-26-0" class="fa fa-caret-right"></span>&nbsp;Recommended performance and scalability practices</a>
+              <ul id="topicSubGroup-26-0" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../scalability_and_performance/recommended-performance-scale-practices/recommended-control-plane-practices.html">Recommended control plane practices</a></li>
+                  <li><a class="" href="../scalability_and_performance/recommended-performance-scale-practices/recommended-infrastructure-practices.html">Recommended infrastructure practices</a></li>
+                  <li><a class="" href="../scalability_and_performance/recommended-performance-scale-practices/recommended-etcd-practices.html">Recommended etcd practices</a></li>              </ul>
+            </li>
+            <li><a class="" href="../scalability_and_performance/planning-your-environment-according-to-object-maximums.html">Planning your environment according to object maximums</a></li>
             <li><a class="" href="../scalability_and_performance/ibm-z-recommended-host-practices.html">Recommended host practices for IBM zSystems & IBM LinuxONE environments</a></li>
             <li><a class="" href="../scalability_and_performance/using-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
             <li><a class="" href="../scalability_and_performance/using-cpu-manager.html">Using CPU Manager and Topology Manager</a></li>
             <li><a class="" href="../scalability_and_performance/cnf-numa-aware-scheduling.html">Scheduling NUMA-aware workloads</a></li>
-            <li><a class="" href="../scalability_and_performance/scaling-cluster-monitoring-operator.html">Scaling the Cluster Monitoring Operator</a></li>
-            <li><a class="" href="../scalability_and_performance/planning-your-environment-according-to-object-maximums.html">Planning your environment according to object maximums</a></li>
-            <li><a class="" href="../scalability_and_performance/optimizing-storage.html">Optimizing storage</a></li>
-            <li><a class="" href="../scalability_and_performance/routing-optimization.html">Optimizing routing</a></li>
-            <li><a class="" href="../scalability_and_performance/optimizing-networking.html">Optimizing networking</a></li>
-            <li><a class="" href="../scalability_and_performance/optimizing-cpu-usage.html">Optimizing CPU usage</a></li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-26-6"><span id="sgSpan-26-6" class="fa fa-caret-right"></span>&nbsp;Scalability and performance optimization</a>
+              <ul id="topicSubGroup-26-6" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../scalability_and_performance/optimization/optimizing-storage.html">Optimizing storage</a></li>
+                  <li><a class="" href="../scalability_and_performance/optimization/routing-optimization.html">Optimizing routing</a></li>
+                  <li><a class="" href="../scalability_and_performance/optimization/optimizing-networking.html">Optimizing networking</a></li>
+                  <li><a class="" href="../scalability_and_performance/optimization/optimizing-cpu-usage.html">Optimizing CPU usage</a></li>              </ul>
+            </li>
             <li><a class="" href="../scalability_and_performance/managing-bare-metal-hosts.html">Managing bare metal hosts</a></li>
             <li><a class="" href="../scalability_and_performance/what-huge-pages-do-and-how-they-are-consumed-by-apps.html">What huge pages do and how they are consumed by apps</a></li>
             <li><a class="" href="../scalability_and_performance/cnf-low-latency-tuning.html">Low latency tuning</a></li>
@@ -1683,8 +1720,8 @@
             <li><a class="" href="../scalability_and_performance/cnf-create-performance-profiles.html">Creating a performance profile</a></li>
             <li><a class="" href="../scalability_and_performance/enabling-workload-partitioning.html">Workload partitioning</a></li>
             <li><a class="" href="../scalability_and_performance/node-observability-operator.html">Requesting CRI-O and Kubelet profiling data by using the Node Observability Operator</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-26-20"><span id="sgSpan-26-20" class="fa fa-caret-right"></span>&nbsp;Clusters at the network far edge</a>
-              <ul id="topicSubGroup-26-20" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-26-16"><span id="sgSpan-26-16" class="fa fa-caret-right"></span>&nbsp;Clusters at the network far edge</a>
+              <ul id="topicSubGroup-26-16" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../scalability_and_performance/ztp_far_edge/ztp-deploying-far-edge-clusters-at-scale.html">Challenges of the network far edge</a></li>
                   <li><a class="" href="../scalability_and_performance/ztp_far_edge/ztp-preparing-the-hub-cluster.html">Preparing the hub cluster for ZTP</a></li>
@@ -1748,14 +1785,12 @@
 
                   <li><a class="" href="../backup_and_restore/control_plane_backup_and_restore/backing-up-etcd.html">Backing up etcd data</a></li>
                   <li><a class="" href="../backup_and_restore/control_plane_backup_and_restore/replacing-unhealthy-etcd-member.html">Replacing an unhealthy etcd member</a></li>
-                  <li><a class="" href="../backup_and_restore/control_plane_backup_and_restore/etcd-backup-restore-hosted-cluster.html">Backing up and restoring etcd on a hosted cluster</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-28-4-3"><span id="ssgSpan-28-4-3" class="fa fa-caret-right"></span>&nbsp;Disaster recovery</a>
-                  <ul id="topicSubSubGroup-28-4-3" class="nav-tertiary list-unstyled collapse">
+                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-28-4-2"><span id="ssgSpan-28-4-2" class="fa fa-caret-right"></span>&nbsp;Disaster recovery</a>
+                  <ul id="topicSubSubGroup-28-4-2" class="nav-tertiary list-unstyled collapse">
 
                     <li><a class="" href="../backup_and_restore/control_plane_backup_and_restore/disaster_recovery/about-disaster-recovery.html" style="padding-left: 70px;">About disaster recovery</a></li>
                     <li><a class="" href="../backup_and_restore/control_plane_backup_and_restore/disaster_recovery/scenario-2-restoring-cluster-state.html" style="padding-left: 70px;">Restoring to a previous cluster state</a></li>
-                    <li><a class="" href="../backup_and_restore/control_plane_backup_and_restore/disaster_recovery/scenario-3-expired-certs.html" style="padding-left: 70px;">Recovering from expired control plane certificates</a></li>
-                    <li><a class="" href="../backup_and_restore/control_plane_backup_and_restore/disaster_recovery/dr-hosted-cluster-within-aws-region.html" style="padding-left: 70px;">Disaster recovery for a hosted cluster within an AWS region</a></li>                  </ul>
+                    <li><a class="" href="../backup_and_restore/control_plane_backup_and_restore/disaster_recovery/scenario-3-expired-certs.html" style="padding-left: 70px;">Recovering from expired control plane certificates</a></li>                  </ul>
                   </li>
               </ul>
             </li>
@@ -2914,25 +2949,25 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>"Getting started resources" card</p>
+<p><strong>Getting started resources</strong> card</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
-<p>"Quick Starts" tile: Learn how to create, import, and run VirtualMachines with step-by-step instructions and tasks.</p>
+<p><strong>Quick Starts</strong> tile: Learn how to create, import, and run VirtualMachines with step-by-step instructions and tasks.</p>
 </li>
 <li>
-<p>"Feature highlights" tile: Read the latest information about key virtualization features.</p>
+<p><strong>Feature highlights</strong> tile: Read the latest information about key virtualization features.</p>
 </li>
 <li>
-<p>"Related operators" tile: Install Operators such as the Kubernetes NMState Operator or the OpenShift Data Foundation Operator.</p>
+<p><strong>Related operators</strong> tile: Install Operators such as the Kubernetes NMState Operator or the OpenShift Data Foundation Operator.</p>
 </li>
 </ul>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>"VirtualMachines" tile</p>
+<p><strong>VirtualMachines</strong> tile</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Number of VirtualMachines, with a chart showing the last 7 days' trend</p>
@@ -2940,7 +2975,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>"vCPU usage" tile</p>
+<p><strong>vCPU usage</strong> tile</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>vCPU usage, with a chart showing the last 7 days' trend</p>
@@ -2948,7 +2983,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>"Memory" tile</p>
+<p><strong>Memory</strong> tile</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Memory usage, with a chart showing the last 7 days' trend</p>
@@ -2956,7 +2991,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>"Storage" tile</p>
+<p><strong>Storage</strong> tile</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Storage usage, with a chart showing the last 7 days' trend</p>
@@ -2964,7 +2999,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>"Alerts" tile</p>
+<p><strong>Alerts</strong> tile</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>OpenShift Virtualization alerts, grouped by severity</p>
@@ -2972,7 +3007,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>"VirtualMachine statuses" tile</p>
+<p><strong>VirtualMachine statuses</strong> tile</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Number of VirtualMachines, grouped by status</p>
@@ -2980,7 +3015,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>"VirtualMachines per template" chart</p>
+<p><strong>VirtualMachines per template</strong> chart</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Number of VirtualMachines created from templates, grouped by template name</p>
@@ -3024,27 +3059,27 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Select the number of top consumers to filter the results.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"CPU" chart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CPU</strong> chart</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VirtualMachines with the highest CPU usage</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Memory" chart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Memory</strong> chart</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VirtualMachines with the highest memory usage</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Memory swap traffic" chart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Memory swap traffic</strong> chart</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VirtualMachines with the highest memory swap traffic</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"vCPU wait" chart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vCPU wait</strong> chart</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VirtualMachines with the highest vCPU wait periods</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Storage throughput" chart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Storage throughput</strong> chart</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VirtualMachines with the highest storage throughput usage</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Storage IOPS" chart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Storage IOPS</strong> chart</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">VirtualMachines with the highest storage input/output operations per second usage</p></td>
 </tr>
 </tbody>
@@ -3519,43 +3554,43 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Details" tile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Details</strong> tile</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>General VirtualMachine information</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Utilization" tile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Utilization</strong> tile</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><strong>CPU</strong>, <strong>Memory</strong>, <strong>Storage</strong>, and <strong>Network transfer</strong> charts. By default, <strong>Network transfer</strong> displays the sum of all networks. To view the breakdown for a specific network, click <strong>Breakdown by network</strong>.</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Hardware devices" tile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Hardware devices</strong> tile</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>GPU and host devices</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Alerts" tile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Alerts</strong> tile</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>OpenShift Virtualization alerts, grouped by severity</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Snapshots" tile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Snapshots</strong> tile</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><strong>Take snapshot</strong> <span class="image"><img src="data:image/png;base64,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" alt="icon link" width="20" title="link icon"></span> and <strong>Snapshots</strong> table</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Network interfaces" tile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Network interfaces</strong> tile</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><strong>Network interfaces</strong> table</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Disks" tile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Disks</strong> tile</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><strong>Disks</strong> table</p>
 </div></div></td>
@@ -5344,7 +5379,8 @@
     'openshift-enterprise': ['docs_cp', version],
     'openshift-aro' : ['docs_aro', version],
     'openshift-rosa' : ['docs_rosa'],
-    'openshift-acs' : ['docs_acs', version]
+    'openshift-acs' : ['docs_acs', version],
+    'openshift-serverless' : ['docs_serverless', version]
   };
 
   // only OSD v3 docs have the version variable specified

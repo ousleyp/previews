@@ -171,6 +171,8 @@
 
       
 
+      
+
       <li class="sitename">
         <a href="/">
           Documentation</a>
@@ -183,6 +185,7 @@
             </a>
           
           <select id="version-selector" onchange="versionSelector(this);">
+              <option value="4.13">4.13</option>
               <option value="4.12">4.12</option>
               <option value="4.11">4.11</option>
               <option value="4.10">4.10</option>
@@ -252,7 +255,7 @@
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup1"><span id="tgSpan1" class="fa fa-angle-right"></span>Release notes</a>
       <ul id="topicGroup1" class="collapse  list-unstyled">
-            <li><a class="" href="../../release_notes/ocp-4-13-release-notes.html">OpenShift Container Platform 4.13 release notes</a></li>
+            <li><a class="" href="../../release_notes/ocp-4-14-release-notes.html">OpenShift Container Platform 4.14 release notes</a></li>
       </ul>
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup2"><span id="tgSpan2" class="fa fa-angle-right"></span>Getting started</a>
@@ -454,8 +457,20 @@
                   <li><a class="" href="../../installing/installing_ibm_power/installing-ibm-power.html">Installing a cluster on IBM Power</a></li>
                   <li><a class="" href="../../installing/installing_ibm_power/installing-restricted-networks-ibm-power.html">Restricted network IBM Power installation</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-20"><span id="sgSpan-4-20" class="fa fa-caret-down"></span>&nbsp;Installing on OpenStack</a>
-              <ul id="topicSubGroup-4-20" class="nav-tertiary list-unstyled collapse in">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-20"><span id="sgSpan-4-20" class="fa fa-caret-right"></span>&nbsp;Installing on IBM Power Virtual Server</a>
+              <ul id="topicSubGroup-4-20" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../installing/installing_ibm_powervs/preparing-to-install-on-ibm-power-vs.html">Preparing to install on IBM Power Virtual Server</a></li>
+                  <li><a class="" href="../../installing/installing_ibm_powervs/installing-ibm-cloud-account-power-vs.html">Configuring an IBM Cloud account</a></li>
+                  <li><a class="" href="../../installing/installing_ibm_powervs/creating-ibm-power-vs-workspace.html">Creating an IBM Power Virtual Server workspace</a></li>
+                  <li><a class="" href="../../installing/installing_ibm_powervs/installing-ibm-power-vs-customizations.html">Installing a cluster on IBM Power Virtual Server with customizations</a></li>
+                  <li><a class="" href="../../installing/installing_ibm_powervs/installing-ibm-powervs-vpc.html">Installing a cluster on IBM Power Virtual Server into an existing VPC</a></li>
+                  <li><a class="" href="../../installing/installing_ibm_powervs/installing-ibm-power-vs-private-cluster.html">Installing a private cluster on IBM Power Virtual Server</a></li>
+                  <li><a class="" href="../../installing/installing_ibm_powervs/installing-restricted-networks-ibm-power-vs.html">Installing a cluster on IBM Power Virtual Server in a restricted network</a></li>
+                  <li><a class="" href="../../installing/installing_ibm_powervs/uninstalling-cluster-ibm-power-vs.html">Uninstalling a cluster on IBM Power Virtual Server</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-21"><span id="sgSpan-4-21" class="fa fa-caret-down"></span>&nbsp;Installing on OpenStack</a>
+              <ul id="topicSubGroup-4-21" class="nav-tertiary list-unstyled collapse in">
 
                   <li><a class="" href="../../installing/installing_openstack/preparing-to-install-on-openstack.html">Preparing to install on OpenStack</a></li>
                   <li><a class="" href="../../installing/installing_openstack/installing-openstack-nfv-preparing.html">Preparing to install a cluster that uses SR-IOV or OVS-DPDK on OpenStack</a></li>
@@ -468,8 +483,8 @@
                   <li><a class="" href="../../installing/installing_openstack/uninstalling-cluster-openstack.html">Uninstalling a cluster on OpenStack</a></li>
                   <li><a class="" href="../../installing/installing_openstack/uninstalling-openstack-user.html">Uninstalling a cluster on OpenStack from your own infrastructure</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-21"><span id="sgSpan-4-21" class="fa fa-caret-right"></span>&nbsp;Installing on RHV</a>
-              <ul id="topicSubGroup-4-21" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-22"><span id="sgSpan-4-22" class="fa fa-caret-right"></span>&nbsp;Installing on RHV</a>
+              <ul id="topicSubGroup-4-22" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../installing/installing_rhv/preparing-to-install-on-rhv.html">Preparing to install on RHV</a></li>
                   <li><a class="" href="../../installing/installing_rhv/installing-rhv-default.html">Installing a cluster quickly on RHV</a></li>
@@ -478,8 +493,8 @@
                   <li><a class="" href="../../installing/installing_rhv/installing-rhv-restricted-network.html">Installing a cluster on RHV in a restricted network</a></li>
                   <li><a class="" href="../../installing/installing_rhv/uninstalling-cluster-rhv.html">Uninstalling a cluster on RHV</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-22"><span id="sgSpan-4-22" class="fa fa-caret-right"></span>&nbsp;Installing on vSphere</a>
-              <ul id="topicSubGroup-4-22" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-23"><span id="sgSpan-4-23" class="fa fa-caret-right"></span>&nbsp;Installing on vSphere</a>
+              <ul id="topicSubGroup-4-23" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../installing/installing_vsphere/preparing-to-install-on-vsphere.html">Preparing to install on vSphere</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/installing-vsphere-installer-provisioned.html">Installing a cluster on vSphere</a></li>
@@ -494,8 +509,8 @@
                   <li><a class="" href="../../installing/installing_vsphere/uninstalling-cluster-vsphere-installer-provisioned.html">Uninstalling a cluster on vSphere that uses installer-provisioned infrastructure</a></li>
                   <li><a class="" href="../../installing/installing_vsphere/using-vsphere-problem-detector-operator.html">Using the vSphere Problem Detector Operator</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-23"><span id="sgSpan-4-23" class="fa fa-caret-right"></span>&nbsp;Installing on VMC</a>
-              <ul id="topicSubGroup-4-23" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-24"><span id="sgSpan-4-24" class="fa fa-caret-right"></span>&nbsp;Installing on VMC</a>
+              <ul id="topicSubGroup-4-24" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../installing/installing_vmc/preparing-to-install-on-vmc.html">Preparing to install on VMC</a></li>
                   <li><a class="" href="../../installing/installing_vmc/installing-vmc.html">Installing a cluster on VMC</a></li>
@@ -508,13 +523,13 @@
                   <li><a class="" href="../../installing/installing_vmc/installing-vmc-three-node.html">Installing a three-node cluster on VMC</a></li>
                   <li><a class="" href="../../installing/installing_vmc/uninstalling-cluster-vmc.html">Uninstalling a cluster on VMC</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-24"><span id="sgSpan-4-24" class="fa fa-caret-right"></span>&nbsp;Installing on any platform</a>
-              <ul id="topicSubGroup-4-24" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-25"><span id="sgSpan-4-25" class="fa fa-caret-right"></span>&nbsp;Installing on any platform</a>
+              <ul id="topicSubGroup-4-25" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../installing/installing_platform_agnostic/installing-platform-agnostic.html">Installing a cluster on any platform</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-25"><span id="sgSpan-4-25" class="fa fa-caret-right"></span>&nbsp;Installation configuration</a>
-              <ul id="topicSubGroup-4-25" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-4-26"><span id="sgSpan-4-26" class="fa fa-caret-right"></span>&nbsp;Installation configuration</a>
+              <ul id="topicSubGroup-4-26" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../installing/install_config/installing-customizing.html">Customizing nodes</a></li>
                   <li><a class="" href="../../installing/install_config/configuring-firewall.html">Configuring your firewall</a></li>
@@ -927,6 +942,7 @@
                   <li><a class="" href="../../networking/ovn_kubernetes_network_provider/ovn-kubernetes-tracing-using-ovntrace.html">OVN-Kubernetes traffic tracing</a></li>
                   <li><a class="" href="../../networking/ovn_kubernetes_network_provider/migrate-from-openshift-sdn.html">Migrating from the OpenShift SDN network plugin</a></li>
                   <li><a class="" href="../../networking/ovn_kubernetes_network_provider/rollback-to-openshift-sdn.html">Rolling back to the OpenShift SDN network plugin</a></li>
+                  <li><a class="" href="../../networking/ovn_kubernetes_network_provider/migrate-from-kuryr-sdn.html">Migrating from Kuryr</a></li>
                   <li><a class="" href="../../networking/ovn_kubernetes_network_provider/converting-to-dual-stack.html">Converting to IPv4/IPv6 dual stack networking</a></li>
                   <li><a class="" href="../../networking/ovn_kubernetes_network_provider/logging-network-policy.html">Logging for egress firewall and network policy rules</a></li>
                   <li><a class="" href="../../networking/ovn_kubernetes_network_provider/configuring-ipsec-ovn.html">Configuring IPsec encryption</a></li>
@@ -1400,10 +1416,12 @@
                   <li><a class="" href="../../machine_management/creating_machinesets/creating-machineset-azure-stack-hub.html">Creating a compute machine set on Azure Stack Hub</a></li>
                   <li><a class="" href="../../machine_management/creating_machinesets/creating-machineset-gcp.html">Creating a compute machine set on GCP</a></li>
                   <li><a class="" href="../../machine_management/creating_machinesets/creating-machineset-ibm-cloud.html">Creating a compute machine set on IBM Cloud</a></li>
+                  <li><a class="" href="../../machine_management/creating_machinesets/creating-machineset-ibm-power-vs.html">Creating a compute machine set on IBM Power Virtual Server</a></li>
                   <li><a class="" href="../../machine_management/creating_machinesets/creating-machineset-nutanix.html">Creating a compute machine set on Nutanix</a></li>
                   <li><a class="" href="../../machine_management/creating_machinesets/creating-machineset-osp.html">Creating a compute machine set on OpenStack</a></li>
                   <li><a class="" href="../../machine_management/creating_machinesets/creating-machineset-rhv.html">Creating a compute machine set on RHV</a></li>
-                  <li><a class="" href="../../machine_management/creating_machinesets/creating-machineset-vsphere.html">Creating a compute machine set on vSphere</a></li>              </ul>
+                  <li><a class="" href="../../machine_management/creating_machinesets/creating-machineset-vsphere.html">Creating a compute machine set on vSphere</a></li>
+                  <li><a class="" href="../../machine_management/creating_machinesets/creating-machineset-bare-metal.html">Creating a compute machine set on bare metal</a></li>              </ul>
             </li>
             <li><a class="" href="../../machine_management/manually-scaling-machineset.html">Manually scaling a compute machine set</a></li>
             <li><a class="" href="../../machine_management/modifying-machineset.html">Modifying a compute machine set</a></li>
@@ -1441,6 +1459,7 @@
             <li><a class="" href="../../hosted_control_planes/index.html">Hosted control planes overview</a></li>
             <li><a class="" href="../../hosted_control_planes/hcp-configuring.html">Configuring hosted control planes</a></li>
             <li><a class="" href="../../hosted_control_planes/hcp-managing.html">Managing hosted control planes</a></li>
+            <li><a class="" href="../../hosted_control_planes/hcp-backup-restore-dr.html">Backup, restore, and disaster recovery for hosted control planes</a></li>
       </ul>
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup21"><span id="tgSpan21" class="fa fa-angle-right"></span>Nodes</a>
@@ -1459,7 +1478,16 @@
                   <li><a class="" href="../../nodes/pods/nodes-pods-configmaps.html">Creating and using config maps</a></li>
                   <li><a class="" href="../../nodes/pods/nodes-pods-plugins.html">Using Device Manager to make devices available to nodes</a></li>
                   <li><a class="" href="../../nodes/pods/nodes-pods-priority.html">Including pod priority in pod scheduling decisions</a></li>
-                  <li><a class="" href="../../nodes/pods/nodes-pods-node-selectors.html">Placing pods on specific nodes using node selectors</a></li>              </ul>
+                  <li><a class="" href="../../nodes/pods/nodes-pods-node-selectors.html">Placing pods on specific nodes using node selectors</a></li>
+                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-1-11"><span id="ssgSpan-21-1-11" class="fa fa-caret-right"></span>&nbsp;Run Once Duration Override Operator</a>
+                  <ul id="topicSubSubGroup-21-1-11" class="nav-tertiary list-unstyled collapse">
+
+                    <li><a class="" href="../../nodes/pods/run_once_duration_override/index.html" style="padding-left: 70px;">Run Once Duration Override Operator overview</a></li>
+                    <li><a class="" href="../../nodes/pods/run_once_duration_override/run-once-duration-override-release-notes.html" style="padding-left: 70px;">Run Once Duration Override Operator release notes</a></li>
+                    <li><a class="" href="../../nodes/pods/run_once_duration_override/run-once-duration-override-install.html" style="padding-left: 70px;">Overriding the active deadline for run-once pods</a></li>
+                    <li><a class="" href="../../nodes/pods/run_once_duration_override/run-once-duration-override-uninstall.html" style="padding-left: 70px;">Uninstalling the Run Once Duration Override Operator</a></li>                  </ul>
+                  </li>
+              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-2"><span id="sgSpan-21-2" class="fa fa-caret-right"></span>&nbsp;Controlling pod placement onto nodes (scheduling)</a>
               <ul id="topicSubGroup-21-2" class="nav-tertiary list-unstyled collapse">
@@ -1663,17 +1691,26 @@
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup26"><span id="tgSpan26" class="fa fa-angle-right"></span>Scalability and performance</a>
       <ul id="topicGroup26" class="collapse  list-unstyled">
-            <li><a class="" href="../../scalability_and_performance/recommended-host-practices.html">Recommended performance and scalability practices</a></li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-26-0"><span id="sgSpan-26-0" class="fa fa-caret-right"></span>&nbsp;Recommended performance and scalability practices</a>
+              <ul id="topicSubGroup-26-0" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../scalability_and_performance/recommended-performance-scale-practices/recommended-control-plane-practices.html">Recommended control plane practices</a></li>
+                  <li><a class="" href="../../scalability_and_performance/recommended-performance-scale-practices/recommended-infrastructure-practices.html">Recommended infrastructure practices</a></li>
+                  <li><a class="" href="../../scalability_and_performance/recommended-performance-scale-practices/recommended-etcd-practices.html">Recommended etcd practices</a></li>              </ul>
+            </li>
+            <li><a class="" href="../../scalability_and_performance/planning-your-environment-according-to-object-maximums.html">Planning your environment according to object maximums</a></li>
             <li><a class="" href="../../scalability_and_performance/ibm-z-recommended-host-practices.html">Recommended host practices for IBM zSystems & IBM LinuxONE environments</a></li>
             <li><a class="" href="../../scalability_and_performance/using-node-tuning-operator.html">Using the Node Tuning Operator</a></li>
             <li><a class="" href="../../scalability_and_performance/using-cpu-manager.html">Using CPU Manager and Topology Manager</a></li>
             <li><a class="" href="../../scalability_and_performance/cnf-numa-aware-scheduling.html">Scheduling NUMA-aware workloads</a></li>
-            <li><a class="" href="../../scalability_and_performance/scaling-cluster-monitoring-operator.html">Scaling the Cluster Monitoring Operator</a></li>
-            <li><a class="" href="../../scalability_and_performance/planning-your-environment-according-to-object-maximums.html">Planning your environment according to object maximums</a></li>
-            <li><a class="" href="../../scalability_and_performance/optimizing-storage.html">Optimizing storage</a></li>
-            <li><a class="" href="../../scalability_and_performance/routing-optimization.html">Optimizing routing</a></li>
-            <li><a class="" href="../../scalability_and_performance/optimizing-networking.html">Optimizing networking</a></li>
-            <li><a class="" href="../../scalability_and_performance/optimizing-cpu-usage.html">Optimizing CPU usage</a></li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-26-6"><span id="sgSpan-26-6" class="fa fa-caret-right"></span>&nbsp;Scalability and performance optimization</a>
+              <ul id="topicSubGroup-26-6" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../scalability_and_performance/optimization/optimizing-storage.html">Optimizing storage</a></li>
+                  <li><a class="" href="../../scalability_and_performance/optimization/routing-optimization.html">Optimizing routing</a></li>
+                  <li><a class="" href="../../scalability_and_performance/optimization/optimizing-networking.html">Optimizing networking</a></li>
+                  <li><a class="" href="../../scalability_and_performance/optimization/optimizing-cpu-usage.html">Optimizing CPU usage</a></li>              </ul>
+            </li>
             <li><a class="" href="../../scalability_and_performance/managing-bare-metal-hosts.html">Managing bare metal hosts</a></li>
             <li><a class="" href="../../scalability_and_performance/what-huge-pages-do-and-how-they-are-consumed-by-apps.html">What huge pages do and how they are consumed by apps</a></li>
             <li><a class="" href="../../scalability_and_performance/cnf-low-latency-tuning.html">Low latency tuning</a></li>
@@ -1683,8 +1720,8 @@
             <li><a class="" href="../../scalability_and_performance/cnf-create-performance-profiles.html">Creating a performance profile</a></li>
             <li><a class="" href="../../scalability_and_performance/enabling-workload-partitioning.html">Workload partitioning</a></li>
             <li><a class="" href="../../scalability_and_performance/node-observability-operator.html">Requesting CRI-O and Kubelet profiling data by using the Node Observability Operator</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-26-20"><span id="sgSpan-26-20" class="fa fa-caret-right"></span>&nbsp;Clusters at the network far edge</a>
-              <ul id="topicSubGroup-26-20" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-26-16"><span id="sgSpan-26-16" class="fa fa-caret-right"></span>&nbsp;Clusters at the network far edge</a>
+              <ul id="topicSubGroup-26-16" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../scalability_and_performance/ztp_far_edge/ztp-deploying-far-edge-clusters-at-scale.html">Challenges of the network far edge</a></li>
                   <li><a class="" href="../../scalability_and_performance/ztp_far_edge/ztp-preparing-the-hub-cluster.html">Preparing the hub cluster for ZTP</a></li>
@@ -1748,14 +1785,12 @@
 
                   <li><a class="" href="../../backup_and_restore/control_plane_backup_and_restore/backing-up-etcd.html">Backing up etcd data</a></li>
                   <li><a class="" href="../../backup_and_restore/control_plane_backup_and_restore/replacing-unhealthy-etcd-member.html">Replacing an unhealthy etcd member</a></li>
-                  <li><a class="" href="../../backup_and_restore/control_plane_backup_and_restore/etcd-backup-restore-hosted-cluster.html">Backing up and restoring etcd on a hosted cluster</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-28-4-3"><span id="ssgSpan-28-4-3" class="fa fa-caret-right"></span>&nbsp;Disaster recovery</a>
-                  <ul id="topicSubSubGroup-28-4-3" class="nav-tertiary list-unstyled collapse">
+                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-28-4-2"><span id="ssgSpan-28-4-2" class="fa fa-caret-right"></span>&nbsp;Disaster recovery</a>
+                  <ul id="topicSubSubGroup-28-4-2" class="nav-tertiary list-unstyled collapse">
 
                     <li><a class="" href="../../backup_and_restore/control_plane_backup_and_restore/disaster_recovery/about-disaster-recovery.html" style="padding-left: 70px;">About disaster recovery</a></li>
                     <li><a class="" href="../../backup_and_restore/control_plane_backup_and_restore/disaster_recovery/scenario-2-restoring-cluster-state.html" style="padding-left: 70px;">Restoring to a previous cluster state</a></li>
-                    <li><a class="" href="../../backup_and_restore/control_plane_backup_and_restore/disaster_recovery/scenario-3-expired-certs.html" style="padding-left: 70px;">Recovering from expired control plane certificates</a></li>
-                    <li><a class="" href="../../backup_and_restore/control_plane_backup_and_restore/disaster_recovery/dr-hosted-cluster-within-aws-region.html" style="padding-left: 70px;">Disaster recovery for a hosted cluster within an AWS region</a></li>                  </ul>
+                    <li><a class="" href="../../backup_and_restore/control_plane_backup_and_restore/disaster_recovery/scenario-3-expired-certs.html" style="padding-left: 70px;">Recovering from expired control plane certificates</a></li>                  </ul>
                   </li>
               </ul>
             </li>
@@ -2738,8 +2773,10 @@
 <li><a href="#installation-configuration-parameters-optional_installing-openstack-user">Optional configuration parameters</a></li>
 <li><a href="#installation-configuration-parameters-additional-osp_installing-openstack-user">Additional Red Hat OpenStack Platform (RHOSP) configuration parameters</a></li>
 <li><a href="#installation-configuration-parameters-optional-osp_installing-openstack-user">Optional RHOSP configuration parameters</a></li>
+<li><a href="#installation-configuration-parameters-failure-domains-osp_installing-openstack-user">RHOSP parameters for failure domains</a></li>
 <li><a href="#installation-osp-custom-subnet_installing-openstack-user">Custom subnets in RHOSP deployments</a></li>
 <li><a href="#installation-osp-config-yaml_installing-openstack-user">Sample customized <code>install-config.yaml</code> file for RHOSP</a></li>
+<li><a href="#installation-osp-failure-domains-config_installing-openstack-user">Example installation configuration section that uses failure domains</a></li>
 <li><a href="#installation-osp-fixing-subnet_installing-openstack-user">Setting a custom subnet for machines</a></li>
 <li><a href="#installation-osp-emptying-worker-pools_installing-openstack-user">Emptying compute machine pools</a></li>
 <li><a href="#installation-osp-provider-networks_installing-openstack-user">Cluster deployment on RHOSP provider networks</a></li>
@@ -4157,7 +4194,7 @@ The string must be 14 characters or fewer long.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>platform</code></p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">The configuration for the specific platform upon which to perform the installation: <code>alibabacloud</code>, <code>aws</code>, <code>baremetal</code>, <code>azure</code>, <code>gcp</code>, <code>ibmcloud</code>, <code>nutanix</code>, <code>openstack</code>, <code>ovirt</code>, <code>vsphere</code>, or <code>{}</code>. For additional information about <code>platform.&lt;platform&gt;</code> parameters, consult the table for your specific platform that follows.</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">The configuration for the specific platform upon which to perform the installation: <code>alibabacloud</code>, <code>aws</code>, <code>baremetal</code>, <code>azure</code>, <code>gcp</code>, <code>ibmcloud</code>, <code>nutanix</code>, <code>openstack</code>, <code>ovirt</code>, <code>powervs</code>, <code>vsphere</code>, or <code>{}</code>. For additional information about <code>platform.&lt;platform&gt;</code> parameters, consult the table for your specific platform that follows.</p></td>
 <td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p>Object</p>
 </div></div></td>
@@ -4343,7 +4380,7 @@ The prefix length for an IPv4 block is between <code>0</code> and <code>32</code
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>networking.machineNetwork.cidr</code></p></td>
 <td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
-<p>Required if you use <code>networking.machineNetwork</code>. An IP address block. The default value is <code>10.0.0.0/16</code> for all platforms other than libvirt. For libvirt, the default value is <code>192.168.126.0/24</code>.</p>
+<p>Required if you use <code>networking.machineNetwork</code>. An IP address block. The default value is <code>10.0.0.0/16</code> for all platforms other than libvirt and IBM Power Virtual Server. For libvirt, the default value is <code>192.168.126.0/24</code>. For IBM Power Virtual Server, the default value is <code>192.168.0.0/24</code>.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p>An IP network block in CIDR notation.</p>
@@ -4482,7 +4519,7 @@ accounts for the dramatically decreased machine performance.</p>
 <p>Required if you use <code>compute</code>. Use this parameter to specify the cloud provider to host the worker machines. This parameter value must match the <code>controlPlane.platform</code> parameter value.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
-<p><code>alibabacloud</code>, <code>aws</code>, <code>azure</code>, <code>gcp</code>, <code>ibmcloud</code>, <code>nutanix</code>, <code>openstack</code>, <code>ovirt</code>, <code>vsphere</code>, or <code>{}</code></p>
+<p><code>alibabacloud</code>, <code>aws</code>, <code>azure</code>, <code>gcp</code>, <code>ibmcloud</code>, <code>nutanix</code>, <code>openstack</code>, <code>ovirt</code>, <code>powervs</code>, <code>vsphere</code>, or <code>{}</code></p>
 </div></div></td>
 </tr>
 <tr>
@@ -4560,7 +4597,7 @@ accounts for the dramatically decreased machine performance.</p>
 <p>Required if you use <code>controlPlane</code>. Use this parameter to specify the cloud provider that hosts the control plane machines. This parameter value must match the <code>compute.platform</code> parameter value.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
-<p><code>alibabacloud</code>, <code>aws</code>, <code>azure</code>, <code>gcp</code>, <code>ibmcloud</code>, <code>nutanix</code>, <code>openstack</code>, <code>ovirt</code>, <code>vsphere</code>, or <code>{}</code></p>
+<p><code>alibabacloud</code>, <code>aws</code>, <code>azure</code>, <code>gcp</code>, <code>ibmcloud</code>, <code>nutanix</code>, <code>openstack</code>, <code>ovirt</code>, <code>powervs</code>, <code>vsphere</code>, or <code>{}</code></p>
 </div></div></td>
 </tr>
 <tr>
@@ -4989,6 +5026,167 @@ The value can also be the name of an existing Glance image, for example <code>my
 </table>
 </div>
 <div class="sect2">
+<h3 id="installation-configuration-parameters-failure-domains-osp_installing-openstack-user"><a class="anchor" href="#installation-configuration-parameters-failure-domains-osp_installing-openstack-user"></a>RHOSP parameters for failure domains</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>RHOSP failure domains is a Technology Preview feature only. Technology Preview features
+are not supported with Red Hat production service level agreements (SLAs) and
+might not be functionally complete. Red Hat does not recommend using them
+in production. These features provide early access to upcoming product
+features, enabling customers to test functionality and provide feedback during
+the development process.</p>
+</div>
+<div class="paragraph">
+<p>For more information about the support scope of Red Hat Technology Preview features, see <a href="https://access.redhat.com/support/offerings/techpreview/">Technology Preview Features Support Scope</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Red Hat OpenStack Platform (RHOSP) deployments do not have a single implementation of failure domains. Instead, availability zones are defined individually for each service, such as the compute service, Nova; the networking service, Neutron; and the storage service, Cinder.</p>
+</div>
+<div class="paragraph">
+<p>Beginning with OpenShift Container Platform 4.13, there is a unified definition of failure domains for RHOSP deployments that covers all supported availability zone types. You can use failure domains to control related aspects of Nova, Neutron, and Cinder configurations from a single place.</p>
+</div>
+<div class="paragraph">
+<p>In RHOSP, a port describes a network connection and maps to an interface inside a compute machine. A port also:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Is defined by a network or by one more or subnets</p>
+</li>
+<li>
+<p>Connects a machine to one or more subnets</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Failure domains group the services of your deployment by using ports. If you use failure domains, each machine connects to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>portTarget</code> object with the ID <code>control-plane</code> while that object exists.</p>
+</li>
+<li>
+<p>All non-control-plane <code>portTarget</code> objects within its own failure domain.</p>
+</li>
+<li>
+<p>All networks in the machine pool&#8217;s <code>additionalNetworkIDs</code> list.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To configure failure domains for a machine pool, edit availability zone and port target parameters under <code>controlPlane.platform.openstack.failureDomains</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 7. RHOSP parameters for failure domains</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 37.5%;">
+<col style="width: 37.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Parameter</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>platform.openstack.failuredomains.computeAvailabilityZone</code></p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>An availability zone for the server. If not specified, the cluster default is used.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The name of the availability zone. For example, <code>nova-1</code>.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>platform.openstack.failuredomains.storageAvailabilityZone</code></p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>An availability zone for the root volume. If not specified, the cluster default is used.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The name of the availability zone. For example, <code>cinder-1</code>.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>platform.openstack.failuredomains.portTargets</code></p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>A list of <code>portTarget</code> objects,  each of which defines a network connection to attach to machines within a failure domain.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>A list of <code>portTarget</code> objects.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>platform.openstack.failuredomains.portTargets.portTarget.id</code></p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The ID of an individual port target. To select that port target as the first network for machines, set the value of this parameter to <code>control-plane</code>. If this parameter has a different value, it is ignored.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><code>control-plane</code> or an arbitrary string.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>platform.openstack.failuredomains.portTargets.portTarget.network</code></p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Required. The name or ID of the network to attach to machines in the failure domain.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>A <code>network</code> object that contains either a name or UUID. For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">network</span><span class="pi">:</span>
+  <span class="na">id</span><span class="pi">:</span> <span class="s">8db6a48e-375b-4caa-b20b-5b9a7218bfe6</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>or:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">network</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">my-network-1</span></code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>platform.openstack.failuredomains.portTargets.portTarget.fixedIPs</code></p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Subnets to allocate fixed IP addresses to. These subnets must exist within the same network as the port.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>A list of <code>subnet</code> objects.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You cannot combine zone fields and failure domains. If you want to use failure domains, the <code>controlPlane.zone</code> and <code>controlPlane.rootVolume.zone</code> fields must be left unset.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
 <h3 id="installation-osp-custom-subnet_installing-openstack-user"><a class="anchor" href="#installation-osp-custom-subnet_installing-openstack-user"></a>Custom subnets in RHOSP deployments</h3>
 <div class="paragraph">
 <p>Optionally, you can deploy a cluster on a Red Hat OpenStack Platform (RHOSP) subnet of your choice. The subnet&#8217;s GUID is passed as the value of <code>platform.openstack.machinesSubnet</code> in the <code>install-config.yaml</code> file.</p>
@@ -5111,6 +5309,65 @@ This sample file is provided for reference only. You must obtain your
 <span class="na">fips</span><span class="pi">:</span> <span class="no">false</span>
 <span class="na">pullSecret</span><span class="pi">:</span> <span class="s1">'</span><span class="s">{"auths":</span><span class="nv"> </span><span class="s">...}'</span>
 <span class="na">sshKey</span><span class="pi">:</span> <span class="s">ssh-ed25519 AAAA...</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="installation-osp-failure-domains-config_installing-openstack-user"><a class="anchor" href="#installation-osp-failure-domains-config_installing-openstack-user"></a>Example installation configuration section that uses failure domains</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>RHOSP failure domains is a Technology Preview feature only. Technology Preview features
+are not supported with Red Hat production service level agreements (SLAs) and
+might not be functionally complete. Red Hat does not recommend using them
+in production. These features provide early access to upcoming product
+features, enabling customers to test functionality and provide feedback during
+the development process.</p>
+</div>
+<div class="paragraph">
+<p>For more information about the support scope of Red Hat Technology Preview features, see <a href="https://access.redhat.com/support/offerings/techpreview/">Technology Preview Features Support Scope</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The following section of an <code>install-config.yaml</code> file demonstrates the use of failure domains in a cluster to deploy on Red Hat OpenStack Platform (RHOSP):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="c1"># ...</span>
+<span class="na">controlPlane</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">master</span>
+  <span class="na">platform</span><span class="pi">:</span>
+    <span class="na">openstack</span><span class="pi">:</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">m1.large</span>
+      <span class="na">failureDomains</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">computeAvailabilityZone</span><span class="pi">:</span> <span class="s1">'</span><span class="s">nova-1'</span>
+        <span class="na">storageAvailabilityZone</span><span class="pi">:</span> <span class="s1">'</span><span class="s">cinder-1'</span>
+        <span class="na">portTargets</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">control-plane</span>
+          <span class="na">network</span><span class="pi">:</span>
+            <span class="na">id</span><span class="pi">:</span> <span class="s">8db6a48e-375b-4caa-b20b-5b9a7218bfe6</span>
+      <span class="pi">-</span> <span class="na">computeAvailabilityZone</span><span class="pi">:</span> <span class="s1">'</span><span class="s">nova-2'</span>
+        <span class="na">storageAvailabilityZone</span><span class="pi">:</span> <span class="s1">'</span><span class="s">cinder-2'</span>
+        <span class="na">portTargets</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">control-plane</span>
+          <span class="na">network</span><span class="pi">:</span>
+            <span class="na">id</span><span class="pi">:</span> <span class="s">39a7b82a-a8a4-45a4-ba5a-288569a6edd1</span>
+      <span class="pi">-</span> <span class="na">computeAvailabilityZone</span><span class="pi">:</span> <span class="s1">'</span><span class="s">nova-3'</span>
+        <span class="na">storageAvailabilityZone</span><span class="pi">:</span> <span class="s1">'</span><span class="s">cinder-3'</span>
+        <span class="na">portTargets</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">control-plane</span>
+          <span class="na">network</span><span class="pi">:</span>
+            <span class="na">id</span><span class="pi">:</span> <span class="s">8e4b4e0d-3865-4a9b-a769-559270271242</span>
+<span class="na">featureSet</span><span class="pi">:</span> <span class="s">TechPreviewNoUpgrade</span>
+<span class="c1"># ...</span></code></pre>
 </div>
 </div>
 </div>
@@ -5355,10 +5612,10 @@ This sample file is provided for reference only. You must obtain your
 <div class="sect3">
 <h4 id="installation-osp-deploying-provider-networks-installer_installing-openstack-user"><a class="anchor" href="#installation-osp-deploying-provider-networks-installer_installing-openstack-user"></a>Deploying a cluster that has a primary interface on a provider network</h4>
 <div class="paragraph">
-<p>You can deploy an OpenShift Container Platform cluster that has its primary network interface on an Red Hat OpenStack Platform (RHOSP) provider network.
-.Prerequisites</p>
+<p>You can deploy an OpenShift Container Platform cluster that has its primary network interface on an Red Hat OpenStack Platform (RHOSP) provider network.</p>
 </div>
 <div class="ulist">
+<div class="title">Prerequisites</div>
 <ul>
 <li>
 <p>Your Red Hat OpenStack Platform (RHOSP) deployment is configured as described by "RHOSP provider network requirements for cluster installation".</p>
@@ -6243,7 +6500,7 @@ added to the file.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">INFO API v1.25.0 up
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">INFO API v1.26.0 up
 INFO Waiting up to 30m0s for bootstrapping to complete...
 </span><span class="c">...
 </span><span class="go">INFO It is now safe to remove the bootstrap resources</span></code></pre>
@@ -6454,9 +6711,9 @@ If you did not disable the bootstrap Ignition file URL earlier, do so now.
 <div class="title">Example output</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">NAME      STATUS    ROLES   AGE  VERSION
-master-0  Ready     master  63m  v1.25.0
-master-1  Ready     master  63m  v1.25.0
-master-2  Ready     master  64m  v1.25.0</span></code></pre>
+master-0  Ready     master  63m  v1.26.0
+master-1  Ready     master  63m  v1.26.0
+master-2  Ready     master  64m  v1.26.0</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6629,11 +6886,11 @@ csr-c57lv   5m26s   system:node:ip-10-0-95-157.us-east-2.compute.internal       
 <div class="title">Example output</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="go">NAME      STATUS    ROLES   AGE  VERSION
-master-0  Ready     master  73m  v1.25.0
-master-1  Ready     master  73m  v1.25.0
-master-2  Ready     master  74m  v1.25.0
-worker-0  Ready     worker  11m  v1.25.0
-worker-1  Ready     worker  11m  v1.25.0</span></code></pre>
+master-0  Ready     master  73m  v1.26.0
+master-1  Ready     master  73m  v1.26.0
+master-2  Ready     master  74m  v1.26.0
+worker-0  Ready     worker  11m  v1.26.0
+worker-1  Ready     worker  11m  v1.26.0</span></code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -6761,7 +7018,8 @@ worker-1  Ready     worker  11m  v1.25.0</span></code></pre>
     'openshift-enterprise': ['docs_cp', version],
     'openshift-aro' : ['docs_aro', version],
     'openshift-rosa' : ['docs_rosa'],
-    'openshift-acs' : ['docs_acs', version]
+    'openshift-acs' : ['docs_acs', version],
+    'openshift-serverless' : ['docs_serverless', version]
   };
 
   // only OSD v3 docs have the version variable specified
