@@ -3093,16 +3093,6 @@
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc get hco <span class="nt">-n</span> openshift-cnv kubevirt-hyperconverged</code></pre>
 </div>
 </div>
-</li>
-<li>
-<p>Verify the status of the boot source by reviewing the <code>status.dataImportCronTemplates.status</code> field.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>If the field contains <code>commonTemplate: true</code>, it is a system-defined boot source.</p>
-</li>
-<li>
-<p>If the <code>status.dataImportCronTemplates.status</code> field has the value <code>{}</code>, it is a custom boot source.</p>
 <div class="listingblock">
 <div class="title">Example output</div>
 <div class="content">
@@ -3173,6 +3163,16 @@
 </tr>
 </table>
 </div>
+</li>
+<li>
+<p>Verify the status of the boot source by reviewing the <code>status.dataImportCronTemplates.status</code> field.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If the field contains <code>commonTemplate: true</code>, it is a system-defined boot source.</p>
+</li>
+<li>
+<p>If the <code>status.dataImportCronTemplates.status</code> field has the value <code>{}</code>, it is a custom boot source.</p>
 </li>
 </ul>
 </div>
