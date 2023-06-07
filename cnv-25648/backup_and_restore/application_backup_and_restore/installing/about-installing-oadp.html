@@ -537,7 +537,6 @@
             </li>
             <li><a class="" href="../../../installing/validating-an-installation.html">Validating an installation</a></li>
             <li><a class="" href="../../../installing/installing-troubleshooting.html">Troubleshooting installation issues</a></li>
-            <li><a class="" href="../../../installing/installing-fips.html">Support for FIPS cryptography</a></li>
       </ul>
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup5"><span id="tgSpan5" class="fa fa-angle-right"></span>Post-installation configuration</a>
@@ -643,7 +642,15 @@
                   <li><a class="" href="../../../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../../../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../../../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-8-7"><span id="sgSpan-8-7" class="fa fa-caret-right"></span>&nbsp;Web terminal</a>
+              <ul id="topicSubGroup-8-7" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../../web_console/web_terminal/installing-web-terminal.html">Installing the web terminal</a></li>
+                  <li><a class="" href="../../../web_console/web_terminal/configuring-web-terminal.html">Configuring the web terminal</a></li>
+                  <li><a class="" href="../../../web_console/web_terminal/odc-using-web-terminal.html">Using the web terminal</a></li>
+                  <li><a class="" href="../../../web_console/web_terminal/troubleshooting-web-terminal.html">Troubleshooting the web terminal</a></li>
+                  <li><a class="" href="../../../web_console/web_terminal/uninstalling-web-terminal.html">Uninstalling the web terminal</a></li>              </ul>
+            </li>
             <li><a class="" href="../../../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../../../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -781,7 +788,12 @@
                   <li><a class="" href="../../../security/cert_manager_operator/cert-manager-operator-release-notes.html">cert-manager Operator for Red Hat OpenShift release notes</a></li>
                   <li><a class="" href="../../../security/cert_manager_operator/cert-manager-operator-install.html">Installing the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../../security/cert_manager_operator/cert-manager-operator-issuer-acme.html">Managing certificates with an ACME issuer</a></li>
+                  <li><a class="" href="../../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
+                  <li><a class="" href="../../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
                   <li><a class="" href="../../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -1270,9 +1282,9 @@
                   <li><a class="" href="../../../cicd/pipelines/using-tekton-hub-with-openshift-pipelines.html">Using Tekton Hub with OpenShift Pipelines</a></li>
                   <li><a class="" href="../../../cicd/pipelines/using-pipelines-as-code.html">Using Pipelines as Code</a></li>
                   <li><a class="" href="../../../cicd/pipelines/working-with-pipelines-using-the-developer-perspective.html">Working with OpenShift Pipelines using the Developer perspective</a></li>
+                  <li><a class="" href="../../../cicd/pipelines/customizing-configurations-in-the-tektonconfig-cr.html">Customizing configurations in the TektonConfig custom resource</a></li>
                   <li><a class="" href="../../../cicd/pipelines/reducing-pipelines-resource-consumption.html">Reducing resource consumption of OpenShift Pipelines</a></li>
                   <li><a class="" href="../../../cicd/pipelines/setting-compute-resource-quota-for-openshift-pipelines.html">Setting compute resource quota for OpenShift Pipelines</a></li>
-                  <li><a class="" href="../../../cicd/pipelines/automatic-pruning-taskrun-pipelinerun.html">Automatic pruning of task run and pipeline run</a></li>
                   <li><a class="" href="../../../cicd/pipelines/using-pods-in-a-privileged-security-context.html">Using pods in a privileged security context</a></li>
                   <li><a class="" href="../../../cicd/pipelines/securing-webhooks-with-event-listeners.html">Securing webhooks with event listeners</a></li>
                   <li><a class="" href="../../../cicd/pipelines/authenticating-pipelines-using-git-secret.html">Authenticating pipelines using git secret</a></li>
@@ -2421,296 +2433,11 @@
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup35"><span id="tgSpan35" class="fa fa-angle-right"></span>Serverless</a>
       <ul id="topicGroup35" class="collapse  list-unstyled">
-            <li><a class="" href="../../../serverless/serverless-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-1"><span id="sgSpan-35-1" class="fa fa-caret-right"></span>&nbsp;About Serverless</a>
-              <ul id="topicSubGroup-35-1" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-0"><span id="sgSpan-35-0" class="fa fa-caret-right"></span>&nbsp;About Serverless</a>
+              <ul id="topicSubGroup-35-0" class="nav-tertiary list-unstyled collapse">
 
-                  <li><a class="" href="../../../serverless/about/about-serverless.html">Serverless overview</a></li>
-                  <li><a class="" href="../../../serverless/about/about-knative-serving.html">Knative Serving overview</a></li>
-                  <li><a class="" href="../../../serverless/about/about-knative-eventing.html">Knative Eventing overview</a></li>
-                  <li><a class="" href="../../../serverless/about/serverless-functions-about.html">Serverless Functions overview</a></li>              </ul>
+                  <li><a class="" href="../../../serverless/about/about-serverless.html">Serverless overview</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-2"><span id="sgSpan-35-2" class="fa fa-caret-right"></span>&nbsp;Installing Serverless</a>
-              <ul id="topicSubGroup-35-2" class="nav-tertiary list-unstyled collapse">
-
-                  <li><a class="" href="../../../serverless/install/preparing-serverless-install.html">Preparing to install OpenShift Serverless</a></li>
-                  <li><a class="" href="../../../serverless/install/install-serverless-operator.html">Installing the Serverless Operator</a></li>
-                  <li><a class="" href="../../../serverless/install/installing-kn.html">Installing the Knative CLI</a></li>
-                  <li><a class="" href="../../../serverless/install/installing-knative-serving.html">Installing Knative Serving</a></li>
-                  <li><a class="" href="../../../serverless/install/installing-knative-eventing.html">Installing Knative Eventing</a></li>
-                  <li><a class="" href="../../../serverless/install/serverless-kafka-admin.html">Configuring Knative for Apache Kafka</a></li>
-                  <li><a class="" href="../../../serverless/install/configuring-serverless-functions.html">Configuring Serverless Functions</a></li>
-                  <li><a class="" href="../../../serverless/install/serverless-upgrades.html">Serverless upgrades</a></li>              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-3"><span id="sgSpan-35-3" class="fa fa-caret-right"></span>&nbsp;Serving</a>
-              <ul id="topicSubGroup-35-3" class="nav-tertiary list-unstyled collapse">
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-0"><span id="ssgSpan-35-3-0" class="fa fa-caret-right"></span>&nbsp;Getting started with Knative Serving</a>
-                  <ul id="topicSubSubGroup-35-3-0" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/knative-serving/getting-started/serverless-applications.html" style="padding-left: 70px;">Creating Serverless applications</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/getting-started/verifying-application-deployment.html" style="padding-left: 70px;">Verifying application deployment</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-1"><span id="ssgSpan-35-3-1" class="fa fa-caret-right"></span>&nbsp;Autoscaling</a>
-                  <ul id="topicSubSubGroup-35-3-1" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/knative-serving/autoscaling/serverless-autoscaling-developer.html" style="padding-left: 70px;">Autoscaling overview</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/autoscaling/serverless-autoscaling-developer-scale-bounds.html" style="padding-left: 70px;">Scale bounds</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/autoscaling/serverless-concurrency.html" style="padding-left: 70px;">Concurrency</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/autoscaling/serverless-autoscaling-scale-to-zero.html" style="padding-left: 70px;">Scale-to-zero</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-2"><span id="ssgSpan-35-3-2" class="fa fa-caret-right"></span>&nbsp;Configuring Serverless applications</a>
-                  <ul id="topicSubSubGroup-35-3-2" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/knative-serving/config-applications/overriding-config-serving.html" style="padding-left: 70px;">Overriding system deployment configurations</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-applications/multi-container-support-for-serving.html" style="padding-left: 70px;">Multi-container support</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-applications/empty-dir.html" style="padding-left: 70px;">EmptyDir volumes</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-applications/pvcs-for-serving.html" style="padding-left: 70px;">Persistent Volume Claims</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-applications/init-containers.html" style="padding-left: 70px;">Init containers</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-applications/resolving-image-tags-to-digests.html" style="padding-left: 70px;">Resolving image tags to digests</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-applications/serverless-config-tls.html" style="padding-left: 70px;">Configuring TLS authentication</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-applications/restrictive-network-policies.html" style="padding-left: 70px;">Restrictive network policies</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-3"><span id="ssgSpan-35-3-3" class="fa fa-caret-right"></span>&nbsp;Traffic splitting</a>
-                  <ul id="topicSubSubGroup-35-3-3" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/knative-serving/traffic-splitting/traffic-splitting-overview.html" style="padding-left: 70px;">Traffic splitting overview</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/traffic-splitting/traffic-spec-examples.html" style="padding-left: 70px;">Traffic spec examples</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/traffic-splitting/traffic-splitting-using-cli.html" style="padding-left: 70px;">Traffic splitting using the CLI</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/traffic-splitting/traffic-splitting-flags.html" style="padding-left: 70px;">CLI flags for traffic splitting</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/traffic-splitting/traffic-splitting-revisions.html" style="padding-left: 70px;">Splitting traffic between revisions</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/traffic-splitting/traffic-splitting-blue-green.html" style="padding-left: 70px;">Reroute traffic using blue-green strategy</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-4"><span id="ssgSpan-35-3-4" class="fa fa-caret-right"></span>&nbsp;External and Ingress routing</a>
-                  <ul id="topicSubSubGroup-35-3-4" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/knative-serving/external-ingress-routing/routing-overview.html" style="padding-left: 70px;">Routing overview</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/external-ingress-routing/customize-labels-annotations-routes.html" style="padding-left: 70px;">Customizing labels and annotations</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/external-ingress-routing/configuring-service-routes.html" style="padding-left: 70px;">Configuring routes for Knative services</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/external-ingress-routing/https-redirect-global.html" style="padding-left: 70px;">Global HTTPS redirection</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/external-ingress-routing/url-scheme-external-routes.html" style="padding-left: 70px;">URL scheme for external routes</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/external-ingress-routing/https-redirect-per-service.html" style="padding-left: 70px;">HTTPS redirection per service</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/external-ingress-routing/cluster-local-availability.html" style="padding-left: 70px;">Cluster local availability</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/external-ingress-routing/kourier-gateway-service-type.html" style="padding-left: 70px;">Kourier Gateway service type</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/external-ingress-routing/using-http2-gRPC.html" style="padding-left: 70px;">Using HTTP2 and gRPC</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-5"><span id="ssgSpan-35-3-5" class="fa fa-caret-right"></span>&nbsp;Configuring access to Knative services</a>
-                  <ul id="topicSubSubGroup-35-3-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/knative-serving/config-access/serverless-ossm-with-kourier-jwt.html" style="padding-left: 70px;">Configuring JSON Web Token authentication for Knative services</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-access/serverless-ossm-v2x-jwt.html" style="padding-left: 70px;">Using JSON Web Token authentication with Service Mesh 2.x</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-access/serverless-ossm-v1x-jwt.html" style="padding-left: 70px;">Using JSON Web Token authentication with Service Mesh 1.x</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-6"><span id="ssgSpan-35-3-6" class="fa fa-caret-right"></span>&nbsp;Configuring custom domains for Knative services</a>
-                  <ul id="topicSubSubGroup-35-3-6" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/knative-serving/config-custom-domains/serverless-custom-domains.html" style="padding-left: 70px;">Configuring custom domains overview</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-custom-domains/create-domain-mapping.html" style="padding-left: 70px;">Custom domain mapping</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-custom-domains/create-domain-mapping-kn.html" style="padding-left: 70px;">Custom domains using the Knative CLI</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-custom-domains/domain-mapping-odc-developer.html" style="padding-left: 70px;">Domain mapping using the Developer perspective</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-custom-domains/domain-mapping-odc-admin.html" style="padding-left: 70px;">Domain mapping using the Administrator perspective</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-custom-domains/domain-mapping-custom-tls-cert.html" style="padding-left: 70px;">Securing a mapped service using a TLS certificate</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-7"><span id="ssgSpan-35-3-7" class="fa fa-caret-right"></span>&nbsp;Configuring high availability for Knative services</a>
-                  <ul id="topicSubSubGroup-35-3-7" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/knative-serving/config-ha-services/ha-services-overview.html" style="padding-left: 70px;">High availability for Knative services overview</a></li>
-                    <li><a class="" href="../../../serverless/knative-serving/config-ha-services/ha-replicas-serving.html" style="padding-left: 70px;">High availability for Knative services</a></li>                  </ul>
-                  </li>
-              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-4"><span id="sgSpan-35-4" class="fa fa-caret-right"></span>&nbsp;Eventing</a>
-              <ul id="topicSubGroup-35-4" class="nav-tertiary list-unstyled collapse">
-
-                  <li><a class="" href="../../../serverless/eventing/knative-eventing.html">Knative Eventing</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-1"><span id="ssgSpan-35-4-1" class="fa fa-caret-right"></span>&nbsp;Event sources</a>
-                  <ul id="topicSubSubGroup-35-4-1" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/eventing/event-sources/knative-event-sources.html" style="padding-left: 70px;">Event sources overview</a></li>
-                    <li><a class="" href="../../../serverless/eventing/event-sources/event-source-admin-perspective.html" style="padding-left: 70px;">Event source in the Administrator perspective</a></li>
-                    <li><a class="" href="../../../serverless/eventing/event-sources/serverless-apiserversource.html" style="padding-left: 70px;">Creating an API server source</a></li>
-                    <li><a class="" href="../../../serverless/eventing/event-sources/serverless-pingsource.html" style="padding-left: 70px;">Creating a ping source</a></li>
-                    <li><a class="" href="../../../serverless/eventing/event-sources/serverless-kafka-developer-source.html" style="padding-left: 70px;">Source for Apache Kafka</a></li>
-                    <li><a class="" href="../../../serverless/eventing/event-sources/serverless-custom-event-sources.html" style="padding-left: 70px;">Custom event sources</a></li>
-                    <li><a class="" href="../../../serverless/eventing/event-sources/serverless-sink-source-odc.html" style="padding-left: 70px;">Connecting an event source to a sink using the Developer perspective</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-2"><span id="ssgSpan-35-4-2" class="fa fa-caret-right"></span>&nbsp;Event sinks</a>
-                  <ul id="topicSubSubGroup-35-4-2" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/eventing/event-sinks/serverless-event-sinks.html" style="padding-left: 70px;">Event sinks overview</a></li>
-                    <li><a class="" href="../../../serverless/eventing/event-sinks/serverless-creating-sinks.html" style="padding-left: 70px;">Creating event sinks</a></li>
-                    <li><a class="" href="../../../serverless/eventing/event-sinks/serverless-kafka-developer-sink.html" style="padding-left: 70px;">Sink for Apache Kafka</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-3"><span id="ssgSpan-35-4-3" class="fa fa-caret-right"></span>&nbsp;Brokers</a>
-                  <ul id="topicSubSubGroup-35-4-3" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/eventing/brokers/serverless-brokers.html" style="padding-left: 70px;">Brokers overview</a></li>
-                    <li><a class="" href="../../../serverless/eventing/brokers/serverless-broker-types.html" style="padding-left: 70px;">Broker types</a></li>
-                    <li><a class="" href="../../../serverless/eventing/brokers/serverless-using-brokers.html" style="padding-left: 70px;">Creating brokers</a></li>
-                    <li><a class="" href="../../../serverless/eventing/brokers/serverless-broker-backing-channel-default.html" style="padding-left: 70px;">Configuring the default broker backing channel</a></li>
-                    <li><a class="" href="../../../serverless/eventing/brokers/serverless-global-config-broker-class-default.html" style="padding-left: 70px;">Configuring the default broker class</a></li>
-                    <li><a class="" href="../../../serverless/eventing/brokers/kafka-broker.html" style="padding-left: 70px;">Knative broker for Apache Kafka</a></li>
-                    <li><a class="" href="../../../serverless/eventing/brokers/serverless-using-brokers-managing-brokers.html" style="padding-left: 70px;">Managing brokers</a></li>
-                    <li><a class="" href="../../../serverless/eventing/brokers/serverless-event-delivery.html" style="padding-left: 70px;">Event delivery</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-4"><span id="ssgSpan-35-4-4" class="fa fa-caret-right"></span>&nbsp;Triggers</a>
-                  <ul id="topicSubSubGroup-35-4-4" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/eventing/triggers/serverless-triggers.html" style="padding-left: 70px;">Triggers overview</a></li>
-                    <li><a class="" href="../../../serverless/eventing/triggers/create-triggers.html" style="padding-left: 70px;">Creating triggers</a></li>
-                    <li><a class="" href="../../../serverless/eventing/triggers/list-triggers-cli.html" style="padding-left: 70px;">List triggers from the command line</a></li>
-                    <li><a class="" href="../../../serverless/eventing/triggers/describe-triggers-cli.html" style="padding-left: 70px;">Describe triggers from the command line</a></li>
-                    <li><a class="" href="../../../serverless/eventing/triggers/connect-trigger-sink.html" style="padding-left: 70px;">Connecting a trigger to a sink</a></li>
-                    <li><a class="" href="../../../serverless/eventing/triggers/filter-triggers-cli.html" style="padding-left: 70px;">Filtering triggers from the command line</a></li>
-                    <li><a class="" href="../../../serverless/eventing/triggers/update-triggers-cli.html" style="padding-left: 70px;">Updating triggers from the command line</a></li>
-                    <li><a class="" href="../../../serverless/eventing/triggers/delete-triggers-cli.html" style="padding-left: 70px;">Deleting triggers from the command line</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-5"><span id="ssgSpan-35-4-5" class="fa fa-caret-right"></span>&nbsp;Channels</a>
-                  <ul id="topicSubSubGroup-35-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/eventing/channels/serverless-channels.html" style="padding-left: 70px;">Channels and subscriptions</a></li>
-                    <li><a class="" href="../../../serverless/eventing/channels/serverless-creating-channels.html" style="padding-left: 70px;">Creating channels</a></li>
-                    <li><a class="" href="../../../serverless/eventing/channels/connecting-channels-sinks.html" style="padding-left: 70px;">Connecting channels to sinks</a></li>
-                    <li><a class="" href="../../../serverless/eventing/channels/serverless-channel-default.html" style="padding-left: 70px;">Default channel implementation</a></li>
-                    <li><a class="" href="../../../serverless/eventing/channels/serverless-kafka-admin-security-channels.html" style="padding-left: 70px;">Security configuration for channels</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-6"><span id="ssgSpan-35-4-6" class="fa fa-caret-right"></span>&nbsp;Subscriptions</a>
-                  <ul id="topicSubSubGroup-35-4-6" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/eventing/subscriptions/serverless-subs.html" style="padding-left: 70px;">Creating subscriptions</a></li>
-                    <li><a class="" href="../../../serverless/eventing/subscriptions/serverless-subs-managing.html" style="padding-left: 70px;">Managing subscriptions</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-7"><span id="ssgSpan-35-4-7" class="fa fa-caret-right"></span>&nbsp;Event discovery</a>
-                  <ul id="topicSubSubGroup-35-4-7" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/eventing/discovery/serverless-listing-event-sources.html" style="padding-left: 70px;">Listing event sources and event source types</a></li>
-                    <li><a class="" href="../../../serverless/eventing/discovery/list-event-source-types-cli.html" style="padding-left: 70px;">Listing event source types from the command line</a></li>
-                    <li><a class="" href="../../../serverless/eventing/discovery/list-event-source-types-odc.html" style="padding-left: 70px;">Listing event source types from the Developer perspective</a></li>
-                    <li><a class="" href="../../../serverless/eventing/discovery/list-event-sources-cli.html" style="padding-left: 70px;">Listing event sources from the command line</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-8"><span id="ssgSpan-35-4-8" class="fa fa-caret-right"></span>&nbsp;Tuning eventing configuration</a>
-                  <ul id="topicSubSubGroup-35-4-8" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/eventing/tuning/overriding-config-eventing.html" style="padding-left: 70px;">Overriding deployment configurations</a></li>
-                    <li><a class="" href="../../../serverless/eventing/tuning/serverless-ha.html" style="padding-left: 70px;">High availability</a></li>                  </ul>
-                  </li>
-              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-5"><span id="sgSpan-35-5" class="fa fa-caret-right"></span>&nbsp;Functions</a>
-              <ul id="topicSubGroup-35-5" class="nav-tertiary list-unstyled collapse">
-
-                  <li><a class="" href="../../../serverless/functions/serverless-functions-setup.html">Setting up OpenShift Serverless Functions</a></li>
-                  <li><a class="" href="../../../serverless/functions/serverless-functions-getting-started.html">Getting started with functions</a></li>
-                  <li><a class="" href="../../../serverless/functions/serverless-functions-on-cluster-builds.html">On-cluster function building and deploying</a></li>
-                  <li><a class="" href="../../../serverless/functions/serverless-developing-quarkus-functions.html">Developing Quarkus functions</a></li>
-                  <li><a class="" href="../../../serverless/functions/serverless-developing-nodejs-functions.html">Developing Node.js functions</a></li>
-                  <li><a class="" href="../../../serverless/functions/serverless-developing-typescript-functions.html">Developing TypeScript functions</a></li>
-                  <li><a class="" href="../../../serverless/functions/serverless-developing-python-functions.html">Developing Python functions</a></li>
-                  <li><a class="" href="../../../serverless/functions/serverless-functions-eventing.html">Using functions with Knative Eventing</a></li>
-                  <li><a class="" href="../../../serverless/functions/serverless-functions-yaml.html">Function project configuration in func.yaml</a></li>
-                  <li><a class="" href="../../../serverless/functions/serverless-functions-accessing-secrets-configmaps.html">Accessing secrets and config maps from functions</a></li>
-                  <li><a class="" href="../../../serverless/functions/serverless-functions-annotations.html">Adding annotations to functions</a></li>
-                  <li><a class="" href="../../../serverless/functions/serverless-functions-reference-guide.html">Functions development reference guide</a></li>              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-6"><span id="sgSpan-35-6" class="fa fa-caret-right"></span>&nbsp;Knative CLI</a>
-              <ul id="topicSubGroup-35-6" class="nav-tertiary list-unstyled collapse">
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-6-0"><span id="ssgSpan-35-6-0" class="fa fa-caret-right"></span>&nbsp;Knative Serving CLI commands</a>
-                  <ul id="topicSubSubGroup-35-6-0" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/cli_tools/serving_cli/kn-service.html" style="padding-left: 70px;">kn service commands</a></li>
-                    <li><a class="" href="../../../serverless/cli_tools/serving_cli/kn-service-offline.html" style="padding-left: 70px;">kn service commands in offline mode</a></li>
-                    <li><a class="" href="../../../serverless/cli_tools/serving_cli/kn-container.html" style="padding-left: 70px;">kn container commands</a></li>
-                    <li><a class="" href="../../../serverless/cli_tools/serving_cli/kn-domain.html" style="padding-left: 70px;">kn domain commands</a></li>                  </ul>
-                  </li>
-
-                  <li><a class="" href="../../../serverless/cli_tools/advanced-kn-config.html">Configuring the Knative CLI</a></li>
-                  <li><a class="" href="../../../serverless/cli_tools/kn-plugins.html">Knative CLI plugins</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-6-3"><span id="ssgSpan-35-6-3" class="fa fa-caret-right"></span>&nbsp;Knative Eventing CLI commands</a>
-                  <ul id="topicSubSubGroup-35-6-3" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/cli_tools/eventing_cli/kn-source.html" style="padding-left: 70px;">kn source commands</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-6-4"><span id="ssgSpan-35-6-4" class="fa fa-caret-right"></span>&nbsp;Knative Functions CLI commands</a>
-                  <ul id="topicSubSubGroup-35-6-4" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/cli_tools/functions_cli/kn-functions.html" style="padding-left: 70px;">kn functions commands</a></li>                  </ul>
-                  </li>
-              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-7"><span id="sgSpan-35-7" class="fa fa-caret-right"></span>&nbsp;Observability</a>
-              <ul id="topicSubGroup-35-7" class="nav-tertiary list-unstyled collapse">
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-7-0"><span id="ssgSpan-35-7-0" class="fa fa-caret-right"></span>&nbsp;Administrator metrics</a>
-                  <ul id="topicSubSubGroup-35-7-0" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/observability/admin-metrics/serverless-admin-metrics.html" style="padding-left: 70px;">Administrator metrics overview</a></li>
-                    <li><a class="" href="../../../serverless/observability/admin-metrics/serverless-controller-metrics.html" style="padding-left: 70px;">Controller metrics</a></li>
-                    <li><a class="" href="../../../serverless/observability/admin-metrics/serverless-webhook-metrics.html" style="padding-left: 70px;">Webhook metrics</a></li>
-                    <li><a class="" href="../../../serverless/observability/admin-metrics/serverless-admin-metrics-eventing.html" style="padding-left: 70px;">Knative Eventing metrics</a></li>
-                    <li><a class="" href="../../../serverless/observability/admin-metrics/serverless-admin-metrics-serving.html" style="padding-left: 70px;">Knative Serving metrics</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-7-1"><span id="ssgSpan-35-7-1" class="fa fa-caret-right"></span>&nbsp;Developer metrics</a>
-                  <ul id="topicSubSubGroup-35-7-1" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/observability/developer-metrics/serverless-developer-metrics.html" style="padding-left: 70px;">Developer metrics overview</a></li>
-                    <li><a class="" href="../../../serverless/observability/developer-metrics/serverless-monitoring-services-default-metrics.html" style="padding-left: 70px;">Default Knative service metrics</a></li>
-                    <li><a class="" href="../../../serverless/observability/developer-metrics/serverless-monitoring-services-custom-metrics.html" style="padding-left: 70px;">Custom Knative service metrics</a></li>
-                    <li><a class="" href="../../../serverless/observability/developer-metrics/serverless-monitoring-services-configuration-scraping.html" style="padding-left: 70px;">Configuration for scraping custom metrics</a></li>
-                    <li><a class="" href="../../../serverless/observability/developer-metrics/serverless-monitoring-services-examining-metrics.html" style="padding-left: 70px;">Examining metrics of a service</a></li>
-                    <li><a class="" href="../../../serverless/observability/developer-metrics/serverless-developer-metrics-dashboard.html" style="padding-left: 70px;">Dashboard for service metrics</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-7-2"><span id="ssgSpan-35-7-2" class="fa fa-caret-right"></span>&nbsp;Cluster logging</a>
-                  <ul id="topicSubSubGroup-35-7-2" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/observability/cluster-logging/cluster-logging-serverless.html" style="padding-left: 70px;">Using OpenShift Logging with Serverless</a></li>
-                    <li><a class="" href="../../../serverless/observability/cluster-logging/finding-serving-logs-components.html" style="padding-left: 70px;">Finding logs for Knative Serving components</a></li>
-                    <li><a class="" href="../../../serverless/observability/cluster-logging/finding-serving-logs-services.html" style="padding-left: 70px;">Finding logs for Knative Serving services</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-7-3"><span id="ssgSpan-35-7-3" class="fa fa-caret-right"></span>&nbsp;Tracing</a>
-                  <ul id="topicSubSubGroup-35-7-3" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../../serverless/observability/tracing/serverless-tracing.html" style="padding-left: 70px;">Tracing requests</a></li>
-                    <li><a class="" href="../../../serverless/observability/tracing/serverless-tracing-open-telemetry.html" style="padding-left: 70px;">Using Red Hat OpenShift distributed tracing</a></li>
-                    <li><a class="" href="../../../serverless/observability/tracing/serverless-tracing-jaeger.html" style="padding-left: 70px;">Using Jaeger distributed tracing</a></li>                  </ul>
-                  </li>
-              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-8"><span id="sgSpan-35-8" class="fa fa-caret-right"></span>&nbsp;Integrations</a>
-              <ul id="topicSubGroup-35-8" class="nav-tertiary list-unstyled collapse">
-
-                  <li><a class="" href="../../../serverless/integrations/serverless-ossm-setup.html">Integrating Service Mesh with OpenShift Serverless</a></li>
-                  <li><a class="" href="../../../serverless/integrations/serverless-cost-management-integration.html">Integrating Serverless with the cost management service</a></li>
-                  <li><a class="" href="../../../serverless/integrations/gpu-resources.html">Using NVIDIA GPU resources with serverless applications</a></li>              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-9"><span id="sgSpan-35-9" class="fa fa-caret-right"></span>&nbsp;Removing Serverless</a>
-              <ul id="topicSubGroup-35-9" class="nav-tertiary list-unstyled collapse">
-
-                  <li><a class="" href="../../../serverless/removing/removing-openshift-serverless.html">Removing Serverless overview</a></li>
-                  <li><a class="" href="../../../serverless/removing/uninstalling-knative-eventing.html">Uninstalling Knative Eventing</a></li>
-                  <li><a class="" href="../../../serverless/removing/uninstalling-knative-serving.html">Uninstalling Knative Serving</a></li>
-                  <li><a class="" href="../../../serverless/removing/removing-serverless-operator.html">Removing Serverless Operator</a></li>
-                  <li><a class="" href="../../../serverless/removing/deleting-serverless-crds.html">Deleting Serverless CRDs</a></li>              </ul>
-            </li>
-            <li><a class="" href="../../../serverless/serverless-support.html">Serverless support</a></li>
       </ul>
     </li>
 </ul>
@@ -2743,6 +2470,13 @@
 <div id="toc" class="toc">
 <div id="toctitle" class="title"></div>
 <ul class="sectlevel1">
+<li><a href="#oadp-s3-compatible-backup-storage-providers_about-installing-oadp">AWS S3 compatible backup storage providers</a>
+<ul class="sectlevel2">
+<li><a href="#oadp-s3-compatible-backup-storage-providers-supported">Supported backup storage providers</a></li>
+<li><a href="#oadp-s3-compatible-backup-storage-providers-unsupported">Unsupported backup storage providers</a></li>
+<li><a href="#oadp-s3-compatible-backup-storage-providers-known-limitations">Backup storage providers with known limitations</a></li>
+</ul>
+</li>
 <li><a href="#oadp-configuring-noobaa-for-dr_about-installing-oadp">Configuring NooBaa for disaster recovery on OpenShift Data Foundation</a></li>
 <li><a href="#about-oadp-update-channels_about-installing-oadp">About OADP update channels</a></li>
 <li><a href="#about-installing-oadp-on-multiple-namespaces_about-installing-oadp">Installation of OADP on multiple namespaces</a></li>
@@ -2853,6 +2587,104 @@ the development process.</p>
 </div>
 <div class="paragraph">
 <p>You create a default <code>Secret</code> and then you install the Data Protection Application.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="oadp-s3-compatible-backup-storage-providers_about-installing-oadp"><a class="anchor" href="#oadp-s3-compatible-backup-storage-providers_about-installing-oadp"></a>AWS S3 compatible backup storage providers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>OADP is compatible with many object storage providers for use with different backup and snapshot operations. Several object storage providers are fully supported, several are unsupported but known to work, and some have known  limitations.</p>
+</div>
+<div class="sect2">
+<h3 id="oadp-s3-compatible-backup-storage-providers-supported"><a class="anchor" href="#oadp-s3-compatible-backup-storage-providers-supported"></a>Supported backup storage providers</h3>
+<div class="paragraph">
+<p>The following AWS S3 compatible object storage providers, are fully supported by OADP through the AWS plugin for use as backup storage locations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>MinIO</p>
+</li>
+<li>
+<p>Multicloud Object Gateway (MCG) with NooBaa</p>
+</li>
+<li>
+<p>Amazon Web Services (AWS) S3</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The following compatible object storage providers are supported and have their own Velero object store plugins:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Google Cloud Platform (GCP)</p>
+</li>
+<li>
+<p>Microsoft Azure</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="oadp-s3-compatible-backup-storage-providers-unsupported"><a class="anchor" href="#oadp-s3-compatible-backup-storage-providers-unsupported"></a>Unsupported backup storage providers</h3>
+<div class="paragraph">
+<p>The following AWS S3 compatible object storage providers, are known to work with Velero through the AWS plugin, for use as backup storage locations, however, they are unsupported and have not been tested by Red Hat:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>IBM Cloud</p>
+</li>
+<li>
+<p>Oracle Cloud</p>
+</li>
+<li>
+<p>DigitalOcean</p>
+</li>
+<li>
+<p>NooBaa</p>
+</li>
+<li>
+<p>Tencent Cloud</p>
+</li>
+<li>
+<p>Ceph RADOS v12.2.7</p>
+</li>
+<li>
+<p>Quobyte</p>
+</li>
+<li>
+<p>Cloudian HyperStore</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="oadp-s3-compatible-backup-storage-providers-known-limitations"><a class="anchor" href="#oadp-s3-compatible-backup-storage-providers-known-limitations"></a>Backup storage providers with known limitations</h3>
+<div class="paragraph">
+<p>The following AWS S3 compatible object storage providers are known to work with Velero through the AWS plugin with a limited feature set:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Swift - It works for use as a backup storage location for backup storage, but is not compatible with Restic for filesystem-based volume backup and restore.</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>

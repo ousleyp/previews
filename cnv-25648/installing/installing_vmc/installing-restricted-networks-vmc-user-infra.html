@@ -537,7 +537,6 @@
             </li>
             <li><a class="" href="../../installing/validating-an-installation.html">Validating an installation</a></li>
             <li><a class="" href="../../installing/installing-troubleshooting.html">Troubleshooting installation issues</a></li>
-            <li><a class="" href="../../installing/installing-fips.html">Support for FIPS cryptography</a></li>
       </ul>
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup5"><span id="tgSpan5" class="fa fa-angle-right"></span>Post-installation configuration</a>
@@ -643,7 +642,15 @@
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
                   <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
-            <li><a class="" href="../../web_console/odc-using-web-terminal.html">Using the web terminal</a></li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-8-7"><span id="sgSpan-8-7" class="fa fa-caret-right"></span>&nbsp;Web terminal</a>
+              <ul id="topicSubGroup-8-7" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../web_console/web_terminal/installing-web-terminal.html">Installing the web terminal</a></li>
+                  <li><a class="" href="../../web_console/web_terminal/configuring-web-terminal.html">Configuring the web terminal</a></li>
+                  <li><a class="" href="../../web_console/web_terminal/odc-using-web-terminal.html">Using the web terminal</a></li>
+                  <li><a class="" href="../../web_console/web_terminal/troubleshooting-web-terminal.html">Troubleshooting the web terminal</a></li>
+                  <li><a class="" href="../../web_console/web_terminal/uninstalling-web-terminal.html">Uninstalling the web terminal</a></li>              </ul>
+            </li>
             <li><a class="" href="../../web_console/disabling-web-console.html">Disabling the web console</a></li>
             <li><a class="" href="../../web_console/creating-quick-start-tutorials.html">Creating quick start tutorials</a></li>
       </ul>
@@ -781,7 +788,12 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-release-notes.html">cert-manager Operator for Red Hat OpenShift release notes</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-install.html">Installing the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-issuer-acme.html">Managing certificates with an ACME issuer</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
+                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -1270,9 +1282,9 @@
                   <li><a class="" href="../../cicd/pipelines/using-tekton-hub-with-openshift-pipelines.html">Using Tekton Hub with OpenShift Pipelines</a></li>
                   <li><a class="" href="../../cicd/pipelines/using-pipelines-as-code.html">Using Pipelines as Code</a></li>
                   <li><a class="" href="../../cicd/pipelines/working-with-pipelines-using-the-developer-perspective.html">Working with OpenShift Pipelines using the Developer perspective</a></li>
+                  <li><a class="" href="../../cicd/pipelines/customizing-configurations-in-the-tektonconfig-cr.html">Customizing configurations in the TektonConfig custom resource</a></li>
                   <li><a class="" href="../../cicd/pipelines/reducing-pipelines-resource-consumption.html">Reducing resource consumption of OpenShift Pipelines</a></li>
                   <li><a class="" href="../../cicd/pipelines/setting-compute-resource-quota-for-openshift-pipelines.html">Setting compute resource quota for OpenShift Pipelines</a></li>
-                  <li><a class="" href="../../cicd/pipelines/automatic-pruning-taskrun-pipelinerun.html">Automatic pruning of task run and pipeline run</a></li>
                   <li><a class="" href="../../cicd/pipelines/using-pods-in-a-privileged-security-context.html">Using pods in a privileged security context</a></li>
                   <li><a class="" href="../../cicd/pipelines/securing-webhooks-with-event-listeners.html">Securing webhooks with event listeners</a></li>
                   <li><a class="" href="../../cicd/pipelines/authenticating-pipelines-using-git-secret.html">Authenticating pipelines using git secret</a></li>
@@ -2421,296 +2433,11 @@
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup35"><span id="tgSpan35" class="fa fa-angle-right"></span>Serverless</a>
       <ul id="topicGroup35" class="collapse  list-unstyled">
-            <li><a class="" href="../../serverless/serverless-release-notes.html">Release notes</a></li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-1"><span id="sgSpan-35-1" class="fa fa-caret-right"></span>&nbsp;About Serverless</a>
-              <ul id="topicSubGroup-35-1" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-0"><span id="sgSpan-35-0" class="fa fa-caret-right"></span>&nbsp;About Serverless</a>
+              <ul id="topicSubGroup-35-0" class="nav-tertiary list-unstyled collapse">
 
-                  <li><a class="" href="../../serverless/about/about-serverless.html">Serverless overview</a></li>
-                  <li><a class="" href="../../serverless/about/about-knative-serving.html">Knative Serving overview</a></li>
-                  <li><a class="" href="../../serverless/about/about-knative-eventing.html">Knative Eventing overview</a></li>
-                  <li><a class="" href="../../serverless/about/serverless-functions-about.html">Serverless Functions overview</a></li>              </ul>
+                  <li><a class="" href="../../serverless/about/about-serverless.html">Serverless overview</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-2"><span id="sgSpan-35-2" class="fa fa-caret-right"></span>&nbsp;Installing Serverless</a>
-              <ul id="topicSubGroup-35-2" class="nav-tertiary list-unstyled collapse">
-
-                  <li><a class="" href="../../serverless/install/preparing-serverless-install.html">Preparing to install OpenShift Serverless</a></li>
-                  <li><a class="" href="../../serverless/install/install-serverless-operator.html">Installing the Serverless Operator</a></li>
-                  <li><a class="" href="../../serverless/install/installing-kn.html">Installing the Knative CLI</a></li>
-                  <li><a class="" href="../../serverless/install/installing-knative-serving.html">Installing Knative Serving</a></li>
-                  <li><a class="" href="../../serverless/install/installing-knative-eventing.html">Installing Knative Eventing</a></li>
-                  <li><a class="" href="../../serverless/install/serverless-kafka-admin.html">Configuring Knative for Apache Kafka</a></li>
-                  <li><a class="" href="../../serverless/install/configuring-serverless-functions.html">Configuring Serverless Functions</a></li>
-                  <li><a class="" href="../../serverless/install/serverless-upgrades.html">Serverless upgrades</a></li>              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-3"><span id="sgSpan-35-3" class="fa fa-caret-right"></span>&nbsp;Serving</a>
-              <ul id="topicSubGroup-35-3" class="nav-tertiary list-unstyled collapse">
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-0"><span id="ssgSpan-35-3-0" class="fa fa-caret-right"></span>&nbsp;Getting started with Knative Serving</a>
-                  <ul id="topicSubSubGroup-35-3-0" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/knative-serving/getting-started/serverless-applications.html" style="padding-left: 70px;">Creating Serverless applications</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/getting-started/verifying-application-deployment.html" style="padding-left: 70px;">Verifying application deployment</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-1"><span id="ssgSpan-35-3-1" class="fa fa-caret-right"></span>&nbsp;Autoscaling</a>
-                  <ul id="topicSubSubGroup-35-3-1" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/knative-serving/autoscaling/serverless-autoscaling-developer.html" style="padding-left: 70px;">Autoscaling overview</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/autoscaling/serverless-autoscaling-developer-scale-bounds.html" style="padding-left: 70px;">Scale bounds</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/autoscaling/serverless-concurrency.html" style="padding-left: 70px;">Concurrency</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/autoscaling/serverless-autoscaling-scale-to-zero.html" style="padding-left: 70px;">Scale-to-zero</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-2"><span id="ssgSpan-35-3-2" class="fa fa-caret-right"></span>&nbsp;Configuring Serverless applications</a>
-                  <ul id="topicSubSubGroup-35-3-2" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/knative-serving/config-applications/overriding-config-serving.html" style="padding-left: 70px;">Overriding system deployment configurations</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-applications/multi-container-support-for-serving.html" style="padding-left: 70px;">Multi-container support</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-applications/empty-dir.html" style="padding-left: 70px;">EmptyDir volumes</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-applications/pvcs-for-serving.html" style="padding-left: 70px;">Persistent Volume Claims</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-applications/init-containers.html" style="padding-left: 70px;">Init containers</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-applications/resolving-image-tags-to-digests.html" style="padding-left: 70px;">Resolving image tags to digests</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-applications/serverless-config-tls.html" style="padding-left: 70px;">Configuring TLS authentication</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-applications/restrictive-network-policies.html" style="padding-left: 70px;">Restrictive network policies</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-3"><span id="ssgSpan-35-3-3" class="fa fa-caret-right"></span>&nbsp;Traffic splitting</a>
-                  <ul id="topicSubSubGroup-35-3-3" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/knative-serving/traffic-splitting/traffic-splitting-overview.html" style="padding-left: 70px;">Traffic splitting overview</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/traffic-splitting/traffic-spec-examples.html" style="padding-left: 70px;">Traffic spec examples</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/traffic-splitting/traffic-splitting-using-cli.html" style="padding-left: 70px;">Traffic splitting using the CLI</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/traffic-splitting/traffic-splitting-flags.html" style="padding-left: 70px;">CLI flags for traffic splitting</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/traffic-splitting/traffic-splitting-revisions.html" style="padding-left: 70px;">Splitting traffic between revisions</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/traffic-splitting/traffic-splitting-blue-green.html" style="padding-left: 70px;">Reroute traffic using blue-green strategy</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-4"><span id="ssgSpan-35-3-4" class="fa fa-caret-right"></span>&nbsp;External and Ingress routing</a>
-                  <ul id="topicSubSubGroup-35-3-4" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/knative-serving/external-ingress-routing/routing-overview.html" style="padding-left: 70px;">Routing overview</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/external-ingress-routing/customize-labels-annotations-routes.html" style="padding-left: 70px;">Customizing labels and annotations</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/external-ingress-routing/configuring-service-routes.html" style="padding-left: 70px;">Configuring routes for Knative services</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/external-ingress-routing/https-redirect-global.html" style="padding-left: 70px;">Global HTTPS redirection</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/external-ingress-routing/url-scheme-external-routes.html" style="padding-left: 70px;">URL scheme for external routes</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/external-ingress-routing/https-redirect-per-service.html" style="padding-left: 70px;">HTTPS redirection per service</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/external-ingress-routing/cluster-local-availability.html" style="padding-left: 70px;">Cluster local availability</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/external-ingress-routing/kourier-gateway-service-type.html" style="padding-left: 70px;">Kourier Gateway service type</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/external-ingress-routing/using-http2-gRPC.html" style="padding-left: 70px;">Using HTTP2 and gRPC</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-5"><span id="ssgSpan-35-3-5" class="fa fa-caret-right"></span>&nbsp;Configuring access to Knative services</a>
-                  <ul id="topicSubSubGroup-35-3-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/knative-serving/config-access/serverless-ossm-with-kourier-jwt.html" style="padding-left: 70px;">Configuring JSON Web Token authentication for Knative services</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-access/serverless-ossm-v2x-jwt.html" style="padding-left: 70px;">Using JSON Web Token authentication with Service Mesh 2.x</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-access/serverless-ossm-v1x-jwt.html" style="padding-left: 70px;">Using JSON Web Token authentication with Service Mesh 1.x</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-6"><span id="ssgSpan-35-3-6" class="fa fa-caret-right"></span>&nbsp;Configuring custom domains for Knative services</a>
-                  <ul id="topicSubSubGroup-35-3-6" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/knative-serving/config-custom-domains/serverless-custom-domains.html" style="padding-left: 70px;">Configuring custom domains overview</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-custom-domains/create-domain-mapping.html" style="padding-left: 70px;">Custom domain mapping</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-custom-domains/create-domain-mapping-kn.html" style="padding-left: 70px;">Custom domains using the Knative CLI</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-custom-domains/domain-mapping-odc-developer.html" style="padding-left: 70px;">Domain mapping using the Developer perspective</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-custom-domains/domain-mapping-odc-admin.html" style="padding-left: 70px;">Domain mapping using the Administrator perspective</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-custom-domains/domain-mapping-custom-tls-cert.html" style="padding-left: 70px;">Securing a mapped service using a TLS certificate</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-3-7"><span id="ssgSpan-35-3-7" class="fa fa-caret-right"></span>&nbsp;Configuring high availability for Knative services</a>
-                  <ul id="topicSubSubGroup-35-3-7" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/knative-serving/config-ha-services/ha-services-overview.html" style="padding-left: 70px;">High availability for Knative services overview</a></li>
-                    <li><a class="" href="../../serverless/knative-serving/config-ha-services/ha-replicas-serving.html" style="padding-left: 70px;">High availability for Knative services</a></li>                  </ul>
-                  </li>
-              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-4"><span id="sgSpan-35-4" class="fa fa-caret-right"></span>&nbsp;Eventing</a>
-              <ul id="topicSubGroup-35-4" class="nav-tertiary list-unstyled collapse">
-
-                  <li><a class="" href="../../serverless/eventing/knative-eventing.html">Knative Eventing</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-1"><span id="ssgSpan-35-4-1" class="fa fa-caret-right"></span>&nbsp;Event sources</a>
-                  <ul id="topicSubSubGroup-35-4-1" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/eventing/event-sources/knative-event-sources.html" style="padding-left: 70px;">Event sources overview</a></li>
-                    <li><a class="" href="../../serverless/eventing/event-sources/event-source-admin-perspective.html" style="padding-left: 70px;">Event source in the Administrator perspective</a></li>
-                    <li><a class="" href="../../serverless/eventing/event-sources/serverless-apiserversource.html" style="padding-left: 70px;">Creating an API server source</a></li>
-                    <li><a class="" href="../../serverless/eventing/event-sources/serverless-pingsource.html" style="padding-left: 70px;">Creating a ping source</a></li>
-                    <li><a class="" href="../../serverless/eventing/event-sources/serverless-kafka-developer-source.html" style="padding-left: 70px;">Source for Apache Kafka</a></li>
-                    <li><a class="" href="../../serverless/eventing/event-sources/serverless-custom-event-sources.html" style="padding-left: 70px;">Custom event sources</a></li>
-                    <li><a class="" href="../../serverless/eventing/event-sources/serverless-sink-source-odc.html" style="padding-left: 70px;">Connecting an event source to a sink using the Developer perspective</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-2"><span id="ssgSpan-35-4-2" class="fa fa-caret-right"></span>&nbsp;Event sinks</a>
-                  <ul id="topicSubSubGroup-35-4-2" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/eventing/event-sinks/serverless-event-sinks.html" style="padding-left: 70px;">Event sinks overview</a></li>
-                    <li><a class="" href="../../serverless/eventing/event-sinks/serverless-creating-sinks.html" style="padding-left: 70px;">Creating event sinks</a></li>
-                    <li><a class="" href="../../serverless/eventing/event-sinks/serverless-kafka-developer-sink.html" style="padding-left: 70px;">Sink for Apache Kafka</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-3"><span id="ssgSpan-35-4-3" class="fa fa-caret-right"></span>&nbsp;Brokers</a>
-                  <ul id="topicSubSubGroup-35-4-3" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/eventing/brokers/serverless-brokers.html" style="padding-left: 70px;">Brokers overview</a></li>
-                    <li><a class="" href="../../serverless/eventing/brokers/serverless-broker-types.html" style="padding-left: 70px;">Broker types</a></li>
-                    <li><a class="" href="../../serverless/eventing/brokers/serverless-using-brokers.html" style="padding-left: 70px;">Creating brokers</a></li>
-                    <li><a class="" href="../../serverless/eventing/brokers/serverless-broker-backing-channel-default.html" style="padding-left: 70px;">Configuring the default broker backing channel</a></li>
-                    <li><a class="" href="../../serverless/eventing/brokers/serverless-global-config-broker-class-default.html" style="padding-left: 70px;">Configuring the default broker class</a></li>
-                    <li><a class="" href="../../serverless/eventing/brokers/kafka-broker.html" style="padding-left: 70px;">Knative broker for Apache Kafka</a></li>
-                    <li><a class="" href="../../serverless/eventing/brokers/serverless-using-brokers-managing-brokers.html" style="padding-left: 70px;">Managing brokers</a></li>
-                    <li><a class="" href="../../serverless/eventing/brokers/serverless-event-delivery.html" style="padding-left: 70px;">Event delivery</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-4"><span id="ssgSpan-35-4-4" class="fa fa-caret-right"></span>&nbsp;Triggers</a>
-                  <ul id="topicSubSubGroup-35-4-4" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/eventing/triggers/serverless-triggers.html" style="padding-left: 70px;">Triggers overview</a></li>
-                    <li><a class="" href="../../serverless/eventing/triggers/create-triggers.html" style="padding-left: 70px;">Creating triggers</a></li>
-                    <li><a class="" href="../../serverless/eventing/triggers/list-triggers-cli.html" style="padding-left: 70px;">List triggers from the command line</a></li>
-                    <li><a class="" href="../../serverless/eventing/triggers/describe-triggers-cli.html" style="padding-left: 70px;">Describe triggers from the command line</a></li>
-                    <li><a class="" href="../../serverless/eventing/triggers/connect-trigger-sink.html" style="padding-left: 70px;">Connecting a trigger to a sink</a></li>
-                    <li><a class="" href="../../serverless/eventing/triggers/filter-triggers-cli.html" style="padding-left: 70px;">Filtering triggers from the command line</a></li>
-                    <li><a class="" href="../../serverless/eventing/triggers/update-triggers-cli.html" style="padding-left: 70px;">Updating triggers from the command line</a></li>
-                    <li><a class="" href="../../serverless/eventing/triggers/delete-triggers-cli.html" style="padding-left: 70px;">Deleting triggers from the command line</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-5"><span id="ssgSpan-35-4-5" class="fa fa-caret-right"></span>&nbsp;Channels</a>
-                  <ul id="topicSubSubGroup-35-4-5" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/eventing/channels/serverless-channels.html" style="padding-left: 70px;">Channels and subscriptions</a></li>
-                    <li><a class="" href="../../serverless/eventing/channels/serverless-creating-channels.html" style="padding-left: 70px;">Creating channels</a></li>
-                    <li><a class="" href="../../serverless/eventing/channels/connecting-channels-sinks.html" style="padding-left: 70px;">Connecting channels to sinks</a></li>
-                    <li><a class="" href="../../serverless/eventing/channels/serverless-channel-default.html" style="padding-left: 70px;">Default channel implementation</a></li>
-                    <li><a class="" href="../../serverless/eventing/channels/serverless-kafka-admin-security-channels.html" style="padding-left: 70px;">Security configuration for channels</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-6"><span id="ssgSpan-35-4-6" class="fa fa-caret-right"></span>&nbsp;Subscriptions</a>
-                  <ul id="topicSubSubGroup-35-4-6" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/eventing/subscriptions/serverless-subs.html" style="padding-left: 70px;">Creating subscriptions</a></li>
-                    <li><a class="" href="../../serverless/eventing/subscriptions/serverless-subs-managing.html" style="padding-left: 70px;">Managing subscriptions</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-7"><span id="ssgSpan-35-4-7" class="fa fa-caret-right"></span>&nbsp;Event discovery</a>
-                  <ul id="topicSubSubGroup-35-4-7" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/eventing/discovery/serverless-listing-event-sources.html" style="padding-left: 70px;">Listing event sources and event source types</a></li>
-                    <li><a class="" href="../../serverless/eventing/discovery/list-event-source-types-cli.html" style="padding-left: 70px;">Listing event source types from the command line</a></li>
-                    <li><a class="" href="../../serverless/eventing/discovery/list-event-source-types-odc.html" style="padding-left: 70px;">Listing event source types from the Developer perspective</a></li>
-                    <li><a class="" href="../../serverless/eventing/discovery/list-event-sources-cli.html" style="padding-left: 70px;">Listing event sources from the command line</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-4-8"><span id="ssgSpan-35-4-8" class="fa fa-caret-right"></span>&nbsp;Tuning eventing configuration</a>
-                  <ul id="topicSubSubGroup-35-4-8" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/eventing/tuning/overriding-config-eventing.html" style="padding-left: 70px;">Overriding deployment configurations</a></li>
-                    <li><a class="" href="../../serverless/eventing/tuning/serverless-ha.html" style="padding-left: 70px;">High availability</a></li>                  </ul>
-                  </li>
-              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-5"><span id="sgSpan-35-5" class="fa fa-caret-right"></span>&nbsp;Functions</a>
-              <ul id="topicSubGroup-35-5" class="nav-tertiary list-unstyled collapse">
-
-                  <li><a class="" href="../../serverless/functions/serverless-functions-setup.html">Setting up OpenShift Serverless Functions</a></li>
-                  <li><a class="" href="../../serverless/functions/serverless-functions-getting-started.html">Getting started with functions</a></li>
-                  <li><a class="" href="../../serverless/functions/serverless-functions-on-cluster-builds.html">On-cluster function building and deploying</a></li>
-                  <li><a class="" href="../../serverless/functions/serverless-developing-quarkus-functions.html">Developing Quarkus functions</a></li>
-                  <li><a class="" href="../../serverless/functions/serverless-developing-nodejs-functions.html">Developing Node.js functions</a></li>
-                  <li><a class="" href="../../serverless/functions/serverless-developing-typescript-functions.html">Developing TypeScript functions</a></li>
-                  <li><a class="" href="../../serverless/functions/serverless-developing-python-functions.html">Developing Python functions</a></li>
-                  <li><a class="" href="../../serverless/functions/serverless-functions-eventing.html">Using functions with Knative Eventing</a></li>
-                  <li><a class="" href="../../serverless/functions/serverless-functions-yaml.html">Function project configuration in func.yaml</a></li>
-                  <li><a class="" href="../../serverless/functions/serverless-functions-accessing-secrets-configmaps.html">Accessing secrets and config maps from functions</a></li>
-                  <li><a class="" href="../../serverless/functions/serverless-functions-annotations.html">Adding annotations to functions</a></li>
-                  <li><a class="" href="../../serverless/functions/serverless-functions-reference-guide.html">Functions development reference guide</a></li>              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-6"><span id="sgSpan-35-6" class="fa fa-caret-right"></span>&nbsp;Knative CLI</a>
-              <ul id="topicSubGroup-35-6" class="nav-tertiary list-unstyled collapse">
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-6-0"><span id="ssgSpan-35-6-0" class="fa fa-caret-right"></span>&nbsp;Knative Serving CLI commands</a>
-                  <ul id="topicSubSubGroup-35-6-0" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/cli_tools/serving_cli/kn-service.html" style="padding-left: 70px;">kn service commands</a></li>
-                    <li><a class="" href="../../serverless/cli_tools/serving_cli/kn-service-offline.html" style="padding-left: 70px;">kn service commands in offline mode</a></li>
-                    <li><a class="" href="../../serverless/cli_tools/serving_cli/kn-container.html" style="padding-left: 70px;">kn container commands</a></li>
-                    <li><a class="" href="../../serverless/cli_tools/serving_cli/kn-domain.html" style="padding-left: 70px;">kn domain commands</a></li>                  </ul>
-                  </li>
-
-                  <li><a class="" href="../../serverless/cli_tools/advanced-kn-config.html">Configuring the Knative CLI</a></li>
-                  <li><a class="" href="../../serverless/cli_tools/kn-plugins.html">Knative CLI plugins</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-6-3"><span id="ssgSpan-35-6-3" class="fa fa-caret-right"></span>&nbsp;Knative Eventing CLI commands</a>
-                  <ul id="topicSubSubGroup-35-6-3" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/cli_tools/eventing_cli/kn-source.html" style="padding-left: 70px;">kn source commands</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-6-4"><span id="ssgSpan-35-6-4" class="fa fa-caret-right"></span>&nbsp;Knative Functions CLI commands</a>
-                  <ul id="topicSubSubGroup-35-6-4" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/cli_tools/functions_cli/kn-functions.html" style="padding-left: 70px;">kn functions commands</a></li>                  </ul>
-                  </li>
-              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-7"><span id="sgSpan-35-7" class="fa fa-caret-right"></span>&nbsp;Observability</a>
-              <ul id="topicSubGroup-35-7" class="nav-tertiary list-unstyled collapse">
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-7-0"><span id="ssgSpan-35-7-0" class="fa fa-caret-right"></span>&nbsp;Administrator metrics</a>
-                  <ul id="topicSubSubGroup-35-7-0" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/observability/admin-metrics/serverless-admin-metrics.html" style="padding-left: 70px;">Administrator metrics overview</a></li>
-                    <li><a class="" href="../../serverless/observability/admin-metrics/serverless-controller-metrics.html" style="padding-left: 70px;">Controller metrics</a></li>
-                    <li><a class="" href="../../serverless/observability/admin-metrics/serverless-webhook-metrics.html" style="padding-left: 70px;">Webhook metrics</a></li>
-                    <li><a class="" href="../../serverless/observability/admin-metrics/serverless-admin-metrics-eventing.html" style="padding-left: 70px;">Knative Eventing metrics</a></li>
-                    <li><a class="" href="../../serverless/observability/admin-metrics/serverless-admin-metrics-serving.html" style="padding-left: 70px;">Knative Serving metrics</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-7-1"><span id="ssgSpan-35-7-1" class="fa fa-caret-right"></span>&nbsp;Developer metrics</a>
-                  <ul id="topicSubSubGroup-35-7-1" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/observability/developer-metrics/serverless-developer-metrics.html" style="padding-left: 70px;">Developer metrics overview</a></li>
-                    <li><a class="" href="../../serverless/observability/developer-metrics/serverless-monitoring-services-default-metrics.html" style="padding-left: 70px;">Default Knative service metrics</a></li>
-                    <li><a class="" href="../../serverless/observability/developer-metrics/serverless-monitoring-services-custom-metrics.html" style="padding-left: 70px;">Custom Knative service metrics</a></li>
-                    <li><a class="" href="../../serverless/observability/developer-metrics/serverless-monitoring-services-configuration-scraping.html" style="padding-left: 70px;">Configuration for scraping custom metrics</a></li>
-                    <li><a class="" href="../../serverless/observability/developer-metrics/serverless-monitoring-services-examining-metrics.html" style="padding-left: 70px;">Examining metrics of a service</a></li>
-                    <li><a class="" href="../../serverless/observability/developer-metrics/serverless-developer-metrics-dashboard.html" style="padding-left: 70px;">Dashboard for service metrics</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-7-2"><span id="ssgSpan-35-7-2" class="fa fa-caret-right"></span>&nbsp;Cluster logging</a>
-                  <ul id="topicSubSubGroup-35-7-2" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/observability/cluster-logging/cluster-logging-serverless.html" style="padding-left: 70px;">Using OpenShift Logging with Serverless</a></li>
-                    <li><a class="" href="../../serverless/observability/cluster-logging/finding-serving-logs-components.html" style="padding-left: 70px;">Finding logs for Knative Serving components</a></li>
-                    <li><a class="" href="../../serverless/observability/cluster-logging/finding-serving-logs-services.html" style="padding-left: 70px;">Finding logs for Knative Serving services</a></li>                  </ul>
-                  </li>
-
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-35-7-3"><span id="ssgSpan-35-7-3" class="fa fa-caret-right"></span>&nbsp;Tracing</a>
-                  <ul id="topicSubSubGroup-35-7-3" class="nav-tertiary list-unstyled collapse">
-
-                    <li><a class="" href="../../serverless/observability/tracing/serverless-tracing.html" style="padding-left: 70px;">Tracing requests</a></li>
-                    <li><a class="" href="../../serverless/observability/tracing/serverless-tracing-open-telemetry.html" style="padding-left: 70px;">Using Red Hat OpenShift distributed tracing</a></li>
-                    <li><a class="" href="../../serverless/observability/tracing/serverless-tracing-jaeger.html" style="padding-left: 70px;">Using Jaeger distributed tracing</a></li>                  </ul>
-                  </li>
-              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-8"><span id="sgSpan-35-8" class="fa fa-caret-right"></span>&nbsp;Integrations</a>
-              <ul id="topicSubGroup-35-8" class="nav-tertiary list-unstyled collapse">
-
-                  <li><a class="" href="../../serverless/integrations/serverless-ossm-setup.html">Integrating Service Mesh with OpenShift Serverless</a></li>
-                  <li><a class="" href="../../serverless/integrations/serverless-cost-management-integration.html">Integrating Serverless with the cost management service</a></li>
-                  <li><a class="" href="../../serverless/integrations/gpu-resources.html">Using NVIDIA GPU resources with serverless applications</a></li>              </ul>
-            </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-35-9"><span id="sgSpan-35-9" class="fa fa-caret-right"></span>&nbsp;Removing Serverless</a>
-              <ul id="topicSubGroup-35-9" class="nav-tertiary list-unstyled collapse">
-
-                  <li><a class="" href="../../serverless/removing/removing-openshift-serverless.html">Removing Serverless overview</a></li>
-                  <li><a class="" href="../../serverless/removing/uninstalling-knative-eventing.html">Uninstalling Knative Eventing</a></li>
-                  <li><a class="" href="../../serverless/removing/uninstalling-knative-serving.html">Uninstalling Knative Serving</a></li>
-                  <li><a class="" href="../../serverless/removing/removing-serverless-operator.html">Removing Serverless Operator</a></li>
-                  <li><a class="" href="../../serverless/removing/deleting-serverless-crds.html">Deleting Serverless CRDs</a></li>              </ul>
-            </li>
-            <li><a class="" href="../../serverless/serverless-support.html">Serverless support</a></li>
       </ul>
     </li>
 </ul>
@@ -2759,6 +2486,7 @@
 <li><a href="#vsphere-csi-driver-reqs_installing-restricted-networks-vmc-user-infra">VMware vSphere CSI Driver Operator requirements</a></li>
 <li><a href="#installation-requirements-user-infra_installing-restricted-networks-vmc-user-infra">Requirements for a cluster with user-provisioned infrastructure</a>
 <ul class="sectlevel2">
+<li><a href="#installation-vsphere-installer-infra-requirements_installing-restricted-networks-vmc-user-infra">vCenter requirements</a></li>
 <li><a href="#installation-machine-requirements_installing-restricted-networks-vmc-user-infra">Required machines for cluster installation</a></li>
 <li><a href="#installation-minimum-resource-requirements_installing-restricted-networks-vmc-user-infra">Minimum resource requirements for cluster installation</a></li>
 <li><a href="#csr-management_installing-restricted-networks-vmc-user-infra">Certificate signing requests management</a></li>
@@ -3267,12 +2995,688 @@ of the required machines.</p>
 <p>This section describes the requirements for deploying OpenShift Container Platform on user-provisioned infrastructure.</p>
 </div>
 <div class="sect2">
+<h3 id="installation-vsphere-installer-infra-requirements_installing-restricted-networks-vmc-user-infra"><a class="anchor" href="#installation-vsphere-installer-infra-requirements_installing-restricted-networks-vmc-user-infra"></a>vCenter requirements</h3>
+<div class="paragraph">
+<p>Before you install an OpenShift Container Platform cluster on your vCenter that uses infrastructure that you provided, you must prepare your environment.</p>
+</div>
+<h4 id="installation-vsphere-installer-infra-requirements-account_installing-restricted-networks-vmc-user-infra" class="discrete">Required vCenter account privileges</h4>
+<div class="paragraph">
+<p>To install an OpenShift Container Platform cluster in a vCenter, your vSphere account must include privileges for reading and creating the required resources. Using an account that has global administrative privileges is the simplest way to access all of the necessary permissions.</p>
+</div>
+<details>
+<summary class="title">Roles and privileges required for installation in vSphere API</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">vSphere object for role</th>
+<th class="tableblock halign-left valign-top">When required</th>
+<th class="tableblock halign-left valign-top">Required privileges in vSphere API</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>Cns.Searchable</code><br>
+<code>InventoryService.Tagging.AttachTag</code><br>
+<code>InventoryService.Tagging.CreateCategory</code><br>
+<code>InventoryService.Tagging.CreateTag</code><br>
+<code>InventoryService.Tagging.DeleteCategory</code><br>
+<code>InventoryService.Tagging.DeleteTag</code><br>
+<code>InventoryService.Tagging.EditCategory</code><br>
+<code>InventoryService.Tagging.EditTag</code><br>
+<code>Sessions.ValidateSession</code><br>
+<code>StorageProfile.Update</code><br>
+<code>StorageProfile.View</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter Cluster</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>If VMs will be created in the cluster root</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>Host.Config.Storage</code><br>
+<code>Resource.AssignVMToPool</code><br>
+<code>VApp.AssignResourcePool</code><br>
+<code>VApp.Import</code><br>
+<code>VirtualMachine.Config.AddNewDisk</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter Resource Pool</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>If an existing resource pool is provided</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>Host.Config.Storage</code><br>
+<code>Resource.AssignVMToPool</code><br>
+<code>VApp.AssignResourcePool</code><br>
+<code>VApp.Import</code><br>
+<code>VirtualMachine.Config.AddNewDisk</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere Datastore</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>Datastore.AllocateSpace</code><br>
+<code>Datastore.Browse</code><br>
+<code>Datastore.FileManagement</code><br>
+<code>InventoryService.Tagging.ObjectAttachable</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere Port Group</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>Network.Assign</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Virtual Machine Folder</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>InventoryService.Tagging.ObjectAttachable</code><br>
+<code>Resource.AssignVMToPool</code><br>
+<code>VApp.Import</code><br>
+<code>VirtualMachine.Config.AddExistingDisk</code><br>
+<code>VirtualMachine.Config.AddNewDisk</code><br>
+<code>VirtualMachine.Config.AddRemoveDevice</code><br>
+<code>VirtualMachine.Config.AdvancedConfig</code><br>
+<code>VirtualMachine.Config.Annotation</code><br>
+<code>VirtualMachine.Config.CPUCount</code><br>
+<code>VirtualMachine.Config.DiskExtend</code><br>
+<code>VirtualMachine.Config.DiskLease</code><br>
+<code>VirtualMachine.Config.EditDevice</code><br>
+<code>VirtualMachine.Config.Memory</code><br>
+<code>VirtualMachine.Config.RemoveDisk</code><br>
+<code>VirtualMachine.Config.Rename</code><br>
+<code>VirtualMachine.Config.ResetGuestInfo</code><br>
+<code>VirtualMachine.Config.Resource</code><br>
+<code>VirtualMachine.Config.Settings</code><br>
+<code>VirtualMachine.Config.UpgradeVirtualHardware</code><br>
+<code>VirtualMachine.Interact.GuestControl</code><br>
+<code>VirtualMachine.Interact.PowerOff</code><br>
+<code>VirtualMachine.Interact.PowerOn</code><br>
+<code>VirtualMachine.Interact.Reset</code><br>
+<code>VirtualMachine.Inventory.Create</code><br>
+<code>VirtualMachine.Inventory.CreateFromExisting</code><br>
+<code>VirtualMachine.Inventory.Delete</code><br>
+<code>VirtualMachine.Provisioning.Clone</code><br>
+<code>VirtualMachine.Provisioning.MarkAsTemplate</code><br>
+<code>VirtualMachine.Provisioning.DeployTemplate</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter Datacenter</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>If the installation program creates the virtual machine folder. For UPI, <code>VirtualMachine.Inventory.Create</code> and <code>VirtualMachine.Inventory.Delete</code> privileges are optional if your cluster does not use the Machine API.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>InventoryService.Tagging.ObjectAttachable</code><br>
+<code>Resource.AssignVMToPool</code><br>
+<code>VApp.Import</code><br>
+<code>VirtualMachine.Config.AddExistingDisk</code><br>
+<code>VirtualMachine.Config.AddNewDisk</code><br>
+<code>VirtualMachine.Config.AddRemoveDevice</code><br>
+<code>VirtualMachine.Config.AdvancedConfig</code><br>
+<code>VirtualMachine.Config.Annotation</code><br>
+<code>VirtualMachine.Config.CPUCount</code><br>
+<code>VirtualMachine.Config.DiskExtend</code><br>
+<code>VirtualMachine.Config.DiskLease</code><br>
+<code>VirtualMachine.Config.EditDevice</code><br>
+<code>VirtualMachine.Config.Memory</code><br>
+<code>VirtualMachine.Config.RemoveDisk</code><br>
+<code>VirtualMachine.Config.Rename</code><br>
+<code>VirtualMachine.Config.ResetGuestInfo</code><br>
+<code>VirtualMachine.Config.Resource</code><br>
+<code>VirtualMachine.Config.Settings</code><br>
+<code>VirtualMachine.Config.UpgradeVirtualHardware</code><br>
+<code>VirtualMachine.Interact.GuestControl</code><br>
+<code>VirtualMachine.Interact.PowerOff</code><br>
+<code>VirtualMachine.Interact.PowerOn</code><br>
+<code>VirtualMachine.Interact.Reset</code><br>
+<code>VirtualMachine.Inventory.Create</code><br>
+<code>VirtualMachine.Inventory.CreateFromExisting</code><br>
+<code>VirtualMachine.Inventory.Delete</code><br>
+<code>VirtualMachine.Provisioning.Clone</code><br>
+<code>VirtualMachine.Provisioning.DeployTemplate</code><br>
+<code>VirtualMachine.Provisioning.MarkAsTemplate</code><br>
+<code>Folder.Create</code><br>
+<code>Folder.Delete</code></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary class="title">Roles and privileges required for installation in vCenter graphical user interface (GUI)</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">vSphere object for role</th>
+<th class="tableblock halign-left valign-top">When required</th>
+<th class="tableblock halign-left valign-top">Required privileges in vCenter GUI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>Cns.Searchable</code><br>
+<code>"vSphere Tagging"."Assign or Unassign vSphere Tag"</code><br>
+<code>"vSphere Tagging"."Create vSphere Tag Category"</code><br>
+<code>"vSphere Tagging"."Create vSphere Tag"</code><br>
+<code>vSphere Tagging"."Delete vSphere Tag Category"</code><br>
+<code>"vSphere Tagging"."Delete vSphere Tag"</code><br>
+<code>"vSphere Tagging"."Edit vSphere Tag Category"</code><br>
+<code>"vSphere Tagging"."Edit vSphere Tag"</code><br>
+<code>Sessions."Validate session"</code><br>
+<code>"Profile-driven storage"."Profile-driven storage update"</code><br>
+<code>"Profile-driven storage"."Profile-driven storage view"</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter Cluster</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>If VMs will be created in the cluster root</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>Host.Configuration."Storage partition configuration"</code><br>
+<code>Resource."Assign virtual machine to resource pool"</code><br>
+<code>VApp."Assign resource pool"</code><br>
+<code>VApp.Import</code><br>
+<code>"Virtual machine"."Change Configuration"."Add new disk"</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter Resource Pool</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>If an existing resource pool is provided</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>Host.Configuration."Storage partition configuration"</code><br>
+<code>Resource."Assign virtual machine to resource pool"</code><br>
+<code>VApp."Assign resource pool"</code><br>
+<code>VApp.Import</code><br>
+<code>"Virtual machine"."Change Configuration"."Add new disk"</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere Datastore</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>Datastore."Allocate space"</code><br>
+<code>Datastore."Browse datastore"</code><br>
+<code>Datastore."Low level file operations"</code><br>
+<code>"vSphere Tagging"."Assign or Unassign vSphere Tag on Object"</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere Port Group</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>Network."Assign network"</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Virtual Machine Folder</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>"vSphere Tagging"."Assign or Unassign vSphere Tag on Object"</code><br>
+<code>Resource."Assign virtual machine to resource pool"</code><br>
+<code>VApp.Import</code><br>
+<code>"Virtual machine"."Change Configuration"."Add existing disk"</code><br>
+<code>"Virtual machine"."Change Configuration"."Add new disk"</code><br>
+<code>"Virtual machine"."Change Configuration"."Add or remove device"</code><br>
+<code>"Virtual machine"."Change Configuration"."Advanced configuration"</code><br>
+<code>"Virtual machine"."Change Configuration"."Set annotation"</code><br>
+<code>"Virtual machine"."Change Configuration"."Change CPU count"</code><br>
+<code>"Virtual machine"."Change Configuration"."Extend virtual disk"</code><br>
+<code>"Virtual machine"."Change Configuration"."Acquire disk lease"</code><br>
+<code>"Virtual machine"."Change Configuration"."Modify device settings"</code><br>
+<code>"Virtual machine"."Change Configuration"."Change Memory"</code><br>
+<code>"Virtual machine"."Change Configuration"."Remove disk"</code><br>
+<code>"Virtual machine"."Change Configuration".Rename</code><br>
+<code>"Virtual machine"."Change Configuration"."Reset guest information"</code><br>
+<code>"Virtual machine"."Change Configuration"."Change resource"</code><br>
+<code>"Virtual machine"."Change Configuration"."Change Settings"</code><br>
+<code>"Virtual machine"."Change Configuration"."Upgrade virtual machine compatibility"</code><br>
+<code>"Virtual machine".Interaction."Guest operating system management by VIX API"</code><br>
+<code>"Virtual machine".Interaction."Power off"</code><br>
+<code>"Virtual machine".Interaction."Power on"</code><br>
+<code>"Virtual machine".Interaction.Reset</code><br>
+<code>"Virtual machine"."Edit Inventory"."Create new"</code><br>
+<code>"Virtual machine"."Edit Inventory"."Create from existing"</code><br>
+<code>"Virtual machine"."Edit Inventory"."Remove"</code><br>
+<code>"Virtual machine".Provisioning."Clone virtual machine"</code><br>
+<code>"Virtual machine".Provisioning."Mark as template"</code><br>
+<code>"Virtual machine".Provisioning."Deploy template"</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter Datacenter</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>If the installation program creates the virtual machine folder. For UPI, <code>VirtualMachine.Inventory.Create</code> and <code>VirtualMachine.Inventory.Delete</code> privileges are optional if your cluster does not use the Machine API.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>"vSphere Tagging"."Assign or Unassign vSphere Tag on Object"</code><br>
+<code>Resource."Assign virtual machine to resource pool"</code><br>
+<code>VApp.Import</code><br>
+<code>"Virtual machine"."Change Configuration"."Add existing disk"</code><br>
+<code>"Virtual machine"."Change Configuration"."Add new disk"</code><br>
+<code>"Virtual machine"."Change Configuration"."Add or remove device"</code><br>
+<code>"Virtual machine"."Change Configuration"."Advanced configuration"</code><br>
+<code>"Virtual machine"."Change Configuration"."Set annotation"</code><br>
+<code>"Virtual machine"."Change Configuration"."Change CPU count"</code><br>
+<code>"Virtual machine"."Change Configuration"."Extend virtual disk"</code><br>
+<code>"Virtual machine"."Change Configuration"."Acquire disk lease"</code><br>
+<code>"Virtual machine"."Change Configuration"."Modify device settings"</code><br>
+<code>"Virtual machine"."Change Configuration"."Change Memory"</code><br>
+<code>"Virtual machine"."Change Configuration"."Remove disk"</code><br>
+<code>"Virtual machine"."Change Configuration".Rename</code><br>
+<code>"Virtual machine"."Change Configuration"."Reset guest information"</code><br>
+<code>"Virtual machine"."Change Configuration"."Change resource"</code><br>
+<code>"Virtual machine"."Change Configuration"."Change Settings"</code><br>
+<code>"Virtual machine"."Change Configuration"."Upgrade virtual machine compatibility"</code><br>
+<code>"Virtual machine".Interaction."Guest operating system management by VIX API"</code><br>
+<code>"Virtual machine".Interaction."Power off"</code><br>
+<code>"Virtual machine".Interaction."Power on"</code><br>
+<code>"Virtual machine".Interaction.Reset</code><br>
+<code>"Virtual machine"."Edit Inventory"."Create new"</code><br>
+<code>"Virtual machine"."Edit Inventory"."Create from existing"</code><br>
+<code>"Virtual machine"."Edit Inventory"."Remove"</code><br>
+<code>"Virtual machine".Provisioning."Clone virtual machine"</code><br>
+<code>"Virtual machine".Provisioning."Deploy template"</code><br>
+<code>"Virtual machine".Provisioning."Mark as template"</code><br>
+<code>Folder."Create folder"</code><br>
+<code>Folder."Delete folder"</code></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Additionally, the user requires some <code>ReadOnly</code> permissions, and some of the roles require permission to propogate the permissions to child objects. These settings vary depending on whether or not you install the cluster into an existing folder.</p>
+</div>
+<details>
+<summary class="title">Required permissions and propagation settings</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">vSphere object</th>
+<th class="tableblock halign-left valign-top">When required</th>
+<th class="tableblock halign-left valign-top">Propagate to children</th>
+<th class="tableblock halign-left valign-top">Permissions required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>False</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Listed required privileges</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><div class="content"><div class="paragraph">
+<p>vSphere vCenter Datacenter</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Existing folder</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>False</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>ReadOnly</code> permission</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Installation program creates the folder</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>True</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Listed required privileges</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><div class="content"><div class="paragraph">
+<p>vSphere vCenter Cluster</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Existing resource pool</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>True</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>ReadOnly</code> permission</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>VMs in cluster root</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>True</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Listed required privileges</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter Datastore</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>False</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Listed required privileges</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere Switch</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>False</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>ReadOnly</code> permission</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere Port Group</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Always</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>False</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Listed required privileges</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter Virtual Machine Folder</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Existing folder</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>True</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Listed required privileges</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>vSphere vCenter Resource Pool</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Existing resource pool</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>True</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Listed required privileges</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>For more information about creating an account with only the required privileges, see <a href="https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-5372F580-5C23-4E9C-8A4E-EF1B4DD9033E.html">vSphere Permissions and User Management Tasks</a> in the vSphere documentation.</p>
+</div>
+<h4 id="installation-vsphere-installer-infra-requirements-vmotion_installing-restricted-networks-vmc-user-infra" class="discrete">Using OpenShift Container Platform with vMotion</h4>
+<div class="paragraph">
+<p>If you intend on using vMotion in your vSphere environment, consider the following before installing an OpenShift Container Platform cluster.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>OpenShift Container Platform generally supports compute-only vMotion. Using Storage vMotion can cause issues and is not supported.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>To help ensure the uptime of your compute and control plane nodes, it is recommended that you follow the VMware best practices for vMotion. It is also recommended to use VMware anti-affinity rules to improve the availability of OpenShift Container Platform during maintenance or hardware issues.</p>
+</div>
+<div class="paragraph">
+<p>For more information about vMotion and anti-affinity rules, see the VMware vSphere documentation for  <a href="https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-3B41119A-1276-404B-8BFB-A32409052449.html">vMotion networking requirements</a> and <a href="https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-FBE46165-065C-48C2-B775-7ADA87FF9A20.html">VM anti-affinity rules</a>.</p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>If you are using vSphere volumes in your pods, migrating a VM across datastores either manually or through Storage vMotion causes, invalid references within OpenShift Container Platform persistent volume (PV) objects. These references prevent affected pods from starting up and can result in data loss.</p>
+</li>
+<li>
+<p>Similarly, OpenShift Container Platform does not support selective migration of VMDKs across datastores, using datastore clusters for VM provisioning or for dynamic or static provisioning of PVs, or using a datastore that is part of a datastore cluster for dynamic or static provisioning of PVs.</p>
+</li>
+</ul>
+</div>
+<h4 id="installation-vsphere-installer-infra-requirements-resources_installing-restricted-networks-vmc-user-infra" class="discrete">Cluster resources</h4>
+<div class="paragraph">
+<p>When you deploy an OpenShift Container Platform cluster that uses infrastructure that you provided, you must create the following resources in your vCenter instance:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>1 Folder</p>
+</li>
+<li>
+<p>1 Tag category</p>
+</li>
+<li>
+<p>1 Tag</p>
+</li>
+<li>
+<p>Virtual machines:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>1 template</p>
+</li>
+<li>
+<p>1 temporary bootstrap node</p>
+</li>
+<li>
+<p>3 control plane nodes</p>
+</li>
+<li>
+<p>3 compute machines</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Although these resources use 856 GB of storage, the bootstrap node is destroyed during the cluster installation process. A minimum of 800 GB of storage is required to use a standard cluster.</p>
+</div>
+<div class="paragraph">
+<p>If you deploy more compute machines, the OpenShift Container Platform cluster will use more storage.</p>
+</div>
+<h4 id="installation-vsphere-installer-infra-requirements-limits_installing-restricted-networks-vmc-user-infra" class="discrete">Cluster limits</h4>
+<div class="paragraph">
+<p>Available resources vary between clusters. The number of possible clusters within a vCenter is limited primarily by available storage space and any limitations on the number of required resources. Be sure to consider both limitations to the vCenter resources that the cluster creates and the resources that you require to deploy a cluster, such as IP addresses and networks.</p>
+</div>
+<h4 id="installation-vsphere-installer-infra-requirements-networking_installing-restricted-networks-vmc-user-infra" class="discrete">Networking requirements</h4>
+<div class="paragraph">
+<p>You must use DHCP for the network and ensure that the DHCP server is configured to provide persistent IP addresses to the cluster machines. You must configure the default gateway to use the DHCP server. All nodes must be in the same VLAN. You cannot scale the cluster using a second VLAN as a Day 2 operation.
+Additionally, you must create the following networking resources before you install the OpenShift Container Platform cluster:</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It is recommended that each OpenShift Container Platform node in the cluster must have access to a Network Time Protocol (NTP) server that is discoverable via DHCP. Installation is possible without an NTP server. However, asynchronous server clocks will cause errors, which NTP server prevents.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h5 id="installation-vsphere-installer-infra-requirements-_installing-restricted-networks-vmc-user-infra" class="discrete">Required IP Addresses</h5>
+<h5 id="installation-vsphere-installer-infra-requirements-dns-records_installing-restricted-networks-vmc-user-infra" class="discrete">DNS records</h5>
+<div class="paragraph">
+<p>You must create DNS records for two static IP addresses in the appropriate DNS server for the vCenter instance that hosts your OpenShift Container Platform cluster. In each record, <code>&lt;cluster_name&gt;</code> is the cluster name and <code>&lt;base_domain&gt;</code> is the cluster base domain that you specify when you install the cluster. A complete DNS record takes the form: <code>&lt;component&gt;.&lt;cluster_name&gt;.&lt;base_domain&gt;.</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Required DNS records</caption>
+<colgroup>
+<col style="width: 11.1111%;">
+<col style="width: 55.5555%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Record</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>API VIP</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>api.&lt;cluster_name&gt;.&lt;base_domain&gt;.</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>This DNS A/AAAA or CNAME record must point to the load balancer
+for the control plane machines. This record must be resolvable by both clients
+external to the cluster and from all the nodes within the cluster.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ingress VIP</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>*.apps.&lt;cluster_name&gt;.&lt;base_domain&gt;.</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>A wildcard DNS A/AAAA or CNAME record that points to the load balancer that targets the
+machines that run the Ingress router pods, which are the worker nodes by
+default. This record must be resolvable by both clients external to the cluster
+and from all the nodes within the cluster.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist _additional-resources">
+<div class="title">Additional resources</div>
+<ul>
+<li>
+<p><a href="../../machine_management/creating_machinesets/creating-machineset-vsphere.html#creating-machineset-vsphere_creating-machineset-vsphere">Creating a compute machine set on vSphere</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
 <h3 id="installation-machine-requirements_installing-restricted-networks-vmc-user-infra"><a class="anchor" href="#installation-machine-requirements_installing-restricted-networks-vmc-user-infra"></a>Required machines for cluster installation</h3>
 <div class="paragraph">
 <p>The smallest OpenShift Container Platform clusters require the following hosts:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. Minimum required hosts</caption>
+<caption class="title">Table 4. Minimum required hosts</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3329,7 +3733,7 @@ See <a href="https://access.redhat.com/articles/rhel-limits">Red Hat Enterprise 
 <p>Each cluster machine must meet the following minimum requirements:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 4. Minimum resource requirements</caption>
+<caption class="title">Table 5. Minimum resource requirements</caption>
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 16.6666%;">
@@ -3470,7 +3874,7 @@ for platform containers and provide telemetry data to Red Hat.</p>
 </table>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. Ports used for all-machine to all-machine communications</caption>
+<caption class="title">Table 6. Ports used for all-machine to all-machine communications</caption>
 <colgroup>
 <col style="width: 22.2222%;">
 <col style="width: 22.2222%;">
@@ -3599,7 +4003,7 @@ the Cluster Version Operator on port <code>9099</code>.</p>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. Ports used for all-machine to control plane communications</caption>
+<caption class="title">Table 7. Ports used for all-machine to control plane communications</caption>
 <colgroup>
 <col style="width: 22.2222%;">
 <col style="width: 22.2222%;">
@@ -3627,7 +4031,7 @@ the Cluster Version Operator on port <code>9099</code>.</p>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 7. Ports used for control plane machine to control plane machine communications</caption>
+<caption class="title">Table 8. Ports used for control plane machine to control plane machine communications</caption>
 <colgroup>
 <col style="width: 22.2222%;">
 <col style="width: 22.2222%;">
@@ -3731,7 +4135,7 @@ not succeed.</p>
 <p>The following DNS records are required for a user-provisioned OpenShift Container Platform cluster and they must be in place before installation. In each record, <code>&lt;cluster_name&gt;</code> is the cluster name and <code>&lt;base_domain&gt;</code> is the base domain that you specify in the <code>install-config.yaml</code> file. A complete DNS record takes the form: <code>&lt;component&gt;.&lt;cluster_name&gt;.&lt;base_domain&gt;.</code>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 8. Required DNS records</caption>
+<caption class="title">Table 9. Required DNS records</caption>
 <colgroup>
 <col style="width: 11.1111%;">
 <col style="width: 33.3333%;">
@@ -4088,7 +4492,7 @@ worker1.ocp4.example.com.	IN	A	192.168.1.7 <i class="conum" data-value="6"></i><
 <p>Configure the following ports on both the front and back of the load balancers:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 9. API load balancer</caption>
+<caption class="title">Table 10. API load balancer</caption>
 <colgroup>
 <col style="width: 15.3846%;">
 <col style="width: 38.4615%;">
@@ -4179,7 +4583,7 @@ to become unhealthy, are well-tested values.</p>
 <p>Configure the following ports on both the front and back of the load balancers:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. Application ingress load balancer</caption>
+<caption class="title">Table 11. Application ingress load balancer</caption>
 <colgroup>
 <col style="width: 15.3846%;">
 <col style="width: 38.4615%;">
@@ -5204,7 +5608,7 @@ installation process. You must back it up now.</p>
 <p>Required installation configuration parameters are described in the following table:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. Required parameters</caption>
+<caption class="title">Table 12. Required parameters</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 30%;">
@@ -5299,7 +5703,7 @@ installation process. You must back it up now.</p>
 </table>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. Network parameters</caption>
+<caption class="title">Table 13. Network parameters</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 37.5%;">
@@ -5466,7 +5870,7 @@ The prefix length for an IPv4 block is between <code>0</code> and <code>32</code
 <p>Optional installation configuration parameters are described in the following table:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 13. Optional parameters</caption>
+<caption class="title">Table 14. Optional parameters</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 37.5%;">
@@ -5822,7 +6226,7 @@ accounts for the dramatically decreased machine performance.</p>
 <p>Additional VMware vSphere configuration parameters are described in the following table:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 14. Additional VMware vSphere cluster parameters</caption>
+<caption class="title">Table 15. Additional VMware vSphere cluster parameters</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 37.5%;">
@@ -5938,7 +6342,7 @@ accounts for the dramatically decreased machine performance.</p>
 <p>The following table lists each deprecated vSphere configuration parameter:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 15. Deprecated VMware vSphere cluster parameters</caption>
+<caption class="title">Table 16. Deprecated VMware vSphere cluster parameters</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 37.5%;">
@@ -6091,7 +6495,7 @@ in vSphere.</p>
 <p>Optional VMware vSphere machine pool configuration parameters are described in the following table:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 16. Optional VMware vSphere machine pool parameters</caption>
+<caption class="title">Table 17. Optional VMware vSphere machine pool parameters</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 37.5%;">
