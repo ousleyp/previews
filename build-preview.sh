@@ -24,6 +24,12 @@ else
   DIR="previews"
 fi
 
+if [ -d ../previews/okd ]; then
+  :
+else
+  mkdir ../previews/okd
+fi
+
 cp -r _preview/$DISTRO/$BRANCH ../$DIR
 cd ../previews
 git add .
