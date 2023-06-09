@@ -636,11 +636,11 @@
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-8-6"><span id="sgSpan-8-6" class="fa fa-caret-right"></span>&nbsp;Dynamic plugins</a>
               <ul id="topicSubGroup-8-6" class="nav-tertiary list-unstyled collapse">
 
-                  <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-in.html">Overview of dynamic plugins</a></li>
-                  <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-ins-get-started.html">Getting started with dynamic plugins</a></li>
-                  <li><a class="" href="../../web_console/dynamic-plug-in/deploy-plug-in-cluster.html">Deploy your plugin on a cluster</a></li>
-                  <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
-                  <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
+                  <li><a class="" href="../../web_console/dynamic-plugin/overview-dynamic-plugin.html">Overview of dynamic plugins</a></li>
+                  <li><a class="" href="../../web_console/dynamic-plugin/dynamic-plugins-get-started.html">Getting started with dynamic plugins</a></li>
+                  <li><a class="" href="../../web_console/dynamic-plugin/deploy-plugin-cluster.html">Deploy your plugin on a cluster</a></li>
+                  <li><a class="" href="../../web_console/dynamic-plugin/dynamic-plugin-example.html">Dynamic plugin example</a></li>
+                  <li><a class="" href="../../web_console/dynamic-plugin/dynamic-plugins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-8-7"><span id="sgSpan-8-7" class="fa fa-caret-right"></span>&nbsp;Web terminal</a>
               <ul id="topicSubGroup-8-7" class="nav-tertiary list-unstyled collapse">
@@ -791,9 +791,6 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
-                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
-                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
-                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -1607,13 +1604,7 @@
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup23"><span id="tgSpan23" class="fa fa-angle-right"></span>Sandboxed Containers Support for OpenShift</a>
       <ul id="topicGroup23" class="collapse  list-unstyled">
-            <li><a class="" href="../../sandboxed_containers/sandboxed-containers-release-notes.html">OpenShift sandboxed containers release notes</a></li>
-            <li><a class="" href="../../sandboxed_containers/understanding-sandboxed-containers.html">Understanding OpenShift sandboxed containers</a></li>
-            <li><a class="" href="../../sandboxed_containers/deploying-sandboxed-container-workloads.html">Deploying OpenShift sandboxed containers workloads</a></li>
-            <li><a class="" href="../../sandboxed_containers/monitoring-sandboxed-containers.html">Monitoring OpenShift sandboxed containers</a></li>
-            <li><a class="" href="../../sandboxed_containers/uninstalling-sandboxed-containers.html">Uninstalling OpenShift sandboxed containers</a></li>
-            <li><a class="" href="../../sandboxed_containers/upgrading-sandboxed-containers.html">Upgrading OpenShift sandboxed containers</a></li>
-            <li><a class="" href="../../sandboxed_containers/troubleshooting-sandboxed-containers.html">Collecting OpenShift sandboxed containers data</a></li>
+            <li><a class="" href="../../sandboxed_containers/sandboxed-containers-moved.html">OpenShift sandboxed containers documentation has been moved</a></li>
       </ul>
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
@@ -3264,16 +3255,13 @@ hub    v1.9.0    True             https://api.route.url/    https://ui.route.url
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc <span class="nb">cp</span> <span class="nt">-n</span> &lt;namespace&gt; &lt;podName&gt;:&lt;path-to-hub.dump&gt; &lt;path-to-local-system&gt;</code></pre>
 </div>
 </div>
-</li>
-</ol>
-</div>
 <div class="listingblock">
+<div class="title">Example</div>
 <div class="content">
-<pre class="nowrap">$ oc cp -n openshift-pipelines tekton-hub-db-7d6d888c67-p7mdr:/tmp/hub.dump /home/test_user/Downloads/hub.dump</pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc <span class="nb">cp</span> <span class="nt">-n</span> openshift-pipelines tekton-hub-db-7d6d888c67-p7mdr:/tmp/hub.dump /home/test_user/Downloads/hub.dump</code></pre>
 </div>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>Copy the file that contains the data dump from the local system to the pod running the external Crunchy Postgres database.</p>
 <div class="listingblock">
@@ -3282,25 +3270,19 @@ hub    v1.9.0    True             https://api.route.url/    https://ui.route.url
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc <span class="nb">cp</span> <span class="nt">-n</span> &lt;namespace&gt; &lt;path-to-local-system&gt; &lt;podName&gt;:&lt;path-to-hub.dump&gt;</code></pre>
 </div>
 </div>
-</li>
-</ol>
-</div>
 <div class="listingblock">
+<div class="title">Example</div>
 <div class="content">
-<pre class="nowrap">$ oc cp -n openshift-operators /home/test_user/Downloads/hub.dump test-instance1-spnz-0:/tmp/hub.dump</pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>oc <span class="nb">cp</span> <span class="nt">-n</span> openshift-operators /home/test_user/Downloads/hub.dump test-instance1-spnz-0:/tmp/hub.dump</code></pre>
 </div>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
-<p>Restore the data in the Crunchy Postgres database.
-.Command format</p>
-</li>
-</ol>
-</div>
+<p>Restore the data in the Crunchy Postgres database.</p>
 <div class="listingblock">
+<div class="title">Command format</div>
 <div class="content">
-<pre class="nowrap">$ pg_restore -d &lt;database-name&gt; -h localhost -U postgres &lt;path-where-file-is-copied&gt;</pre>
+<pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>pg_restore <span class="nt">-d</span> &lt;database-name&gt; <span class="nt">-h</span> localhost <span class="nt">-U</span> postgres &lt;path-where-file-is-copied&gt;</code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -3309,8 +3291,7 @@ hub    v1.9.0    True             https://api.route.url/    https://ui.route.url
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span>pg_restore <span class="nt">-d</span> <span class="nb">test</span> <span class="nt">-h</span> localhost <span class="nt">-U</span> postgres /tmp/hub.dump</code></pre>
 </div>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>Get into the Crunchy Postgres pod.
 .Example: Get into the <code>test-instance1-m7hh-0</code> pod</p>
@@ -3433,11 +3414,8 @@ Type "help" for help.
 <div class="paragraph">
 <p>The value of the <code>POSTGRES_HOST</code> field is encoded as a secret. You can decode the value of the Crunchy Postgres host by using the following example.</p>
 </div>
-<div class="paragraph">
-<p>+
-.Example: Decode the secret value of a Crunchy Postgres host</p>
-</div>
 <div class="listingblock">
+<div class="title">Example: Decode the secret value of a Crunchy Postgres host</div>
 <div class="content">
 <pre class="rouge highlight nowrap"><code data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">echo</span> <span class="s1">'aGlwcG8tcHJpbWFyeS5vcGVuc2hpZnQtb3BlcmF0b3JzLnN2YyA='</span> | <span class="nb">base64</span> <span class="nt">--decode</span>
 <span class="go">test-primary.openshift-operators.svc</span></code></pre>

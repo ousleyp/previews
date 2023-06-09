@@ -636,11 +636,11 @@
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-8-6"><span id="sgSpan-8-6" class="fa fa-caret-right"></span>&nbsp;Dynamic plugins</a>
               <ul id="topicSubGroup-8-6" class="nav-tertiary list-unstyled collapse">
 
-                  <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-in.html">Overview of dynamic plugins</a></li>
-                  <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-ins-get-started.html">Getting started with dynamic plugins</a></li>
-                  <li><a class="" href="../../web_console/dynamic-plug-in/deploy-plug-in-cluster.html">Deploy your plugin on a cluster</a></li>
-                  <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-in-example.html">Dynamic plugin example</a></li>
-                  <li><a class="" href="../../web_console/dynamic-plug-in/dynamic-plug-ins-reference.html">Dynamic plugin reference</a></li>              </ul>
+                  <li><a class="" href="../../web_console/dynamic-plugin/overview-dynamic-plugin.html">Overview of dynamic plugins</a></li>
+                  <li><a class="" href="../../web_console/dynamic-plugin/dynamic-plugins-get-started.html">Getting started with dynamic plugins</a></li>
+                  <li><a class="" href="../../web_console/dynamic-plugin/deploy-plugin-cluster.html">Deploy your plugin on a cluster</a></li>
+                  <li><a class="" href="../../web_console/dynamic-plugin/dynamic-plugin-example.html">Dynamic plugin example</a></li>
+                  <li><a class="" href="../../web_console/dynamic-plugin/dynamic-plugins-reference.html">Dynamic plugin reference</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-8-7"><span id="sgSpan-8-7" class="fa fa-caret-right"></span>&nbsp;Web terminal</a>
               <ul id="topicSubGroup-8-7" class="nav-tertiary list-unstyled collapse">
@@ -791,9 +791,6 @@
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-monitoring.html">Enabling monitoring for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-proxy.html">Configuring the egress proxy for the cert-manager Operator for Red Hat OpenShift</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-customizing-api-fields.html">Customizing cert-manager by using the cert-manager Operator API fields</a></li>
-                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-log-levels.html">Configuring log levels for cert-manager and the cert-manager Operator for Red Hat OpenShift</a></li>
-                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-non-sts-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift on GCP</a></li>
-                  <li><a class="" href="../../security/cert_manager_operator/cert-manager-authenticate-gcp.html">Authenticating the cert-manager Operator for Red Hat OpenShift with GCP Workload Identity</a></li>
                   <li><a class="" href="../../security/cert_manager_operator/cert-manager-operator-uninstall.html">Uninstalling the cert-manager Operator for Red Hat OpenShift</a></li>              </ul>
             </li>
             <li><a class="" href="../../security/audit-log-view.html">Viewing audit logs</a></li>
@@ -1607,13 +1604,7 @@
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup23"><span id="tgSpan23" class="fa fa-angle-right"></span>Sandboxed Containers Support for OpenShift</a>
       <ul id="topicGroup23" class="collapse  list-unstyled">
-            <li><a class="" href="../../sandboxed_containers/sandboxed-containers-release-notes.html">OpenShift sandboxed containers release notes</a></li>
-            <li><a class="" href="../../sandboxed_containers/understanding-sandboxed-containers.html">Understanding OpenShift sandboxed containers</a></li>
-            <li><a class="" href="../../sandboxed_containers/deploying-sandboxed-container-workloads.html">Deploying OpenShift sandboxed containers workloads</a></li>
-            <li><a class="" href="../../sandboxed_containers/monitoring-sandboxed-containers.html">Monitoring OpenShift sandboxed containers</a></li>
-            <li><a class="" href="../../sandboxed_containers/uninstalling-sandboxed-containers.html">Uninstalling OpenShift sandboxed containers</a></li>
-            <li><a class="" href="../../sandboxed_containers/upgrading-sandboxed-containers.html">Upgrading OpenShift sandboxed containers</a></li>
-            <li><a class="" href="../../sandboxed_containers/troubleshooting-sandboxed-containers.html">Collecting OpenShift sandboxed containers data</a></li>
+            <li><a class="" href="../../sandboxed_containers/sandboxed-containers-moved.html">OpenShift sandboxed containers documentation has been moved</a></li>
       </ul>
     </li>
     <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicGroup24"><span id="tgSpan24" class="fa fa-angle-right"></span>Logging</a>
@@ -2480,6 +2471,7 @@
 </ul>
 </li>
 <li><a href="#nw-egress-ips-object_configuring-egress-ips-ovn">EgressIP object</a></li>
+<li><a href="#nw-egress-ips-config-object_configuring-egress-ips-ovn">EgressIPconfig object</a></li>
 <li><a href="#nw-egress-ips-node_configuring-egress-ips-ovn">Labeling a node to host egress IP addresses</a></li>
 <li><a href="#configuring-egress-ips-next-steps">Next steps</a></li>
 <li><a href="#configuring-egress-ips-additional-resources">Additional resources</a></li>
@@ -3003,6 +2995,50 @@ To ensure that you can reliably allow access to the server from only that specif
       <span class="na">values</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s">development</span></code></pre>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="nw-egress-ips-config-object_configuring-egress-ips-ovn"><a class="anchor" href="#nw-egress-ips-config-object_configuring-egress-ips-ovn"></a>EgressIPconfig object</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As a feature of egress IP, the <code>reachabilityTotalTimeoutSeconds</code> parameter configures the total timeout for checks that are sent by probes to egress IP nodes. The <code>egressIPConfig</code> object allows users to set the <code>reachabilityTotalTimeoutSeconds</code> <code>spec</code>. If the EgressIP node cannot be reached within this timeout, the node is declared down.</p>
+</div>
+<div class="paragraph">
+<p>You can increase this value if your network is not stable enough to handle the current default value of 1 second.</p>
+</div>
+<div class="paragraph">
+<p>The following YAML describes changing the <code>reachabilityTotalTimeoutSeconds</code> from the default 1 second probes to 5 second probes:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight nowrap"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">k8s.ovn.org/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">EgressIP</span>
+  <span class="s">name</span><span class="pi">:</span> <span class="s">networks.operator.openshift.io</span>
+  <span class="s">spec</span><span class="pi">:</span>
+  <span class="na">clusterNetwork</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">cidr</span><span class="pi">:</span> <span class="s">10.128.0.0/14</span>
+    <span class="na">hostPrefix</span><span class="pi">:</span> <span class="m">23</span>
+  <span class="na">defaultNetwork</span><span class="pi">:</span>
+    <span class="na">ovnKubernetesConfig</span><span class="pi">:</span>
+      <span class="na">egressIPConfig</span><span class="pi">:</span> <i class="conum" data-value="1"></i><b>(1)</b>
+        <span class="na">reachabilityTotalTimeoutSeconds</span><span class="pi">:</span> <span class="s">5</span> <i class="conum" data-value="2"></i><b>(2)</b>
+      <span class="na">gatewayConfig</span><span class="pi">:</span>
+        <span class="na">routingViaHost</span><span class="pi">:</span> <span class="no">false</span>
+      <span class="na">genevePort</span><span class="pi">:</span> <span class="s">6081</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The <code>egressIPConfig</code> holds the configurations for the options of the <code>EgressIP</code> object. Changing these configurations allows you to extend the <code>EgressIP</code> object.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>The value for <code>reachabilityTotalTimeoutSeconds</code> accepts integer values from <code>0</code> to <code>60</code>. A value of 0 disables the reachability check of the egressIP node. Values of <code>1</code> to <code>60</code> correspond to the duration in seconds between probes sending the reachability check for the node.</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
