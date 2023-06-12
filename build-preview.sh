@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# authored by: Pan Ousley (6/2023)
 # prerequisites:
 # 
 # * you set up a repo named "previews"
