@@ -2,17 +2,22 @@
 
 Notes on the [build-preview.sh](https://github.com/ousleyp/previews/blob/main/build-preview.sh) script:
 
-- Read the comments before using :)
-- It won't work if you don't run it from the openshift-docs directory
-- The script assumes that openshift-docs and previews have the same parent
+- Read the comments before using. :)
+- It won't work if you don't run it from the `openshift-docs` directory.
+- Don't save it to the `openshift-docs` directory, though! You can save it to your `previews` dir
+  or another directory that belongs to you alone.
+- The script assumes that `openshift-docs` and `previews` have the same parent directory;
   in my case, they're in a directory called `repos`:
-  
-    $ ls ~/repos
-  
-    openshift-docs previews
 
-TIP: it can be useful to create an alias or two to make this even faster.
-This is what mine look like:
+        $ ls ~/repos
+        openshift-docs previews
+
+If you move your openshift-docs directory, you might have to change the search path in VSCode.
+To avoid this potential headache, don't move it; just make sure you create your `previews` repo dir
+in the same parent directory as `openshift-docs`.
+
+TIP: it can be useful to create an alias or two to make the script more convenient.
+For example:
 
     alias preview="~/repos/previews/build-preview.sh"
     alias preview-okd="~/repos/previews/build-preview.sh okd"
@@ -27,3 +32,5 @@ If you don't know what shell you're using, run `$ echo $SHELL`.
 
 If you have a bunch of terminals open, run the `zsh`/`bash` equivalent in all
 of them or they won't have the latest changes to the `rc` file.
+
+Authored by: Pan Ousley, 6/2023
