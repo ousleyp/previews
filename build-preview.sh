@@ -17,15 +17,14 @@ GITUSER=$(git config --get remote.origin.url | sed -r 's/git@github.com://; s/\/
 if [ $1 = "okd" ]; then
   DISTRO="openshift-origin"
   DIR="previews/okd"
+  if [ -d ../previews/okd ]; then
+    :
+  else
+    mkdir ../previews/okd
+  fi
 else
   DISTRO="openshift-enterprise"
   DIR="previews"
-fi
-
-if [ -d ../previews/okd ]; then
-  :
-else
-  mkdir ../previews/okd
 fi
 
 asciibinder build --distro $DISTRO
