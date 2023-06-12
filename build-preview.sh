@@ -1,6 +1,7 @@
 #!/bin/bash
 # prerequisites:
 # 
+# * you set up a repo named "previews"
 # * your openshift-docs and previews directories have the same parent
 # * you are in the openshift-docs directory when running this script
 # * you checked out the branch that you want to build
