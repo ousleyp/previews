@@ -2517,10 +2517,10 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>If you disable the <code>enableCommonBootImageImport</code> feature gate, all <code>DataImportCron</code> objects are deleted. This does not remove <code>PersistentVolumeClaim</code> (PVC) objects that store operating system images. Instead, <code>DataSource</code> objects are pointed to non-existent PVCs.</p>
+<p>If you disable the <code>enableCommonBootImageImport</code> feature gate, all <code>DataImportCron</code> objects are deleted. This does not remove previously imported <code>PersistentVolumeClaim</code> (PVC) objects that store operating system images. <code>DataSource</code> objects are reset so that they no longer point to the original PVCs. An administrator can manually provide a boot source by creating a new PVC for the <code>DataSource</code> object and populating the PVC with an operating system image.</p>
 </div>
 <div class="paragraph">
-<p>Optionally, after disabling the feature gate, administrators can add boot sources or delete previously imported images.</p>
+<p>After disabling the feature gate, administrators can optionally delete the previously created PVCs.</p>
 </div>
 </td>
 </tr>
