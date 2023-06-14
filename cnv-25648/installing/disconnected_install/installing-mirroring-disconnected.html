@@ -1308,6 +1308,7 @@
                   <li><a class="" href="../../cicd/gitops/monitoring-argo-cd-custom-resource-workloads.html">Monitoring Argo CD custom resource workloads</a></li>
                   <li><a class="" href="../../cicd/gitops/run-gitops-control-plane-workload-on-infra-nodes.html">Running Control Plane Workloads on Infra nodes</a></li>
                   <li><a class="" href="../../cicd/gitops/about-sizing-requirements-gitops.html">Sizing requirements for GitOps Operator</a></li>
+                  <li><a class="" href="../../cicd/gitops/collecting-debugging-data-for-support.html">Collecting debugging data for a support case</a></li>
                   <li><a class="" href="../../cicd/gitops/troubleshooting-issues-in-GitOps.html">Troubleshooting issues in GitOps</a></li>              </ul>
             </li>
             <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-16-4"><span id="sgSpan-16-4" class="fa fa-caret-right"></span>&nbsp;Jenkins</a>
@@ -1481,15 +1482,14 @@
                   <li><a class="" href="../../nodes/pods/nodes-pods-viewing.html">Viewing pods</a></li>
                   <li><a class="" href="../../nodes/pods/nodes-pods-configuring.html">Configuring a cluster for pods</a></li>
                   <li><a class="" href="../../nodes/pods/nodes-pods-autoscaling.html">Automatically scaling pods with the horizontal pod autoscaler</a></li>
-                  <li><a class="" href="../../nodes/pods/nodes-pods-autoscaling-custom.html">Automatically scaling pods with the custom metrics autoscaler</a></li>
                   <li><a class="" href="../../nodes/pods/nodes-pods-vertical-autoscaler.html">Automatically adjust pod resource levels with the vertical pod autoscaler</a></li>
                   <li><a class="" href="../../nodes/pods/nodes-pods-secrets.html">Providing sensitive data to pods</a></li>
                   <li><a class="" href="../../nodes/pods/nodes-pods-configmaps.html">Creating and using config maps</a></li>
                   <li><a class="" href="../../nodes/pods/nodes-pods-plugins.html">Using Device Manager to make devices available to nodes</a></li>
                   <li><a class="" href="../../nodes/pods/nodes-pods-priority.html">Including pod priority in pod scheduling decisions</a></li>
                   <li><a class="" href="../../nodes/pods/nodes-pods-node-selectors.html">Placing pods on specific nodes using node selectors</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-1-11"><span id="ssgSpan-21-1-11" class="fa fa-caret-right"></span>&nbsp;Run Once Duration Override Operator</a>
-                  <ul id="topicSubSubGroup-21-1-11" class="nav-tertiary list-unstyled collapse">
+                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-1-10"><span id="ssgSpan-21-1-10" class="fa fa-caret-right"></span>&nbsp;Run Once Duration Override Operator</a>
+                  <ul id="topicSubSubGroup-21-1-10" class="nav-tertiary list-unstyled collapse">
 
                     <li><a class="" href="../../nodes/pods/run_once_duration_override/index.html" style="padding-left: 70px;">Run Once Duration Override Operator overview</a></li>
                     <li><a class="" href="../../nodes/pods/run_once_duration_override/run-once-duration-override-release-notes.html" style="padding-left: 70px;">Run Once Duration Override Operator release notes</a></li>
@@ -1498,8 +1498,23 @@
                   </li>
               </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-2"><span id="sgSpan-21-2" class="fa fa-caret-right"></span>&nbsp;Controlling pod placement onto nodes (scheduling)</a>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-2"><span id="sgSpan-21-2" class="fa fa-caret-right"></span>&nbsp;Automatically scaling pods with the Custom Metrics Autoscaler Operator</a>
               <ul id="topicSubGroup-21-2" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../nodes/cma/nodes-cma-autoscaling-custom.html">Custom Metrics Autoscaler Operator overview</a></li>
+                  <li><a class="" href="../../nodes/cma/nodes-cma-autoscaling-custom-rn.html">Custom Metrics Autoscaler Operator release notes</a></li>
+                  <li><a class="" href="../../nodes/cma/nodes-cma-autoscaling-custom-install.html">Installing the custom metrics autoscaler</a></li>
+                  <li><a class="" href="../../nodes/cma/nodes-cma-autoscaling-custom-trigger.html">Understanding the custom metrics autoscaler triggers</a></li>
+                  <li><a class="" href="../../nodes/cma/nodes-cma-autoscaling-custom-trigger-auth.html">Understanding the custom metrics autoscaler trigger authentications</a></li>
+                  <li><a class="" href="../../nodes/cma/nodes-cma-autoscaling-custom-pausing.html">Pausing the custom metrics autoscaler</a></li>
+                  <li><a class="" href="../../nodes/cma/nodes-cma-autoscaling-custom-audit-log.html">Gathering audit logs</a></li>
+                  <li><a class="" href="../../nodes/cma/nodes-cma-autoscaling-custom-debugging.html">Gathering debugging data</a></li>
+                  <li><a class="" href="../../nodes/cma/nodes-cma-autoscaling-custom-metrics.html">Viewing Operator metrics</a></li>
+                  <li><a class="" href="../../nodes/cma/nodes-cma-autoscaling-custom-adding.html">Understanding how to add custom metrics autoscalers</a></li>
+                  <li><a class="" href="../../nodes/cma/nodes-cma-autoscaling-custom-removing.html">Removing the Custom Metrics Autoscaler Operator</a></li>              </ul>
+            </li>
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-3"><span id="sgSpan-21-3" class="fa fa-caret-right"></span>&nbsp;Controlling pod placement onto nodes (scheduling)</a>
+              <ul id="topicSubGroup-21-3" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../nodes/scheduling/nodes-scheduler-about.html">About pod placement using the scheduler</a></li>
                   <li><a class="" href="../../nodes/scheduling/nodes-scheduler-profiles.html">Scheduling pods using a scheduler profile</a></li>
@@ -1510,8 +1525,8 @@
                   <li><a class="" href="../../nodes/scheduling/nodes-scheduler-node-selectors.html">Placing pods on specific nodes using node selectors</a></li>
                   <li><a class="" href="../../nodes/scheduling/nodes-scheduler-pod-topology-spread-constraints.html">Controlling pod placement using pod topology spread constraints</a></li>
                   <li><a class="" href="../../nodes/scheduling/nodes-descheduler.html">Evicting pods using the descheduler</a></li>
-                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-2-9"><span id="ssgSpan-21-2-9" class="fa fa-caret-right"></span>&nbsp;Secondary scheduler</a>
-                  <ul id="topicSubSubGroup-21-2-9" class="nav-tertiary list-unstyled collapse">
+                <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubSubGroup-21-3-9"><span id="ssgSpan-21-3-9" class="fa fa-caret-right"></span>&nbsp;Secondary scheduler</a>
+                  <ul id="topicSubSubGroup-21-3-9" class="nav-tertiary list-unstyled collapse">
 
                     <li><a class="" href="../../nodes/scheduling/secondary_scheduler/index.html" style="padding-left: 70px;">Secondary scheduler overview</a></li>
                     <li><a class="" href="../../nodes/scheduling/secondary_scheduler/nodes-secondary-scheduler-release-notes.html" style="padding-left: 70px;">Secondary Scheduler Operator release notes</a></li>
@@ -1520,14 +1535,14 @@
                   </li>
               </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-3"><span id="sgSpan-21-3" class="fa fa-caret-right"></span>&nbsp;Using Jobs and DaemonSets</a>
-              <ul id="topicSubGroup-21-3" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-4"><span id="sgSpan-21-4" class="fa fa-caret-right"></span>&nbsp;Using Jobs and DaemonSets</a>
+              <ul id="topicSubGroup-21-4" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../nodes/jobs/nodes-pods-daemonsets.html">Running background tasks on nodes automatically with daemonsets</a></li>
                   <li><a class="" href="../../nodes/jobs/nodes-nodes-jobs.html">Running tasks in pods using jobs</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-4"><span id="sgSpan-21-4" class="fa fa-caret-right"></span>&nbsp;Working with nodes</a>
-              <ul id="topicSubGroup-21-4" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-5"><span id="sgSpan-21-5" class="fa fa-caret-right"></span>&nbsp;Working with nodes</a>
+              <ul id="topicSubGroup-21-5" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-viewing.html">Viewing and listing the nodes in your cluster</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-working.html">Working with nodes</a></li>
@@ -1544,8 +1559,8 @@
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-machine-config-daemon-metrics.html">Machine Config Daemon metrics</a></li>
                   <li><a class="" href="../../nodes/nodes/nodes-nodes-creating-infrastructure-nodes.html">Creating infrastructure nodes</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-5"><span id="sgSpan-21-5" class="fa fa-caret-right"></span>&nbsp;Working with containers</a>
-              <ul id="topicSubGroup-21-5" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-6"><span id="sgSpan-21-6" class="fa fa-caret-right"></span>&nbsp;Working with containers</a>
+              <ul id="topicSubGroup-21-6" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../nodes/containers/nodes-containers-using.html">Understanding containers</a></li>
                   <li><a class="" href="../../nodes/containers/nodes-containers-init.html">Using Init Containers to perform tasks before a pod is deployed</a></li>
@@ -1557,8 +1572,8 @@
                   <li><a class="" href="../../nodes/containers/nodes-containers-port-forwarding.html">Using port forwarding to access applications in a container</a></li>
                   <li><a class="" href="../../nodes/containers/nodes-containers-sysctls.html">Using sysctls in containers</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-6"><span id="sgSpan-21-6" class="fa fa-caret-right"></span>&nbsp;Working with clusters</a>
-              <ul id="topicSubGroup-21-6" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-7"><span id="sgSpan-21-7" class="fa fa-caret-right"></span>&nbsp;Working with clusters</a>
+              <ul id="topicSubGroup-21-7" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../nodes/clusters/nodes-containers-events.html">Viewing system event information in a cluster</a></li>
                   <li><a class="" href="../../nodes/clusters/nodes-cluster-resource-levels.html">Analyzing cluster resource levels</a></li>
@@ -1569,13 +1584,13 @@
                   <li><a class="" href="../../nodes/clusters/nodes-cluster-enabling-features.html">Enabling features using FeatureGates</a></li>
                   <li><a class="" href="../../nodes/clusters/nodes-cluster-worker-latency-profiles.html">Improving cluster stability in high latency environments using worker latency profiles</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-7"><span id="sgSpan-21-7" class="fa fa-caret-right"></span>&nbsp;Remote worker nodes on the network edge</a>
-              <ul id="topicSubGroup-21-7" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-8"><span id="sgSpan-21-8" class="fa fa-caret-right"></span>&nbsp;Remote worker nodes on the network edge</a>
+              <ul id="topicSubGroup-21-8" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../nodes/edge/nodes-edge-remote-workers.html">Using remote worker node at the network edge</a></li>              </ul>
             </li>
-            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-8"><span id="sgSpan-21-8" class="fa fa-caret-right"></span>&nbsp;Worker nodes for single-node OpenShift clusters</a>
-              <ul id="topicSubGroup-21-8" class="nav-tertiary list-unstyled collapse">
+            <li class="nav-header"><a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#topicSubGroup-21-9"><span id="sgSpan-21-9" class="fa fa-caret-right"></span>&nbsp;Worker nodes for single-node OpenShift clusters</a>
+              <ul id="topicSubGroup-21-9" class="nav-tertiary list-unstyled collapse">
 
                   <li><a class="" href="../../nodes/nodes/nodes-sno-worker-nodes.html">Adding worker nodes to single-node OpenShift clusters</a></li>              </ul>
             </li>
@@ -4710,7 +4725,7 @@ Writing image mapping to oc-mirror-workspace/mapping.txt</span></code></pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--manifests-only</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Generate manifests for <code>ImageContentSourcePolicy</code> objects to configure a cluster to use the mirror registry, but do not actually mirror any images.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Generate manifests for <code>ImageContentSourcePolicy</code> objects to configure a cluster to use the mirror registry, but do not actually mirror any images. To use this flag, you must pass in an image set archive with the <code>--from</code> flag.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--max-nested-paths &lt;int&gt;</code></p></td>
