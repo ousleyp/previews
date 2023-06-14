@@ -16,7 +16,7 @@
 BRANCH=$(git branch --show-current)
 GITUSER=$(git config --get remote.origin.url | sed -r 's/git@github.com://; s/\/openshift-docs.git//')
 
-if [ $1 = "okd" ]; then
+if [ "$1" = "okd" ]; then
   DISTRO="openshift-origin"
   DIR="previews/okd"
   if [ -d ../previews/okd ]; then
